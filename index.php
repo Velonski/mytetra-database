@@ -25,10 +25,10 @@ set_exception_handler(
 );
 
 /**
- * @param object $xmlIterator
+ * @param resource $xmlnode
  * @param integer $level
  */
-function echoNodeList($xmlnode, $level)
+function echoNodeList($xmlnode, $level = 1)
 {
     if ($level > 6) {
         $headerLevel = 6;
@@ -40,22 +40,20 @@ function echoNodeList($xmlnode, $level)
     
     echo '<ul>';
     
-    try {
+    if (isset($xmlnode->recordtable->record)) {
         foreach ($xmlnode->recordtable->record as $record) {
             
-            echo '<li><a href="base/'.$record['id'].'/'.$record['file'].'">'.$record['name'].'</a></li>';
+            echo '<li><a href="base/'.$record['dir'].'/'.$record['file'].'">'.$record['name'].'</a></li>';
             
         }
-    } catch (\Exception $e) {
     }
     
-    try {
+    if (isset($xmlnode->node)) {
         foreach ($xmlnode->node as $node) {
             
             echoNodeList($node, $level+1);
             
         }
-    } catch (\Exception $e) {
     }
     
     echo '</ul>';
