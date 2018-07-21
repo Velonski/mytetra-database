@@ -1,0 +1,24 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<html><head><meta name="qrichtext" content="1" /><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><style type="text/css">
+p, li { white-space: pre-wrap; }
+</style></head><body style=" font-family:'DejaVu Sans'; font-size:11pt; font-weight:400; font-style:normal;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">To rename multiple files use rename command or script provided by MySQL/MariaDB package as per regex.</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">How to rename a file Linux?</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">The syntax is as follows:<br />mv old-file-name new-file-name<br />mv [options] old-file-name new-file-name<br />mv file1 file2</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Examples: Renaming files with mv Command</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">In this example, rename a file called resumezzz.pdf to resume.pdf. Open a command-line terminal (select Applications &gt; Accessories &gt; Terminal), and then type:<br />mv resumezzz.pdf resume.pdf<br />If resumezzz.pdf is located in /home/vivek/docs/files directory, type:<br />cd /home/vivek/docs/files<br />mv resumezzz.pdf resume.pdf<br />OR<br />mv /home/vivek/docs/files/resumezzz.pdf /home/vivek/docs/files/resume.pdf<br />Use the ls command to view files:<br />ls -l file1<br />ls -l file1 file2<br />ls -l /home/vivek/docs/files/*.pdf<br />ls -l *.pdf</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Linux rename a file syntax</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">In short, to rename a file:<br />mv file1 file2<br />You can get verbose output i.e. mv command can explain what is being done using the following syntax:<br />mv -v file1 file2<br />Sample outputs:</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">`file1' -&gt; `file2'</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">To make mv interactive pass the -i option. This option will prompt before overwriting file and recommended for new users:<br />mv -i file1 file2<br />Sample outputs:</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">mv: overwrite `file2'? y</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">How to use rename command to renames multiple files</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">The syntax is:<br />rename 's/old/new/' files<br />rename [options] 's/old/new/' files<br />For example, rename all perl files (*.perl) to *.pl, enter:<br />rename 's/perl/pl/' *.perl<br />OR<br />rename -v 's/perl/pl/' *.perl<br />Sample outputs:</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">'bar.perl' renamed to 'bar.pl'</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">'foo.perl' renamed to 'foo.pl'</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">'input.perl' renamed to 'input.pl'</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">'output.perl' renamed to 'output.pl'</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">'test.perl' renamed to 'test.pl'</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">The above command changed all files with the extension .perl to .pl. See “Howto Rename Multiple Files At a Shell Prompt In Linux or Unix” for more info.</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Detailed information about mv command</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">You can also view the manual page on mv using the following command:<br />man mv<br />OR<br />info mv<br />OR<br />man rename</p></body></html>

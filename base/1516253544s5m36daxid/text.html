@@ -1,0 +1,772 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<html><head><meta name="qrichtext" content="1" /><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><style type="text/css">
+p, li { white-space: pre-wrap; }
+</style></head><body style=" font-family:'DejaVu Sans'; font-size:11pt; font-weight:400; font-style:normal;">
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td colspan="3">
+<p style=" margin-top:16px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="whatisvim"></a><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">2</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">.1 What is VIM?</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td></tr>
+<tr>
+<td width="29">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td colspan="2">
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Vim is an improved (in many ways) version of vi, a ubiquitous text editor found on any UNIX system. VIM was created by </span><a href="http://www.vimregex.com/images/photos/nyc/pics/linux-bram.jpg"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; text-decoration: underline; color:#0000ff;">Bram Moolenaar</span></a><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> with a help of other people. It's free but if you like it you can make a charitable contribution to orphans in Uganda. </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Vim has its own web site, </span><a href="http://www.vim.org"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600; text-decoration: underline; color:#0000ff;">www.vim.org</span></a><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> and several </span><a href="http://www.vim.org/mail.html"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; text-decoration: underline; color:#0000ff;">mailing lists</span></a><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">, with a wealth of information on every aspect of VIM. Vim was successfully ported to nearly all existing OS. It is a default editor in many Linux distributions (e.g. RedHat). </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">VIM has all features of a modern programmer's editor - macro language, syntax highlighting, customizable user interface, easy integration with various IDEs plus a set of features which makes VIM so attractive to its users: crash recovery, automatic commands, session management. </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">VIM has a very broad and loyal user base. Over 10 million people have it installed (counting only Linux users). Estimation is that there are about half a million people using Vim as their main editor. And this number is growing. </span></p></td></tr>
+<tr>
+<td colspan="3">
+<p style=" margin-top:16px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="about"></a><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">2</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">.2 About this Tutorial</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td></tr>
+<tr>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td colspan="2">
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">I started this tutorial for one simple reason - I like regular expressions. Nothing compares to the satisfaction from a well-crafted regexp which does exactly what you wanted it to do :-). I hope it's passable as a foreword. </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Speaking more seriously, regular expressions (or regexps for short) are tools used to manipulate text and data. They don't exist as a standalone product but usually are a part of some program/utility. The best known example is UNIX</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-style:italic;"> grep, </span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">a program to search files for lines that match certain pattern. The search pattern is described in terms of </span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-style:italic;">regular expressions. </span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">You can think of regexps as a specialized pattern language. Regexps are quite useful and can greatly reduce time it takes to do some tedious text editing. </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">(Regexp terminology is largely borrowed from Jeffrey Friedl &quot;Mastering Regular Expressions.&quot;) </span></p></td></tr>
+<tr>
+<td colspan="3">
+<p style=" margin-top:16px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="credits"></a><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">2</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">.3 Credits</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td></tr>
+<tr>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td colspan="2">
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Many thanks (in no particular order): Benji Fisher, Zdenek Sekera, Preben &quot;Peppe&quot; Guldberg, Steve Kirkendall, Shaul Karl and all others who helped me with their comments. </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Feel free to send me (</span><img src="image1428.png" /><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">volontir at yahoo dot com</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">) your comments. suggestions, examples... </span></p></td></tr>
+<tr>
+<td colspan="3">
+<p style=" margin-top:18px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="substitute"></a><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">I</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">II. Substitute Command</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td></tr>
+<tr>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td colspan="2">
+<p style=" margin-top:16px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="replace"></a><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">3</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">.1 Search &amp; Replace</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">So, what can you do with regular expressions? The most common task is to make replacements in a text following some certain rules. For this tutorial you need to know VIM search and replace command (S&amp;R) </span><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">:substitute</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">. Here is an excerpt from VIM help: </span></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="3" cellpadding="0">
+<tr>
+<td colspan="2">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">:</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600; font-style:italic;">range</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;"> s[ubstitute]/</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600; font-style:italic;">pattern</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">/</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600; font-style:italic;">string</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">/cgiI</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td></tr>
+<tr>
+<td colspan="2">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">For each line in</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;"> </span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600; font-style:italic;">the range</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> replace a match of </span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600; font-style:italic;">the pattern</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> with </span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600; font-style:italic;">the string</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> where:</span></p></td></tr>
+<tr>
+<td width="44">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">c</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td width="551">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Confirm each substitution</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">g</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Replace all occurrences in the line (without </span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">g </span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">- only first).</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">i</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Ignore case for the pattern.</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">I </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Don't ignore case for the pattern.</span></p></td></tr></table>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Part of the command word enclosed in the &quot;[&quot; &amp; &quot;]&quot; can be omitted. </span></p>
+<p style=" margin-top:16px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="address"></a><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">3</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">.2 Range of Operation, Line Addressing and Marks</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Before I begin with a pattern description let's talk about line addresses in Vim. Some Vim commands can accept a line range in front of them. By specifying the line range you restrict the command execution to this particular part of text only. Line range consists of one or more line specifiers, separated with a comma or semicolon. You can also mark your current position in the text typing </span><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">m</span><span style=" font-family:'Courier New,courier'; font-size:8.25pt; font-style:italic;">l</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> , where </span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-style:italic;">&quot;l&quot;</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> can be any letter, and use it later defining the line address. </span></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" width="585" cellspacing="3" cellpadding="0">
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">Specifier</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">Description</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600; font-style:italic;">number</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">an absolute line number </span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">. </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">the current line</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">$</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">the last line in the file</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">%</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">the whole file. The same as </span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">1,$</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">'</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600; font-style:italic;">t </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">position of mark &quot;t&quot;</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">/</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600; font-style:italic;">pattern</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">[/]</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">the next line where text</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-style:italic;"> &quot;pattern</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">&quot; matches.</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">?</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600; font-style:italic;">pattern</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">[?] </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">the previous line where text &quot;</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-style:italic;">pattern</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">&quot; matches</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">\/ </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">the next line where the previously used search pattern matches </span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">\?</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">the previous line where the previously used search pattern matches </span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">\&amp;</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">the next line where the previously used substitute pattern matches </span></p></td></tr></table>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">If no line range is specified the command will operate on the current line only. </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Here are a few examples: </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">10,20 </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">- from 10 to 20 line. </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Each may be followed (several times) by &quot;+&quot; or &quot;-&quot; and an optional number. This number is added or subtracted from the preceding line number. If the number is omitted, 1 is used. </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">/Section 1/+,/Section 2/-</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">- all lines between Section 1 and Section 2, non-inclusively, i.e. the lines containing Section 1 and Section 2 will not be affected. </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">The </span><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">/</span><span style=" font-family:'Courier New,courier'; font-size:8.25pt; font-style:italic;">pattern</span><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">/</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> and </span><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">?</span><span style=" font-family:'Courier New,courier'; font-size:8.25pt; font-style:italic;">pattern</span><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">?</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> may be followed by another address separated by a semicolon. A semicolon between two search patterns tells Vim to find the location of the first pattern, then start searching from that location for the second pattern. </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">/Section 1/;/Subsection/-,/Subsection/+</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">- first find Section 1, then the first line with Subsection, step one line down (beginning of the range) and find the next line with Subsection, step one line up (end of the range). </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">The next example shows how you can reuse you search pattern: </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">:/Section/+ y</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">- this will search for the Section line and yank (copy) one line after into the memory. </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">:// normal p</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">- and that will search for the next Section line and put (paste) the saved text on the next line. </span></p></td></tr>
+<tr>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td colspan="2">
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">Tip 1:</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> frequently you need to do S&amp;R in a text which contains UNIX file paths - text strings with slashes (&quot;/&quot;) inside. Because S&amp;R command uses slashes for pattern/replacement separation you have to escape every slash in your pattern, i.e. use &quot;\/&quot; for every &quot;/&quot; in your pattern: </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">s/\/dir1\/dir2\/dir3\/file/dir4\/dir5\/file2/g</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">To avoid this so-called &quot;backslashitis&quot; you can use different separators in S&amp;R (I prefer &quot;:&quot;) </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">s:/dir1/dir2/dir3/file:/dir4/dir5/file2:g</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">Tip 2:</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> You may find these mappings useful (put them in your </span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">.vimrc</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> file) </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">noremap ;; :%s:::g&lt;Left&gt;&lt;Left&gt;&lt;Left&gt;<br />noremap ;' :%s:::cg&lt;Left&gt;&lt;Left&gt;&lt;Left&gt;&lt;Left&gt;</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">These mappings save you some keystrokes and put you where you start typing your search pattern. After typing it you move to the replacement part , type it and hit return. The second version adds confirmation flag. </span></p></td></tr>
+<tr>
+<td colspan="3">
+<p style=" margin-top:18px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="pattern"></a><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">I</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">V. Pattern Description</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td></tr>
+<tr>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td colspan="2">
+<p style=" margin-top:16px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="anchors"></a><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">4</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">.1 Anchors</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Suppose you want to replace all occurrences of vi with VIM. This can be easily done with </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">s/vi/VIM/g</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">If you've tried this example then you, no doubt, noticed that VIM replaced all occurrences of vi even if it's a part of the word (e.g. navigator). If we want to be more specific and replace only whole words vi then we need to correct our pattern. We may rewrite it by putting spaces around vi: </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">s: vi : VIM :g</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">But it will still miss vi followed by the punctuation or at the end of the line/file. The right way is to put special word boundary symbols &quot;</span><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">\&lt;</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">&quot; and &quot;</span><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">\&gt;</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">&quot; around vi. </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">s:\&lt;vi\&gt;:VIM:g</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">The beginning and the end of the line have their own special anchors - &quot;</span><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">^</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">&quot; and &quot;</span><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">$</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">&quot;, respectively. So, for all vi only at the start of the line: </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">s:^vi\&gt;:VIM:</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">To match the lines where vi is the only word: </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">s:^vi$:VIM:</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Now suppose you want to replace not only all vi but also Vi and VI. There are several ways to do this: </span></p>
+<ul style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;"><li style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;" style=" margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">probably the simplest way is to put &quot;i&quot; - ignore case in a pattern <span style=" font-family:'Courier New,courier';">%s:vi:VIM:gi</span> </li>
+<li style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;" style=" margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">define a class of characters. This is a sequence of characters enclosed by square brackets &quot;[&quot; and &quot;]&quot;. It matches any character from this set. So <span style=" font-family:'Courier New,courier';">:%s:[Vv]i:VIM:</span> will match vi and Vi. More on character ranges in the following <a href="http://www.vimregex.com/#ranges"><span style=" text-decoration: underline; color:#0000ff;">section</span></a>. </li></ul></td></tr>
+<tr>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td colspan="2">
+<p style=" margin-top:16px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="metacharacters"></a><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">4</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">.2 &quot;Escaped&quot; characters or metacharacters</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">So far our pattern strings were constructed from normal or </span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600; font-style:italic;">literal </span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">text characters. The power of regexps is in the use of </span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600; font-style:italic;">metacharacters</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-style:italic;">. </span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">These are types of characters which have special meaning inside the search pattern. With a few exceptions these metacharacters are distinguished by a &quot;magic&quot; backslash in front of them. The table below lists some common VIM metacharacters. </span></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="3" cellpadding="0">
+<tr>
+<td width="43">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;"># </span></p></td>
+<td width="245">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">Matching </span></p></td>
+<td width="46">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;"># </span></p></td>
+<td width="225">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">Matching </span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">.</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">any character except new line</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">  </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">\s</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">whitespace character </span></p></td>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">\S</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">non-whitespace character </span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">\d</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">digit</span></p></td>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">\D</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">non-digit</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">\x</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">hex digit</span></p></td>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">\X</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">non-hex digit</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">\o</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">octal digit</span></p></td>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">\O</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">non-octal digit</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">\h</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">head of word character (a,b,c...z,A,B,C...Z and _)</span></p></td>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">\H</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">non-head of word character</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">\p</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">printable character</span></p></td>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">\P</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">like </span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">\p</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">, but excluding digits</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">\w</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">word character</span></p></td>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">\W</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">non-word character</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">\a</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">alphabetic character</span></p></td>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">\A</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">non-alphabetic character</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">\l</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">lowercase character</span></p></td>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">\L</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">non-lowercase character</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">\u</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">uppercase character</span></p></td>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">\U</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">non-uppercase character </span></p></td></tr></table>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">So, to match a date like 09/01/2000 you can use (assuming you don't use &quot;/&quot; as a separator in the S&amp;R)</span><span style=" font-family:'Courier New,courier'; font-size:8.25pt;"> </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">\d\d/\d\d/\d\d\d\d</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">To match 6 letter word starting with a capital letter </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">\u\w\w\w\w\w</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Obviously, it is not very convenient to write </span><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">\w</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> for any character in the pattern - what if you don't know how many letters in your word? This can be helped by introducing so-called </span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-style:italic;">quantifiers</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">. </span></p></td></tr>
+<tr>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td colspan="2">
+<p style=" margin-top:16px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="Non-Greedy"></a><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">4</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">.3 Quantifiers, Greedy and Non-Greedy</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Using quantifiers you can set how many times certain part of you pattern should repeat by putting the following after your pattern: </span></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" width="585" cellspacing="3" cellpadding="0">
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">Quantifier </span></p></td>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">Description </span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">*</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">matches 0 or more of the preceding characters, ranges or metacharacters .* matches everything including empty line </span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">\+</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">matches 1 or more of the preceding characters... </span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">\= </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">matches 0 or 1 more of the preceding characters...</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">\{n,m}</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">matches from n to m of the preceding characters...</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">\{n}</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">matches exactly n times of the preceding characters...</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">\{,m}</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">matches at most m (from 0 to m) of the preceding characters...</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">\{n,}</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">matches at least n of of the preceding characters... </span></p></td></tr>
+<tr>
+<td colspan="2">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">where </span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">n</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> and </span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">m</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> are positive integers (&gt;0) </span></p></td></tr></table>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Now it's much easier to define a pattern that matches a word of </span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-style:italic;">any </span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">length </span><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">\u\w\+</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">. </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">These quantifiers are </span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-style:italic;">greedy</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> - that is your pattern will try to match </span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600; font-style:italic;">as much text as</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> possible. Sometimes it presents a problem. Let's consider a typical example - define a pattern to match delimited text, i.e. text enclosed in quotes, brackets, etc. Since we don't know what kind of text is inside the quotes we'll use </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">/&quot;.*&quot;/</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">But this pattern will match </span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-style:italic;">everything</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> between the first &quot; and the last &quot; in the following line: </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">this file is normally &quot;$VIM/.gvimrc&quot;. You can check this with &quot;:version&quot;.</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">This problem can be resolved by using non-greedy quantifiers: </span></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" width="585" cellspacing="3" cellpadding="0">
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">Quantifier</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">Description</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">\{-}</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">matches 0 or more of the preceding atom, as few as possible </span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">\{-n,m} </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">matches 1 or more of the preceding characters...</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">\{-n,}</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">matches at lease or more of the preceding characters... </span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">\{-,m} </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">matches 1 or more of the preceding characters... </span></p></td></tr>
+<tr>
+<td colspan="2">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">where </span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">n</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> and </span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">m</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> are positive integers (&gt;0) </span></p></td></tr></table>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Let's use </span><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">\{-}</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> in place of </span><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">*</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> in our pattern. So, now </span><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">&quot;.\{-}&quot;</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> will match the first quoted text: </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">this file is normally &quot;$VIM/gvimrc&quot;. You can check this with &quot;:version&quot;.</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">.\{-}</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> pattern is not without surprises. Look what will happen to the following text after we apply: </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">:s:.\{-}:_:g</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Before: </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">n and m are decimal numbers between</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">After: </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">_n_ _a_n_d_ _m_ _a_r_e_ _d_e_c_i_m_a_l_ _n_u_m_b_e_r_s_ _b_e_t_w_e_e_n_</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">&quot;As few as possible&quot; applied here means zero character replacements. However match </span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">does occur</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> between characters! To explain this behavior I quote Bram himself: </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-style:italic;">Matching zero characters is still a match. Thus it will replace zero characters with a &quot;_&quot;. And then go on to the next position, where it will match again. </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-style:italic;">It's true that using &quot;\{-}&quot; is mostly useless. It works this way to be consistent with &quot;*&quot;, which also matches zero characters. There are more useless ones: &quot;x\{-1,}&quot; always matches one x. You could just use &quot;x&quot;. More useful is something like &quot;x\{70}&quot;. The others are just consistent behavior: ..., &quot;x\{-3,}&quot;, &quot;x\{-2,}&quot;, &quot;x\{-1,}. </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-style:italic;">- Bram </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">But what if we want to match only the second occurrence of quoted text? Or we want to replace only a part of the quoted text keeping the rest untouched? We will need </span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-style:italic;">grouping</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> and </span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-style:italic;">backreferences.</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> But before let's talk more about character ranges. </span></p></td></tr>
+<tr>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td colspan="2">
+<p style=" margin-top:16px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="ranges"></a><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">4</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">.4 Character ranges</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Typical character ranges: </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">[012345]</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> will match any of the numbers inside the brackets. The same range can be written as </span><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">[0-5]</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">, where dash indicates a range of characters in ASCII order. Likewise, we can define the range for all lowercase letters: </span><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">[a-z]</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">, for all letters: </span><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">[a-zA-Z]</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">, letters and digits: </span><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">[0-9a-zA-Z]</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> etc. Depending on your system locale you can define range which will include characters like à, Ö, ß and other non ASCII characters. </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Note that the range represents just </span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-style:italic;">one character</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> in the search pattern, that is </span><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">[0123]</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> and </span><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">0123</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> are not the same. Likewise the order (with a few exceptions) is not important: </span><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">[3210]</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> and </span><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">[0123]</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> are the same character ranges, while </span><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">0123</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> and </span><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">3210</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> are two different patterns. Watch what happens when we apply </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">s:[65]:Dig:g</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">to the following text: </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Before: </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">High 65 to 70. Southeast wind around 10</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">After: </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">High DigDig to 70. Southeast wind around 10</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">and now: </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">s:65:Dig:g</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Before: </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">High 65 to 70. Southeast wind around 10</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">After: </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">High Dig to 70. Southeast wind around 10</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Sometimes it's easier to define the characters you don't want to match. This is done by putting a negation sign </span><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">&quot;^&quot;</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> (caret) as a first character of the range </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">/</span><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">[^A-Z]</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">/ </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">- will match </span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-style:italic;">any character</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> except capital letters. We can now rewrite our pattern for quoted text using </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">/&quot;[^&quot;]\+&quot;</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">/ </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Note: inside the [ ] all metacharacters behave like ordinary characters. If you want to include &quot;-&quot; (dash) in your range put it first </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">/[-0-9]/</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">- will match all digits </span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-style:italic;">and </span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">-. &quot;^&quot; will lose its special meaning if it's not the first character in the range. </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Now, let's have some real life example. Suppose you want to run a grammar check on your file and find all places where new sentence does not start with a capital letter. The pattern that will catch this: </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">\.\s\+[a-z] </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">- a period followed by one or more blanks and a lowercase word. We know how to find an error, now let's see how we can correct it. To do this we need some ways to remember our matched pattern and recall it later. That is exactly what </span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-style:italic;">backreferences</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> are for. </span></p></td></tr>
+<tr>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td colspan="2">
+<p style=" margin-top:16px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="backreferences"></a><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">4</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">.5 Grouping and Backreferences</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">You can group parts of the pattern expression enclosing them with &quot;</span><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">\(</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">&quot; and &quot;</span><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">\)</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">&quot; and refer to them inside the replacement pattern by their special number </span><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">\1, \2 ... \9</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">. Typical example is swapping first two words of the line: </span><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">s:\(\w\+\)\(\s\+\)\(\w\+\):\3\2\1:</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">where </span><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">\1</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> holds the first word, </span><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">\2</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> - any number of spaces or tabs in between and </span><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">\3</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> - the second word. How to decide what number holds what pair of </span><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">\(\)</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> ? - count opening &quot;</span><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">\(</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">&quot; from the left. </span></p>
+<p style=" margin-top:16px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">Replacement Part of :substitute</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Replacement part of the S&amp;R has its own special characters which we are going to use to fix grammar: </span></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="3" cellpadding="0">
+<tr>
+<td width="43">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">#</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td width="245">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">Meaning</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td width="46">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">#</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td width="225">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">Meaning</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">&amp;</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">the whole matched pattern</span></p></td>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">\L</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">the following characters are made lowercase</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">\0</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">the whole matched pattern</span></p></td>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">\U</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">the following characters are made uppercase</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">\1</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">the matched pattern in the first pair of \(\)</span></p></td>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">\E</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">end of \U and \L</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">\2</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">the matched pattern in the second pair of \(\)</span></p></td>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">\e</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">end of \U and \L</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">...</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">...</span></p></td>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">\r</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">split line in two at this point</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">\9</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">the matched pattern in the ninth pair of \(\)</span></p></td>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">\l </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">next character made lowercase</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">~</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">the previous substitute string</span></p></td>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">\u</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">next character made uppercase </span></p></td></tr></table>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Now the full S&amp;R to correct non-capital words at the beginning of the sentences looks like </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">s:\([.!?]\)\s\+\([a-z]\):\1  \u\2:g</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">We have corrected our grammar and as an extra job we replaced variable number of spaces between punctuation and the first letter of the next sentence with exactly two spaces. </span></p></td></tr>
+<tr>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td colspan="2">
+<p style=" margin-top:16px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="alternations"></a><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">4</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">.6 Alternations</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Using &quot;</span><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">\|</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">&quot; you can combine several expressions into one which matches any of its components. The first one matched will be used. </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">\(Date:\|Subject:\|From:\)\(\s.*\)</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">will parse various mail headings and their contents into \1 and \2, respectively. The thing to remember about VIM alternation that it is not </span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-style:italic;">greedy. </span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">It won't search for the longest possible match, it will use the first that matched. That means that the order of the items in the alternation is important!</span></p></td></tr>
+<tr>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td colspan="2">
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">Tip 3:</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> Quick mapping to put \(\) in your pattern string </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">cmap ;\ \(\)&lt;Left&gt;&lt;Left&gt;</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td></tr>
+<tr>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td colspan="2">
+<p style=" margin-top:16px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="precedence"></a><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">4</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">.7 Regexp Operator Precedence</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">As in arithmetic expressions, regular expressions are executed in a certain order of precedence. Here the table of precedence, from highest to lowest: </span></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="3" cellpadding="0">
+<tr>
+<td width="94">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">Precedence</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td width="192">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">Regexp</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td width="261">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">Description</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">1</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">\( \)</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">grouping </span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">2</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">\=,\+,*,\{n} etc.</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">quantifiers </span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">3</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">abc\t\.\w</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">sequence of characters/ metacharacters, not containing quantifiers or grouping operators </span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">4</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">\|</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">alternation </span></p></td></tr></table></td></tr>
+<tr>
+<td colspan="3">
+<p style=" margin-top:18px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="global"></a><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">V</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">. Global Command</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td></tr>
+<tr>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td colspan="2">
+<p style=" margin-top:16px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="global search"></a><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">5</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">.1 Global search and execution</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">I want to introduce another quite useful and powerful Vim command which we're going to use later </span></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="3" cellpadding="0">
+<tr>
+<td colspan="2">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">:</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600; font-style:italic;">range</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;"> g[lobal][!]/</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600; font-style:italic;">pattern</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">/</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600; font-style:italic;">cmd</span></p></td></tr>
+<tr>
+<td colspan="2">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Execute the Ex command </span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600; font-style:italic;">cmd</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> (default &quot;</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">:p</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">&quot;) on the lines within [</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600; font-style:italic;">range</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">] where </span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600; font-style:italic;">pattern</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> matches. If </span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600; font-style:italic;">pattern</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> is preceded with a </span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">!</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> - only where match </span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">does not</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> occur.</span></p></td></tr></table>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">The global commands work by first scanning through the [</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-style:italic;">range</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">] of of the lines and marking each line where a match occurs. In a second scan the [</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-style:italic;">cmd</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">] is executed for each marked line with its line number prepended. If a line is changed or deleted its mark disappears. The default for the [</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-style:italic;">range</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">] is the whole file. </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Note: Ex commands are all commands you are entering on the Vim command line like </span><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">:s[ubstitute], :co[py] , :d[elete], :w[rite] </span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">etc. Non-Ex commands (normal mode commands) can be also executed via </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">:norm[al]</span><span style=" font-family:'Courier New,courier'; font-size:8.25pt; font-style:italic;">non-ex command</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">mechanism. </span></p>
+<p style=" margin-top:16px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="global examples"></a><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">5</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">.2 Examples</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Some examples of </span><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">:global</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> usage: </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">:g/^$/ d</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">- delete all empty lines in a file </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">:g/^$/,/./-j</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">- reduce multiple blank lines to a single blank </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">:10,20g/^/ mo 10</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">- reverse the order of the lines starting from the line 10 up to the line 20. </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Here is a modified example from </span><a href="http://www.networkcomputing.com/unixworld/tutorial/009/009.html"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; text-decoration: underline; color:#0000ff;">Walter Zintz vi tutorial</span></a><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">: </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">:'a,'b g/^Error/ . w &gt;&gt; errors.txt</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">- in the text block marked by </span><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">'a</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> and </span><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">'b </span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">find all the lines starting with Error and copy (append) them to &quot;errors.txt&quot; file.</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;"> Note:</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> . (current line address) in front of the </span><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">w</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> is very important, omitting it will cause </span><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">:write</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> to write the whole file to &quot;errors.txt&quot; for every Error line found. </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">You can give multiple commands after </span><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">:global </span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">using &quot;|&quot; as a separator. If you want to use &quot;|' in an argument, precede it with &quot;\'. Another example from Zintz tutorial: </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">:g/^Error:/ copy $ | s /Error/copy of the error/</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">- will copy all Error line to the end of the file and then make a substitution in the copied line. Without giving the line address </span><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">:s</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> will operate on the current line, which is the newly copied line. </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">:g/^Error:/ s /Error/copy of the error/ | copy $</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">- here the order is reversed: first modify the string then copy to the end. </span></p></td></tr>
+<tr>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td colspan="2">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td></tr>
+<tr>
+<td colspan="3">
+<p style=" margin-top:18px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="examples"></a><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">V</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">I. Examples</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td></tr>
+<tr>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td colspan="2">
+<p style=" margin-top:16px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="tips"></a><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">6</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">.1 Tips and Techniques</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">A collection of some useful S&amp;R tips: </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">(1) sent by Antonio Colombo: </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-style:italic;">&quot;a simple regexp I use quite often to clean up a text: it drops the blanks at the end of the line:&quot;</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">s:\s*$::</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-style:italic;">or (to avoid acting on all lines): </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">s:\s\+$::</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td></tr>
+<tr>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td colspan="2">
+<p style=" margin-top:16px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="contents"></a><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">6</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">.2 Creating outline</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">For this example you need to know a bit of HTML. We want to make a table of contents out of </span><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">h1</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> and </span><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">h2</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> headings, which I will call majors and minors. HTML heading </span><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">h1</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> is a text enclosed by </span><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">&lt;h1&gt;</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> tags as in </span><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">&lt;h1&gt;Heading&lt;/h1&gt;</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">. </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">(1) First let's make named anchors in all headings, i.e. put </span><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">&lt;h1&gt;&lt;a name=&quot;anchor&quot;&gt;Heading&lt;/a&gt;&lt;/h1&gt;</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> around all headings. The </span><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">&quot;anchor</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">&quot; is a unique identifier of this particular place in HTML document. The following S&amp;R does exactly this: </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">:s:\(&lt;h[12]&gt;\)\(.*\s\+\([-a-zA-Z]\+\)\)\s*\(&lt;/h[12]&gt;\):\1&lt;a name=&quot;\3&quot;&gt;\2&lt;/a&gt;\4:</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">Explanation:</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> the first pair of </span><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">\(\)</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> saves the opening tag (</span><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">h1</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> or </span><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">h2</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">) to the </span><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">\1</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">, the second pair saves all heading text before the closing tag, the third pair saves the last word in the heading which we will later use for &quot;anchor&quot; and the last pair saves the closing tag. The replacement is quite obvious - we just reconstruct a new &quot;named&quot; heading using </span><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">\1-\4</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> and link tag </span><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">&lt;a&gt;.</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">(2) Now let's copy all headings to one place: </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">:%g/&lt;h[12]&gt;/ t$</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">This command searches our file for the lines starting with </span><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">&lt;h1&gt;</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> or </span><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">&lt;h2&gt;</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> and copies them to the end of the file. Now we have a bunch of lines like: </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">&lt;h1&gt;&lt;a name=&quot;anchor1&quot;&gt;Heading1&gt;&lt;/a&gt;&lt;/h1&gt;<br />&lt;h2&gt;&lt;a name=&quot;anchor2&quot;&gt;Heading2&gt;&lt;/a&gt;&lt;/h2&gt;<br />&lt;h2&gt;&lt;a name=&quot;anchor3&quot;&gt;Heading3&gt;&lt;/a&gt;&lt;/h2&gt;<br />..........................<br />&lt;h1&gt;&lt;a name=&quot;anchorN&quot;&gt;HeadingN&gt;&lt;/a&gt;&lt;/h1&gt;</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">First, we want to convert all </span><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">name=&quot;</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> to </span><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">href=&quot;#</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> in order to link table entries to their respective places in the text: </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">s:name=&quot;:href=&quot;#:</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Second, we want our </span><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">h1</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> entries look different from </span><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">h2</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">. Let's define CSS classes &quot;majorhead&quot; and &quot;minorhead&quot; and do the following: </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">g/&lt;h1&gt;/ s:&lt;a:&amp; class=&quot;majorhead&quot;:<br />g/&lt;h2&gt;/ s:&lt;a:&amp; class=&quot;minorhead&quot;: </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Now our entries look like: </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">&lt;h1&gt;&lt;a class=&quot;majorhead&quot; name=&quot;anchor1&quot;&gt;Heading1&gt;&lt;/a&gt;&lt;/h1&gt;<br />&lt;h2&gt;&lt;a class=&quot;minorhead&quot; name=&quot;anchor2&quot;&gt;Heading2&gt;&lt;/a&gt;&lt;/h2&gt;</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">We no longer need </span><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">h1</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> and </span><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">h2</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> tags: </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">s:&lt;h[21]&gt;::</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">and replace closing tags with breaklines </span><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">&lt;br&gt;</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">s:/h[21]:br:</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">&lt;a class=&quot;majorhead&quot; name=&quot;anchor1&quot;&gt;Heading1&gt;&lt;/a&gt;&lt;br&gt;<br />&lt;a class=&quot;minorhead&quot; name=&quot;anchor2&quot;&gt;Heading2&gt;&lt;/a&gt;&lt;br&gt;</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td></tr>
+<tr>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td colspan="2">
+<p style=" margin-top:16px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="tables"></a><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">6</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">.3 Working with Tables</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Quite often you have to work with a text organized in tables/columns. Consider, for example, the following text </span></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" align="center" width="500" cellspacing="2" cellpadding="0">
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Asia </span></p></td>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">America </span></p></td>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Africa </span></p></td>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Europe </span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Africa </span></p></td>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Europe </span></p></td>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Europe </span></p></td>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Africa </span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Europe </span></p></td>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Asia </span></p></td>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Europe </span></p></td>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Europe </span></p></td></tr></table>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Suppose we want to change all &quot;Europe&quot; cells in the third column to &quot;Asia&quot;: </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">:%s:\(\(\w\+\s\+\)\{2}\)Europe:\1Asia:</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" align="center" width="500" cellspacing="2" cellpadding="0">
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Asia </span></p></td>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">America </span></p></td>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Africa </span></p></td>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Europe </span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Africa </span></p></td>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Europe </span></p></td>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Asia </span></p></td>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Africa </span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Europe </span></p></td>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Asia </span></p></td>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Asia </span></p></td>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Europe </span></p></td></tr></table>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">  </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">To swap the first and the last columns: </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:8.25pt;">:%s:\(\w\+\)\(.*\s\+\)\(\w\+\)$:\3\2\1:</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" align="center" width="500" cellspacing="2" cellpadding="0">
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Europe </span></p></td>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">America </span></p></td>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Africa </span></p></td>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Asia </span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Africa </span></p></td>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Europe </span></p></td>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Europe </span></p></td>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Africa </span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Europe </span></p></td>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Asia </span></p></td>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Europe </span></p></td>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Europe </span></p></td></tr></table>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">  </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">To be continued... </span></p></td></tr>
+<tr>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td colspan="2">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td></tr>
+<tr>
+<td colspan="3">
+<p style=" margin-top:18px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="compare"></a><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">V</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">II. Other Regexp Flavors</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td></tr>
+<tr>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td colspan="2">
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Here I would like to compare Vim's regexp implementation with others, in particular, Perl's. You can't talk about regular expressions without mentioning Perl. </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">(with a help from </span><a href="mailto:skirkendall@uswest.net"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; text-decoration: underline; color:#0000ff;">Steve Kirkendall</span></a><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">) The main differences between Perl and Vim are: </span></p>
+<ul style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;"><li style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;" style=" margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Perl doesn't require backslashes before most of its operators. Personally, I think it makes regexps more readable - the less backlashes are there the better. </li>
+<li style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Perl allows you to convert any quantifier into a non-greedy version by adding an extra ? after it. So *? is a non-greedy *. </li>
+<li style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Perl supports a lots of weird options that can be appended to the regexp, or even embedded in it. </li>
+<li style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;" style=" margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">You can also embed variable names in a Perl regular expression. Perl replaces the name with its value; this is called &quot;variable interpolation&quot;. </li></ul></td></tr>
+<tr>
+<td colspan="3">
+<p style=" margin-top:18px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="links"></a><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">V</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;">III. Links</span><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td></tr>
+<tr>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> </span></p></td>
+<td colspan="2">
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Read VIM documentation about pattern and searching. To get this type &quot;:help pattern&quot; in VIM normal mode. </span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">There are currently two books on the market that deal with VIM regular expressions: </span></p>
+<ul style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;"><li style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;" style=" margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a href="http://www.oreilly.com/catalog/vi6/"><span style=" font-weight:600; text-decoration: underline; color:#0000ff;">&quot;Learning the vi Editor&quot;</span></a> by Linda Lamb and Arnold Robbins. </li>
+<li style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;" style=" margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">&quot;</span><a href="http://www.oualline.com/"><span style=" font-weight:600; text-decoration: underline; color:#0000ff;">vi Improved - VIM</span></a><span style=" font-weight:600;">&quot;</span> by Steve Oualline </li></ul>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;">Definitive reference on regular expressions is Jeffrey Friedl's </span><a href="http://www.oreilly.com/catalog/regex/chapter/ch04.html"><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600; text-decoration: underline; color:#0000ff;">&quot;Mastering Regular Expressions&quot;</span></a><span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"> published by O'Reilly &amp; Associates, but it mostly deals with Perl regular expressions. O'Reilly has one of the book chapters available online.</span></p></td></tr></table></body></html>

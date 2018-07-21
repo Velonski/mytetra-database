@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mytetradoc>
+<root>
+ <format version="1" subversion="2"/>
+ <content>
+  <node crypt="" id="1300000000aaaaaaaaa1" name="MyTetra">
+   <recordtable>
+    <record id="1481021645vm08pfvgfu" name="MyTetra app website" author="Eremeev &quot;Velonski&quot; Mikhail" url="webhamster.ru" tags="mytetra" ctime="20161206155405" dir="148102164544rhhv7pjn" file="text.html"/>
+   </recordtable>
+  </node>
+  <node crypt="" id="1481019387sz06b7quf1" name="Интернет">
+   <recordtable>
+    <record id="1481020001gt5hprqzlg" name="Веб-сервисы для разных задач" author="" url="habrahabr.ru" tags="веб-сервис" ctime="20161206162641" dir="1481020001a3fm1r8q7p" file="text.html"/>
+    <record id="14810201211c8kk9ckem" name="Интересные сайты" author="" url="" tags="" ctime="20161206162841" dir="1481020121q2w2b9ltns" file="text.html"/>
+   </recordtable>
+   <node crypt="" id="1481020203nxeow4iru8" name="habrahabr.ru">
+    <recordtable>
+     <record id="1481020267io8tnght51" name="Несколько полезных сервисов" author="" url="https://habrahabr.ru/post/131581/" tags="веб-сервис" ctime="20161206163107" dir="14810202677hadfhgdua" file="text.html"/>
+     <record id="1481020541dj5lxvmvwm" name="Обзор бесплатных сервисов для веб-разработки" author="" url="https://habrahabr.ru/post/209258/" tags="" ctime="20161206163541" dir="1481020541qap9jw7jg9" file="text.html"/>
+     <record id="1532052905ycnewwtr82" name="Шпаргалка системного администратора по сетевым инструментам Linux" author="" url="https://m.habr.com/company/ruvds/blog/417485/" tags="habr linux admin utils" ctime="20180720071505" dir="15320529059am2lxrem5" file="text.html"/>
+    </recordtable>
+   </node>
+  </node>
+  <node crypt="" id="1481086834475du10xpd" name="Программирование">
+   <recordtable>
+    <record id="1481171863gg8tty2j00" name="Документация" author="" url="" tags="документация" ctime="20161208093743" dir="1481171863aot2nl7yhp" file="text.html"/>
+   </recordtable>
+  </node>
+  <node crypt="" id="1481181216xr2sla73eb" name="Linux">
+   <recordtable>
+    <record id="1481181246v255uh88vk" name="Последовательное выполнение команд" author="Alex Otwagi" url="https://www.opennet.ru/docs/RUS/linux_base/node27.html" tags="linux cli" ctime="20161208121406" dir="1481181246eh17pmcbo6" file="text.html"/>
+    <record id="14860353364ae9twbwmk" name="Кодировка файла: узнать и поменять" author="unknown" url="http://mindspill.net/computing/linux-notes/determine-and-change-file-character-encoding/" tags="linux file encoding" ctime="20170202163536" dir="148603533614yhdsbbl9" file="text.html"/>
+    <record id="1486035488utbcpt7yu4" name="Количество строк в файле" author="http://stackoverflow.com/users/1301994/mike" url="http://stackoverflow.com/questions/3137094/how-to-count-lines-in-a-document" tags="linux file string" ctime="20170202163808" dir="1486035488q7jkujeuob" file="text.html"/>
+    <record id="14860391279kuvl2gd14" name="Перемешать строки в файле случайным образом" author="http://stackoverflow.com/users/862763/alpha-cod" url="http://stackoverflow.com/questions/14727151/fastest-way-to-shuffle-lines-in-a-file-in-linux" tags="linux file shuffle" ctime="20170202173847" dir="1486039127ejw896urcj" file="text.html"/>
+    <record id="1486101361gt3wvhzgxj" name="Команда SHUF - перемешивание строк в файле" author="George Ornbo - https://shapeshed.com/" url="https://shapeshed.com/unix-shuf/" tags="linux shuf" ctime="20170203105601" dir="1486101361qd0xv8f1ds" file="text.html"/>
+    <record id="14861017444g7xbhwuqd" name="Деление текстовых файлов по кол-ву строк" author="http://stackoverflow.com/users/61974/mark-byers" url="http://stackoverflow.com/questions/2016894/how-to-split-a-large-text-file-into-smaller-files-with-equal-number-of-lines" tags="linux file split" ctime="20170203110224" dir="1486101744l73ylkz44h" file="text.html"/>
+    <record id="1488182024ct6i1b0dia" name="Список всех локальных пользователей в системе" author="http://askubuntu.com/users/256099/pandya" url="http://askubuntu.com/questions/515103/how-to-display-all-user-and-groups-by-command" tags="linux users list" ctime="20170227125344" dir="1488182024mzi66j26oo" file="text.html"/>
+    <record id="1488280365c6i8evh15y" name="Массовое переименование файлов" author="" url="http://tips.webdesign10.com/how-to-bulk-rename-files-in-linux-in-the-terminal" tags="linux rename bulk" ctime="20170228161245" dir="148828036553carhmqpb" file="text.html"/>
+    <record id="1488283177ebeyaoz33y" name="Debian - NetworkConfiguration" author="" url="https://wiki.debian.org/NetworkConfiguration" tags="linux network debian config" ctime="20170228165937" dir="1488283177mlj92cxk2u" file="text.html"/>
+    <record id="14883426203bewgn3r9t" name="Auto-Mounting SSHFS at Startup" author="http://stevenmcmurry.com/" url="http://stevenmcmurry.com/blog/2010_11/auto-mounting-sshfs-startup" tags="linux mount ssh sshfs" ctime="20170301093020" dir="148834262076wszber1l" file="text.html"/>
+    <record id="1488342698sfadlcss29" name="SSHFS AUTOmount on Fesity, Gutsy, Hardy, Intrepid " author="https://ubuntuforums.org/member.php?u=233493&amp;s=ce0f59e8e0cb82605710b26d1d1c0f05" url="https://ubuntuforums.org/showthread.php?t=430312" tags="linux ubuntu ssh sshfs network" ctime="20170301093138" dir="14883426984u8ourtu9f" file="text.html"/>
+    <record id="14883450912v3dztalw9" name="How to start Virtual box machines automatically when booting?" author="http://askubuntu.com/users/1205/kdmurray" url="http://askubuntu.com/questions/404665/how-to-start-virtual-box-machines-automatically-when-booting" tags="linux ubuntu virtaulmox autostart" ctime="20170301101131" dir="14883450915o39xqy1fi" file="text.html"/>
+    <record id="1488349047lkps9k9r7w" name="Как решить проблему SSH «Too many authentication failures for user»? " author="https://www.nixp.ru/user/Dmitry-Shurupov" url="https://www.nixp.ru/recipes/63.html" tags="linux ssh error" ctime="20170301111727" dir="1488349047nyl6af91pp" file="text.html"/>
+    <record id="1488361823pfgj00uncf" name="Mounting external hard disk for all users at start up in ubuntu 14.04" author="http://askubuntu.com/users/114489/astrob0t" url="http://askubuntu.com/questions/547965/mounting-external-hard-disk-for-all-users-at-start-up-in-ubuntu-14-04" tags="linux mount harddisk" ctime="20170301145023" dir="1488361823r8urj83qgz" file="text.html"/>
+    <record id="148904193548t57v9enf" name="Увеличить размер диск. раздела" author="" url="https://www.linux.org.ru/forum/admin/6908707" tags="linux disk resize" ctime="20170309114535" dir="1489041935syezsw1an6" file="text.html"/>
+    <record id="14894670779ugamtdhta" name="Установка monit в Debian" author="" url="http://linuxguru.ru/other/ustanovka-monit-v-debian/" tags="linux monit config" ctime="20170314095117" dir="1489467077rd2217co3e" file="text.html"/>
+    <record id="14894671495o556igus8" name="How To Install and Configure Monit " author="https://www.digitalocean.com/community/users/etel" url="https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-monit" tags="linux monit config" ctime="20170314095229" dir="1489467149zyf9h2n74n" file="text.html"/>
+    <record id="14894722493fjoyfxhur" name="35 Practical Examples of Linux Find Command" author="http://www.tecmint.com/author/admin/" url="http://www.tecmint.com/35-practical-examples-of-linux-find-command/" tags="linux find cli" ctime="20170314111729" dir="1489472249wuz4kl1oa8" file="text.html"/>
+    <record id="1489549156arxsm3msh3" name="How to Connect to MySQL via SSH Tunnel in Linux" author="" url="http://quintagroup.com/services/support/tutorials/mysql-linux" tags="linux ssh tunnel mysql" ctime="20170315083916" dir="148954915684aj9y0oc3" file="text.html"/>
+    <record id="1489549216zzbvlvljdf" name="How to Connect to a Remote MySQL Server via an SSH Tunnel" author="https://hostpresto.com/author/muhammadp/" url="https://hostpresto.com/community/tutorials/how-to-connect-to-a-remote-mysql-server-via-an-ssh-tunnel/" tags="linux ssh tunnel mysql windows" ctime="20170315084016" dir="1489549216irxl2npz03" file="text.html"/>
+    <record id="1489646458bdyjrsm1qr" name="Как установить почтовый сервер в Ubuntu или Debian" author="https://codeby.net/author/webware-team/" url="https://codeby.net/programmy-dlja-servera/kak-ustanovit-pochtovyj-server-v-ubuntu-ili-debian/" tags="linux mail server install config" ctime="20170316114058" dir="1489646458fbxfhemy0h" file="text.html"/>
+    <record id="1489668844d6no2rlv8l" name="21 пример использования iptables для администраторов" author="" url="http://vasilisc.com/21-examples-iptables" tags="linux iptables" ctime="20170316175404" dir="1489668844wsem23oaec" file="text.html"/>
+    <record id="14901570586s6q6122ks" name="Добавить пользователя в группу" author="" url="https://www.cyberciti.biz/faq/howto-linux-add-user-to-group/" tags="linux user group" ctime="20170322093058" dir="1490157058jbem55ii0d" file="text.html"/>
+    <record id="1490243032ankjbdpm5j" name="Get a list of Open Ports in Linux" author="https://superuser.com/users/166247/mehulved" url="https://superuser.com/questions/529830/get-a-list-of-open-ports-in-linux" tags="linux open ports" ctime="20170323092352" dir="1490243032474b04yie6" file="text.html"/>
+    <record id="1490529280pls9izt2p1" name="How to use grep/ack with files in arbitrary encoding?" author="" url="http://unix.stackexchange.com/questions/33574/how-to-use-grep-ack-with-files-in-arbitrary-encoding" tags="linux grep luit encoding" ctime="20170326165440" dir="1490529280ncblyj6sx1" file="text.html"/>
+    <record id="1490529371g6wi706kvd" name="Extract a single image from a video using FFMPEG" author="" url="http://blog.roberthallam.org/2010/06/extract-a-single-image-from-a-video-using-ffmpeg/" tags="linux ffmpeg image" ctime="20170326165611" dir="1490529371irr8u8gmrl" file="text.html"/>
+    <record id="1490529464g37rtb6nk6" name="Convert a video to a fixed screen size by cropping and resizing&#10;&#10;" author="" url="http://askubuntu.com/questions/598324/convert-a-video-to-a-fixed-screen-size-by-cropping-and-resizing" tags="linux ffmpeg crop video" ctime="20170326165744" dir="1490529464lrqwkn80so" file="text.html"/>
+    <record id="1490590978yf1klkzt0c" name="List All Environment Variables Command" author="" url="https://www.cyberciti.biz/faq/linux-list-all-environment-variables-env-command/" tags="linux variable environment global" ctime="20170327100258" dir="1490590978qyv6uv9dib" file="text.html"/>
+    <record id="1490703828fjgcta6qs1" name="Logining into www-data" author="https://ubuntuforums.org/member.php?u=1749960" url="https://ubuntuforums.org/showthread.php?t=2280551" tags="linux user www-data" ctime="20170328172348" dir="1490703828pp5y7aa5p8" file="text.html"/>
+    <record id="1490704075f7ts481jau" name="Linux deny or block user login" author="" url="https://www.cyberciti.biz/faq/howto-linux-deny-user-login/" tags="linux user login allow" ctime="20170328172755" dir="1490704075wbekld1o4e" file="text.html"/>
+    <record id="1491384606ot3votbtr7" name="How Do I Find The Largest Top 10 Files and Directories On a Linux / UNIX / BSD?" author="" url="https://www.cyberciti.biz/faq/how-do-i-find-the-largest-filesdirectories-on-a-linuxunixbsd-filesystem/" tags="linux file directory find" ctime="20170405143006" dir="1491384606qnfw4md2d9" file="text.html"/>
+    <record id="1504586189i172sm1wmg" name="Linux Rename File Command" author="" url="https://www.cyberciti.biz/faq/linux-rename-file/" tags="linux cli rename" ctime="20170905093629" dir="1504586189jz1rsk3gx4" file="text.html"/>
+    <record id="1505488549v6jcp5039l" name="Changing the default text editor on Linux" author="" url="https://www.electrictoolbox.com/changing-default-text-editor-linux/" tags="linux editor default" ctime="20170915201549" dir="1505488549tbm1x5thbm" file="text.html"/>
+    <record id="1506399872m8v15u5856" name="How can I copy the output of a command directly into my clipboard?&#10;&#10;" author="" url="https://stackoverflow.com/questions/5130968/how-can-i-copy-the-output-of-a-command-directly-into-my-clipboard#5130969" tags="linux cli terminal copy clipboard" ctime="20170926092432" dir="1506399872nzmytj51q8" file="text.html"/>
+    <record id="150640134802z14zq5xq" name="How to run process as background and never die?&#10;&#10;" author="" url="https://stackoverflow.com/questions/4797050/how-to-run-process-as-background-and-never-die" tags="linux cli terminal process background" ctime="20170926094908" dir="1506401348di19d1ujqv" file="text.html"/>
+    <record id="1506488072v5045f8faa" name="Connection reset by peer using sshfs" author="" url="https://unix.stackexchange.com/questions/94720/connection-reset-by-peer-using-sshfs" tags="linux sshfs connection reset" ctime="20170927095432" dir="1506488072blhjwy66do" file="text.html"/>
+    <record id="1506489602ivuha29l85" name="SSHFS" author="" url="https://wiki.archlinux.org/index.php/SSHFS" tags="ssh sshfs" ctime="20170927102002" dir="1506489602ldi33rd63v" file="text.html"/>
+    <record id="1506671381tv0rylgqcy" name="Linux Set Date and Time From a Command Prompt" author="" url="https://www.cyberciti.biz/faq/howto-set-date-time-from-linux-command-prompt/" tags="linux cli console date time set" ctime="20170929124941" dir="15066713812s53sjx23e" file="text.html"/>
+    <record id="1506964557b75m9vhp9s" name="IceWM — берём в руки напильник" author="" url="https://habrahabr.ru/sandbox/46236/" tags="linux arch icewm" ctime="20171002221557" dir="1506964557wc44n51u3g" file="text.html"/>
+    <record id="15071811094x5kdzvcd5" name="Монтирование USB-накопителя через терминал" author="" url="" tags="linux usb mount terminal" ctime="20171005102509" dir="1507181109ts8wusdah5" file="text.html"/>
+    <record id="15081359088oxu3uhv6j" name="Why am I getting “Permission Denied” when running ssh-add?" author="" url="https://superuser.com/questions/642972/why-am-i-getting-permission-denied-when-running-ssh-add#643342" tags="linux ssh add permission denied" ctime="20171016113828" dir="1508135908qnoakdffsn" file="text.html"/>
+    <record id="1513920945q1rxue95kx" name="How to remove duplicate lines inside a text file?" author="" url="https://unix.stackexchange.com/questions/30173/how-to-remove-duplicate-lines-inside-a-text-file#30178" tags="linux awk duplicate text line file" ctime="20171222103545" dir="15139209450oxl9adeqp" file="text.html"/>
+    <record id="1513920987dzberze8xi" name="Removing Duplicate Lines With Sort, Uniq and Shell Pipes" author="" url="https://www.cyberciti.biz/faq/unix-linux-shell-removing-duplicate-lines/" tags="linux text duplicate line" ctime="20171222103627" dir="1513920987wrohljdj13" file="text.html"/>
+    <record id="1514351668i79ttiz8ym" name="Linux crontab examples (every X minutes or hours)" author="" url="https://alvinalexander.com/linux/unix-linux-crontab-every-minute-hour-day-syntax" tags="linux crontab cron" ctime="20171227101428" dir="1514351668zmfpb4aqcc" file="text.html"/>
+    <record id="1516604557qm6zigu0qy" name="The Complete Guide to “useradd” Command in Linux – 15 Practical Examples" author="Ravi Saive" url="https://www.tecmint.com/add-users-in-linux/" tags="linux useradd user" ctime="20180122120237" dir="1516604557j0hgnvjtav" file="text.html"/>
+    <record id="1516687122v7niwq4u3m" name="Linux / Unix: Find and Delete All Empty Directories &amp; Files" author="Vivek Gite" url="https://www.cyberciti.biz/faq/howto-find-delete-empty-directories-files-in-unix-linux/" tags="linux find delete directory dir file" ctime="20180123105842" dir="151668712258j6te31qv" file="text.html"/>
+    <record id="1517206961yv21r658vh" name="Как узнать какое приложение в linux слушает порт?" author="Фомин Сергей" url="https://nagg.ru/2012/04/kak-uznat-kakoe-prilozhenie-v-linux-slushaet-port/" tags="linux port app" ctime="20180129112241" dir="1517206961geyd92ih88" file="text.html"/>
+    <record id="15172083247g55mwmnj7" name="Как проверить какое приложение слушает tcp порт" author="" url="https://www.linux.org.ru/forum/general/1327934" tags="linux port listen" ctime="20180129114524" dir="1517208324nrfs54d9uz" file="text.html"/>
+    <record id="1517995103t16lj62266" name="Ошибка Unable to lock the administration directory /var/lib/dpkg" author="" url="https://losst.ru/oshibka-unable-to-lock-the-administration-directory-var-lib-dpkg" tags="linux apt lock dpkg unable" ctime="20180207141823" dir="1517995103lecdlek6n0" file="text.html"/>
+    <record id="15261872680svf3q53va" name="Unpacking or uncompressing gz files under Linux and UNIX systems" author="" url="https://www.cyberciti.biz/faq/unpacking-or-uncompressing-gz-files/" tags="linux gz unpack unzip" ctime="20180513095428" dir="1526187268clwoof62d1" file="text.html"/>
+    <record id="1527243052r5n5jvw95p" name="sed - 20 examples to remove / delete characters from a file" author="" url="http://www.theunixschool.com/2014/08/sed-examples-remove-delete-chars-from-line-file.html" tags="linux sed remove delete file character" ctime="20180525151052" dir="15272430527qrqqqmt71" file="text.html"/>
+    <record id="1528205444r7exltmqih" name="Linux Check Disk Space Command To View System Disk Usage" author="" url="https://www.cyberciti.biz/faq/linux-check-disk-space-command/" tags="linux df disk space terminal" ctime="20180605183044" dir="1528205444yjydvr0ziy" file="text.html"/>
+   </recordtable>
+  </node>
+  <node crypt="" id="1486717776lz9o1gzppb" name="Virtual">
+   <recordtable>
+    <record id="1486717856h64ilbq2p8" name="x86 virtualization in JavaScript, running in your browser and NodeJS" author="https://github.com/copy" url="https://github.com/copy/v86" tags="javascript x86 virtual virtualization" ctime="20170210141056" dir="1486717856em4yoptuzr" file="text.html"/>
+    <record id="1490760221yyz4mbhvfy" name="Виртуальная Windows под виртуальным Debian" author="https://habrahabr.ru/users/passerby" url="https://habrahabr.ru/post/107471/" tags="linux debian vds qemu windows" ctime="20170329090341" dir="14907602212cp58wctu5" file="text.html"/>
+    <record id="1517561615hea2wmhzlw" name="Vagrant: Руководство для Начинающих — За 5 Минут" author="" url="https://www.shellhacks.com/ru/vagrant-tutorial-for-beginners/" tags="vagrant" ctime="20180202135335" dir="1517561615w41u85gipj" file="text.html"/>
+   </recordtable>
+  </node>
+  <node crypt="" id="148826287614fry7q58g" name="Видеонаблюдение">
+   <recordtable>
+    <record id="1488262972r826f4x99a" name="Бесплатное программное обеспечение для IP-камер" author="https://habrahabr.ru/users/alextitoff" url="https://habrahabr.ru/company/intems/blog/322634/" tags="video" ctime="20170228112252" dir="14882629729etk6vsy34" file="text.html"/>
+    <record id="14882630655ea49aoi9v" name="MotionEyeOs - A Video Surveillance OS For Single-board Computers " author="" url="https://github.com/ccrisan/motioneyeos" tags="video" ctime="20170228112425" dir="1488263065kk2lfs7bom" file="text.html"/>
+   </recordtable>
+  </node>
+  <node crypt="" id="14882631585azddp6dm7" name="Видео">
+   <recordtable>
+    <record id="1488263204qh34tvg9ap" name="Record Stream Using VLC" author="https://binfalse.de/" url="https://binfalse.de/2014/07/02/record-stream-using-vlc/" tags="video vlc cli console" ctime="20170228112644" dir="14882632042pm61q9qrd" file="text.html"/>
+    <record id="1488263274bwsbihcr32" name="7 VLC command lines you need to know " author="https://twitter.com/Christi_smithe" url="https://www.wondershare.com/vlc/7-vlc-command-lines-you-need-to-know.html" tags="video vlc cli console" ctime="20170228112754" dir="1488263274buqzr4q94t" file="text.html"/>
+   </recordtable>
+  </node>
+  <node crypt="" id="1488264265nact8wiezx" name="Ubuntu">
+   <recordtable>
+    <record id="1488264331tjhsly99fe" name="Поддержка русского языка в консоли" author="" url="http://help.ubuntu.ru/wiki/russian_font_in_console" tags="linux ubuntu console cyrillic" ctime="20170228114531" dir="1488264331m5k1njaan6" file="text.html"/>
+    <record id="1516076769yk0bnzfz35" name="RootSudo" author="" url="https://help.ubuntu.com/community/RootSudo#Allowing_other_users_to_run_sudo" tags="linux ubuntu sudo root user" ctime="20180116092609" dir="1516076769kw5dss42p7" file="text.html"/>
+   </recordtable>
+  </node>
+  <node crypt="" id="14902527864c3pu5t93i" name="Telnet">
+   <recordtable>
+    <record id="1490252850vgpx3g6jit" name="Доступ к почтовому ящику pop3 на сервере mail.belpak.by через Telnet-клиента" author="" url="http://adm-exter.narod.ru/b/POP3_Telnet.htm" tags="telnet pop" ctime="20170323120730" dir="1490252850d9uexqdukc" file="text.html"/>
+   </recordtable>
+  </node>
+  <node crypt="" id="1492756397k54bcb5qz9" name="Windows">
+   <recordtable>
+    <record id="149275643475b6u0kx0z" name="Где расположен файл hosts" author="" url="http://www.pokatashkin.com/it/microsoft/5498" tags="windows hosts" ctime="20170421113354" dir="14927564346yw3i4m9am" file="text.html"/>
+    <record id="1510813700qista9z7c7" name="Как сделать регистрозависимые имена файлов и папок в Windows?" author="http://ida-freewares.ru/component/contact/contact/7.html" url="http://ida-freewares.ru/kak-sdelat-registrozavisimye-imena-fajlov-i-papok-v-windows.html" tags="windows file name register independent" ctime="20171116112820" dir="1510813700gmxepbwaj9" file="text.html"/>
+    <record id="1531292365si5a6t5nof" name="How to launch an EXE from Web page (asp.net)" author="" url="https://stackoverflow.com/questions/916925/how-to-launch-an-exe-from-web-page-asp-net" tags="windows launch exe from web page" ctime="20180711115925" dir="15312923654cf1wgsfi9" file="text.html"/>
+    <record id="15312924445zd0a2axeh" name="Registering an Application to a URI Scheme" author="" url="https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa767914(v=vs.85)" tags="windows uri scheme register launch program web page" ctime="20180711120044" dir="153129244438qqro08wb" file="text.html"/>
+    <record id="1531378615kdxmtincs3" name="Windows: как добавить что-либо в PATH" author="" url="http://nicothin.pro/page/windows-path" tags="windows path" ctime="20180712115655" dir="1531378615lk7sgrbw2d" file="text.html"/>
+    <record id="1531388064vf05wuiwog" name="Справочник команд Windows (CMD )" author="" url="https://sysadmin.ru/docs/cmd" tags="windows cmd commands" ctime="20180712143424" dir="1531388064izf3ybjo6t" file="text.html"/>
+   </recordtable>
+  </node>
+  <node crypt="" id="1504108400vxxba6csn9" name="Vim">
+   <recordtable>
+    <record id="1504108667rlk7iwu3lx" name="Basic config from vimconfig.com" author="" url="http://vimconfig.com" tags="vim config" ctime="20170830205747" dir="1504108667sri7roqqi4" file="text.html"/>
+    <record id="1504108807vj6dgjlb73" name="Basic vi Commands" author="" url="https://www.cs.colostate.edu/helpdocs/vi.html" tags="vim vi commands" ctime="20170830210007" dir="15041088078qdpbb9f4v" file="text.html"/>
+    <record id="15041090071s56o40erw" name="The 30 Basic Vim Commands You'll Use Every Day" author="https://spin.atomicobject.com/author/brian-vanderwal/" url="https://spin.atomicobject.com/2016/04/19/vim-commands-cheat-sheet/" tags="vim commands" ctime="20170830210327" dir="15041090076eub6i6s9v" file="text.html"/>
+    <record id="1504109101wi1cska6ed" name="VIM Editor Commands" author="" url="http://www.radford.edu/~mhtay/CPSC120/VIM_Editor_Commands.htm" tags="vim commands" ctime="20170830210501" dir="1504109101znsw58bc11" file="text.html"/>
+    <record id="1504115449sgzukwfe7e" name="Vim - Switch color schemes" author="" url="http://vim.wikia.com/wiki/Switch_color_schemes" tags="vim color scheme" ctime="20170830225049" dir="1504115449znx2tfxhy6" file="text.html"/>
+    <record id="15041934195xjd2qe56s" name="My Vim config" author="" url="" tags="vim config" ctime="20170831203019" dir="1504193419zg5jthkcbq" file="text.html"/>
+    <record id="150669034709wxlciesl" name="My Vim config - with plugins" author="" url="" tags="vim config plugin" ctime="20170929180547" dir="1506690347iwew9wu575" file="text.html"/>
+    <record id="15071289987grcbcbdin" name="My VIM plugins" author="" url="" tags="vim plugins" ctime="20171004195638" dir="1507128998mq8ea3gof3" file="text.html"/>
+    <record id="1509079375t73m4iervf" name="Vim clear last search highlighting" author="" url="https://stackoverflow.com/questions/657447/vim-clear-last-search-highlighting" tags="vim highlight search" ctime="20171027094255" dir="1509079375u0tcd7r2zp" file="text.html"/>
+    <record id="1516253544506a0su4la" name="vimregex.com" author="" url="http://www.vimregex.com/" tags="vim regexp replace search" ctime="20180118103224" dir="1516253544s5m36daxid" file="text.html"/>
+   </recordtable>
+  </node>
+  <node crypt="" id="1505040011z64ffrrbo6" name="Git">
+   <recordtable>
+    <record id="1505040073icnjkrstzi" name="Git - вывести историю изменений в терминал" author="" url="https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History" tags="git" ctime="20170910154113" dir="15050400731xrks5tbnq" file="text.html"/>
+    <record id="1525669114a7hpxzu47o" name="Самые типичные ошибки и вопросы, связанные с Git, и удобные способы их решения" author="" url="https://tproger.ru/translations/most-common-git-screwupsquestions-and-solutions/" tags="git help" ctime="20180507095834" dir="1525669114re3qizybr6" file="text.html"/>
+    <record id="1526476341qjgj4wb4yg" name="Reset local repository branch to be just like remote repository HEAD&#10;" author="" url="https://stackoverflow.com/questions/1628088/reset-local-repository-branch-to-be-just-like-remote-repository-head" tags="git reset local master to remote" ctime="20180516181221" dir="15264763414omb9tfisu" file="text.html"/>
+   </recordtable>
+  </node>
+  <node crypt="" id="1506336652wmdu2jx2nn" name="Веб-разработка">
+   <recordtable>
+    <record id="150633671976451bfjgg" name="Как поставить себе на сайт знак рубля" author="http://101studio.ru/contact/" url="http://101studio.ru/blog/kak-postavit-sebe-na-sayt-znak-rublya/" tags="web css rur" ctime="20170925155159" dir="1506336719wz35v17h6u" file="text.html"/>
+    <record id="15314591348ojm3er1wx" name="Ошибка “No ‘Access-Control-Allow-Origin’ header is present on the requested resource”" author="" url="http://bologer.ru/oshibka-no-access-control-allow-origin-header-is-present-on-the-requested-resource/" tags="access control allow origin header" ctime="20180713101854" dir="1531459134zyenc5hj2d" file="text.html"/>
+    <record id="1531484404sr2amdeyzg" name="Request header field Access-Control-Allow-Headers is not allowed by Access-Control-Allow-Headers&#10;" author="" url="https://stackoverflow.com/questions/25727306/request-header-field-access-control-allow-headers-is-not-allowed-by-access-contr" tags="http request access control allow headers" ctime="20180713172004" dir="1531484404j3e3ul5501" file="text.html"/>
+    <record id="1531486736ole0qmc32a" name="Список MIME-типов" author="" url="https://ru.wikipedia.org/wiki/Список_MIME-типов" tags="mime type" ctime="20180713175856" dir="1531486736014kc9krg7" file="text.html"/>
+   </recordtable>
+  </node>
+  <node crypt="" id="1510828357ik2q9pd97k" name="Mime">
+   <recordtable>
+    <record id="15108284347h5y0coeh2" name="Correct Microsoft Office MIME types for HTTP Content Streaming" author="" url="https://stackoverflow.com/questions/4212861/what-is-a-correct-mime-type-for-docx-pptx-etc#4212908" tags="mime microsoft office excel" ctime="20171116153354" dir="1510828434yto8qfj626" file="text.html"/>
+   </recordtable>
+  </node>
+  <node crypt="" id="1512391076fl9i6uk17i" name="netbeans">
+   <recordtable>
+    <record id="1512391122snxrp3xmnn" name="NetBeans: зависание при фоновом сканировании проектов" author="http://blog.eney.solutions/author/admin" url="http://blog.eney.solutions/general/ide/netbeans-zavisanie-pri-fonovom-skanirovanii-proektov.html" tags="netbeans" ctime="20171204173842" dir="1512391122cddqb2bukm" file="text.html"/>
+    <record id="1512391243pcmux5pty7" name="Ускорение NetBeans" author="http://thisis-blog.ru/author/shapito27/" url="http://thisis-blog.ru/netbeans/" tags="netbeans" ctime="20171204174043" dir="15123912438zu7kf31rm" file="text.html"/>
+   </recordtable>
+  </node>
+  <node crypt="" id="15148296260fot1glt8k" name="Docker">
+   <recordtable>
+    <record id="1516593981i1hoxtwtq8" name="Полное практическое руководство по Docker: с нуля до кластера на AWS" author="" url="https://habrahabr.ru/post/310460/" tags="docker tutorial" ctime="20180122090621" dir="15165939818m2hcvkvmw" file="text.html"/>
+    <record id="1516594817spt1eixtgg" name="Docker, Get Started 1" author="" url="https://docs.docker.com/get-started/#setup" tags="docker start tutorial" ctime="20180122092017" dir="1516594817nugdr3ouon" file="text.html"/>
+    <record id="151659671219z1ujeike" name="Docker, Get Started 2" author="" url="https://docs.docker.com/get-started/part2/" tags="docker start tutorial" ctime="20180122095152" dir="1516596712079vjv920n" file="text.html"/>
+    <record id="1516596753aglz5w88gh" name="Docker, Get Started 3" author="" url="https://docs.docker.com/get-started/part3/#recap-and-cheat-sheet-optional" tags="docker start tutorial" ctime="20180122095233" dir="1516596753bkx8x0mp44" file="text.html"/>
+    <record id="1516596842mmhmkf7ebg" name="Docker, Get Started 4" author="" url="https://docs.docker.com/get-started/part4/#recap-and-cheat-sheet-optional" tags="docker start tutorial" ctime="20180122095402" dir="1516596842wnpw6mydse" file="text.html"/>
+    <record id="1516596914m77xt3bzdg" name="Docker, Get Started 5" author="" url="https://docs.docker.com/get-started/part5/" tags="docker start tutorial" ctime="20180122095514" dir="1516596914jwi62riplh" file="text.html"/>
+    <record id="15165969891gb48b0bi7" name="Docker, Get Started 6" author="" url="https://docs.docker.com/get-started/part6/#congratulations" tags="docker start tutorial" ctime="20180122095629" dir="15165969894ul98sig0a" file="text.html"/>
+    <record id="15166800792a0gi9zcov" name="Лабораторная работа: введение в Docker с нуля. Ваш первый микросервис" author="" url="https://m.habrahabr.ru/post/346634/" tags="docker tutorial" ctime="20180123090119" dir="151668007921ustwyx1v" file="text.html"/>
+    <record id="1517561448y1cizcj5qe" name="Виртуализация процесса разработки, часть 1: Docker" author="Андрей Двояк" url="https://dou.ua/lenta/articles/docker/" tags="docker development tutorial" ctime="20180202135048" dir="15175614486e3p3bwlnu" file="text.html"/>
+    <record id="15175615384etehhdvlc" name="Виртуализация процесса разработки, часть 2: Docker и Vagrant" author="Andrii Dvoiak" url="https://dou.ua/lenta/articles/vagrant/" tags="docker vagrant virtual" ctime="20180202135218" dir="15175615387wlwujpdve" file="text.html"/>
+    <record id="1517568427m06qgmvva3" name="Docker Cheat Sheet" author="wsargent" url="https://github.com/wsargent/docker-cheat-sheet" tags="dockrt cheat" ctime="20180202154707" dir="1517568427yj7xcw0hry" file="text.html"/>
+   </recordtable>
+  </node>
+  <node crypt="" id="1516102808v15wtjs1g3" name="cURL, wget">
+   <recordtable>
+    <record id="1516102858kfcj0g01i0" name="Manual -- curl usage explained" author="" url="https://curl.haxx.se/docs/manual.html" tags="linux curl manual" ctime="20180116164058" dir="1516102858hkol4thuc7" file="text.html"/>
+    <record id="15173778840167eqgyr9" name="Справочник по командам wget и curl" author="Моргун Иван @ Украина, Винница" url="http://proft.me/2013/08/17/spravochnik-po-komandam-wget-i-curl/" tags="wget curl" ctime="20180131105124" dir="1517377884u991lcrutv" file="text.html"/>
+    <record id="1517378000t1w4b8mszf" name="Шпаргалка по Curl" author="Андрей Хомлюк" url="https://it-adminio.ru/shpargalka-po-curl/" tags="curl wget" ctime="20180131105320" dir="1517378000f4o41j28xh" file="text.html"/>
+    <record id="15175534805ynoz902ui" name="How to pass payload via JSON file for curl?" author="" url="https://stackoverflow.com/questions/18611903/how-to-pass-payload-via-json-file-for-curl#18614411" tags="curl post json" ctime="20180202113800" dir="1517553480shecowvkgs" file="text.html"/>
+    <record id="15175540774myzzn8es7" name="How do I measure request and response times at once using cURL?" author="" url="https://stackoverflow.com/questions/18215389/how-do-i-measure-request-and-response-times-at-once-using-curl" tags="curl test time" ctime="20180202114757" dir="15175540772cmtazo41w" file="text.html"/>
+    <record id="15175541481d1cg6bkgd" name="Timing Details With cURL" author="Joseph Scott" url="https://blog.josephscott.org/2011/10/14/timing-details-with-curl/" tags="curl test time" ctime="20180202114908" dir="1517554148whmd1hxu00" file="text.html"/>
+    <record id="1517554318f9pq202sjx" name="Curl output to display in the readable JSON format in UNIX shell script" author="" url="https://stackoverflow.com/questions/27238411/curl-output-to-display-in-the-readable-json-format-in-unix-shell-script" tags="curl json output format" ctime="20180202115158" dir="1517554318jd7taqb89i" file="text.html"/>
+    <record id="1517561375wspwnokjcb" name="Проверяем Время Ответа Сайта из Командной строки Linux" author="" url="https://www.shellhacks.com/ru/check-website-response-time-linux-command-line/" tags="curl test response speed time" ctime="20180202134935" dir="1517561375iu0nj6djdc" file="text.html"/>
+    <record id="1517561684mqx5n53x6c" name="Проверка скорости в терминале" author="" url="https://losst.ru/kak-proverit-skorost-zagruzki-sajta" tags="curl bash tcp speed test web" ctime="20180202135444" dir="1517561684mr1gnstf4t" file="text.html"/>
+   </recordtable>
+  </node>
+  <node crypt="" id="1516594305e0kzg3ilz3" name="DevOps">
+   <recordtable>
+    <record id="1516594375c7666xfwsd" name="Настройка роутера Tp-Link в режиме моста (WDS). Соединяем два роутера по Wi-Fi" author="" url="http://help-wifi.com/tp-link/nastrojka-routera-tp-link-v-rezhime-mosta-wds-soedinyaem-dva-routera-po-wi-fi/" tags="tp-link wi-fi config" ctime="20180122091255" dir="1516594375ff3n500nun" file="text.html"/>
+   </recordtable>
+  </node>
+  <node crypt="" id="1516859578fsdmnhpdn1" name="VNC">
+   <recordtable>
+    <record id="1516859647577g4uwm09" name="TurboVNC Documentation" author="" url="https://cdn.rawgit.com/TurboVNC/turbovnc/2.1.2/doc/index.html#hd006001" tags="vnc turbovnc doc" ctime="20180125105407" dir="1516859647we1pbv8de3" file="text.html"/>
+   </recordtable>
+  </node>
+  <node crypt="" id="1517804483vt8dmjz3i3" name="Highload">
+   <recordtable>
+    <record id="1517804538540t6omz08" name="Балансировка бэкендов с помощью Nginx" author="" url="https://ruhighload.com/post/%D0%91%D0%B0%D0%BB%D0%B0%D0%BD%D1%81%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0+%D0%B1%D1%8D%D0%BA%D0%B5%D0%BD%D0%B4%D0%BE%D0%B2+%D1%81+%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E+Nginx" tags="highload nginx balance" ctime="20180205092218" dir="1517804538e3pckzoxet" file="text.html"/>
+    <record id="1517555635deyh6oub0i" name="Горизонтальное масштабирование. Что, зачем, когда и как?" author="Александр Макаров" url="https://habrahabr.ru/company/oleg-bunin/blog/319526/" tags="linux php highload ab siege" ctime="20180205093154" dir="1517555635owu49mg7x0" file="text.html"/>
+    <record id="150719074881vsxx9w30" name="Вебные хитрости: Принудительный рефреш статики" author="https://habrahabr.ru/users/Stampede/" url="https://habrahabr.ru/post/62844/" tags="web develop habrahabr" ctime="20180205093200" dir="1507190748uxeonopx13" file="text.html"/>
+    <record id="1517805206tivr2njk42" name="Оптимальная настройка Nginx" author="" url="https://ruhighload.com/index.php/2009/04/24/%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-nginx/" tags="highload nginx config" ctime="20180205093326" dir="1517805206qxoq8rlmlg" file="text.html"/>
+    <record id="1517806329235keaai37" name="Оптимизация в HTTP/2" author="" url="https://ruhighload.com/post/%D0%9E%D0%BF%D1%82%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F+%D0%B2+HTTP%2F2" tags="http 2" ctime="20180205095209" dir="1517806329or8krxinvz" file="text.html"/>
+    <record id="15178067210s2mzdhq9t" name="Чеклист по скорости PHP" author="" url="https://ruhighload.com/post/%D0%A7%D0%B5%D0%BA%D0%BB%D0%B8%D1%81%D1%82+%D0%BF%D0%BE+%D0%BE%D0%BF%D1%82%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8+PHP" tags="highload php" ctime="20180205095841" dir="1517806721okg7litdp3" file="text.html"/>
+    <record id="1517806872ci07zt4fjg" name="Кэширование данных" author="" url="https://ruhighload.com/post/%D0%9A%D1%8D%D1%88%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5+%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85" tags="highload cache" ctime="20180205100112" dir="15178068724jd8vcyuxo" file="text.html"/>
+    <record id="1517806914h0lskybdyo" name="Тяжелое кэширование" author="" url="https://ruhighload.com/index.php/2009/12/02/keshyrovanie-tyajelyh-zaprosov-memcache/" tags="highload cache" ctime="20180205100154" dir="1517806914ll9vqtmspw" file="text.html"/>
+    <record id="1517806952tl1w4yhkus" name="Оптимизация PHP" author="" url="https://ruhighload.com/index.php/2009/06/03/php-%D1%80%D0%B5%D1%86%D0%B5%D0%BF%D1%82%D1%8B-%D0%B8-%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-%D0%BF%D0%BE%D0%B4-%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%B8%D0%B5-%D0%BD%D0%B0%D0%B3%D1%80/" tags="highload php" ctime="20180205100232" dir="1517806952ochqkmdnu8" file="text.html"/>
+    <record id="1517807028m3o1lsj1pz" name="Оптимизация сервера на Ubuntu" author="" url="https://ruhighload.com/post/%D0%9E%D0%BF%D1%82%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F+%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B0+%D0%BD%D0%B0+Ubuntu" tags="highload ubuntu server" ctime="20180205100348" dir="1517807028v2dp1hx32n" file="text.html"/>
+    <record id="15178071964ilqte5o5d" name="Балансировка нагрузки для NGINX" author="" url="http://devacademy.ru/posts/balansirovka-nagruzki-dlya-nginx/" tags="highload nginx balance config" ctime="20180205100636" dir="15178071962ai1dvdc80" file="text.html"/>
+   </recordtable>
+  </node>
+  <node crypt="" id="15216119077uwt03glwi" name="tmux">
+   <recordtable>
+    <record id="1521611990cbdnekp71n" name="Краткая шпаргалка по tmux (менеджеру терминалов)" author="https://habrahabr.ru/users/darnley/" url="https://habrahabr.ru/post/126996/" tags="linux tmux" ctime="20180321105950" dir="152161199074jkyznul0" file="text.html"/>
+    <record id="15216123078vnud3d39m" name="Терминальный оконный менеджер Tmux" author="" url="https://the-bosha.ru/2010/06/01/terminal-window-manager-tmux/" tags="linux tmux" ctime="20180321110507" dir="15216123074cqxz5y4sz" file="text.html"/>
+   </recordtable>
+  </node>
+  <node crypt="" id="1524717988outfd3dtxl" name="CSS">
+   <recordtable>
+    <record id="1524718082zcdhzl0o2h" name="Несколько дельных советов по CSS" author="https://habr.com/users/splincodewd/" url="https://habr.com/post/273403/" tags="css tricks" ctime="20180426094802" dir="1524718082pusi1dvirz" file="text.html"/>
+    <record id="1524718180sc0nbu9kdt" name="Странности CSS, о которых полезно знать" author="https://habr.com/users/ru_vds/" url="https://habr.com/company/ruvds/blog/350658/" tags="css tricks" ctime="20180426094940" dir="15247181804zr5342wf1" file="text.html"/>
+    <record id="1524718359z4j89h1z5e" name="Трюки с CSS-анимациями: мгновенные изменения, отрицательные задержки, анимация transform-origin и другое" author="https://habr.com/users/ilya42/" url="https://habr.com/company/nordavind/blog/209462/" tags="css tricks" ctime="20180426095239" dir="1524718359ds7qwvve0g" file="text.html"/>
+   </recordtable>
+  </node>
+  <node crypt="" id="15257137018doc0yrgs4" name="WebSocket">
+   <recordtable>
+    <record id="1525713842k7f4v8n6oc" name="Асинхронный веб, или Что такое веб-сокеты" author="" url="https://tproger.ru/translations/what-are-web-sockets/" tags="websocket web socket" ctime="20180507222402" dir="1525713842innsux7nbd" file="text.html"/>
+    <record id="1525714048ee7waxbe7t" name="Вебсокеты на php. Выбираем вебсокет-сервер" author="https://habr.com/users/morozovsk/" url="https://habr.com/post/331462/" tags="websocket" ctime="20180507222728" dir="15257140484y7qwkox3c" file="text.html"/>
+    <record id="1525714113fv42bshh7h" name="WebSockets — полноценный асинхронный веб" author="https://habr.com/users/el777/" url="https://habr.com/post/79038/" tags="websocket" ctime="20180507222833" dir="1525714113ht9tthpjig" file="text.html"/>
+    <record id="1525714200a9ylk2vhaj" name="Websocket в продакшене" author="https://habr.com/users/anlide/" url="https://habr.com/post/301822/" tags="websocket" ctime="20180507223000" dir="1525714200s4su947w3i" file="text.html"/>
+    <record id="15257143125s8kty4fyr" name="Делаем вебсокеты на PHP с нуля" author="https://habr.com/users/morozovsk/" url="https://flowers-for-all.com/company/ifree/blog/209864/" tags="websocket" ctime="20180507223152" dir="1525714312lwx7t6o5s5" file="text.html"/>
+    <record id="1525714382m2ko96v9ze" name="Делаем вебсокеты на PHP с нуля. Часть 2. IPC" author="https://habr.com/users/morozovsk/" url="https://flowers-for-all.com/post/210228/" tags="websocket" ctime="20180507223302" dir="1525714382dsmovx4k7a" file="text.html"/>
+    <record id="1525714469h1b19c08fe" name="Вебсокеты на PHP. Часть 3. От чата до игры: Battle City" author="https://habr.com/users/morozovsk/" url="https://flowers-for-all.com/company/ifree/blog/211504/" tags="websocket" ctime="20180507223429" dir="1525714469veoyfwxib8" file="text.html"/>
+    <record id="1525714866c3hkda6jlj" name="Nginx и Websockets" author="https://habr.com/users/astlock/" url="https://flowers-for-all.com/post/171757/" tags="websocket" ctime="20180507224106" dir="15257148666vfb3a3nmn" file="text.html"/>
+    <record id="1525714972ib2eucv5lh" name="walkor/Workerman" author="" url="https://github.com/walkor/Workerman" tags="websocket github" ctime="20180507224252" dir="15257149720ghrcwgt19" file="text.html"/>
+    <record id="1525763196qk8slfiowd" name="WebSocket" author="" url="http://learn.javascript.ru/websockets" tags="websocket" ctime="20180508120636" dir="15257631962hvxz3dbdi" file="text.html"/>
+    <record id="15257658604fki5hrpu0" name="NGINX as a WebSocket Proxy" author="" url="https://www.nginx.com/blog/websocket-nginx/" tags="websocket nginx" ctime="20180508125100" dir="1525765860vrxjj15vo5" file="text.html"/>
+    <record id="1526994008gkjx90670i" name="wrench/wrench" author="" url="https://packagist.org/packages/wrench/wrench" tags="php websocket packagist" ctime="20180522180008" dir="1526994008m85ixqhgv7" file="text.html"/>
+    <record id="1526994383k38h5jbbes" name="cboden/ratchet" author="" url="https://packagist.org/packages/cboden/ratchet" tags="php packagist websocket" ctime="20180522180623" dir="15269943835t69djk5n7" file="text.html"/>
+    <record id="1526994464t376x8qbpg" name="devristo/phpws" author="" url="https://packagist.org/packages/devristo/phpws" tags="php packagist websocket" ctime="20180522180744" dir="1526994464k9rl4trnid" file="text.html"/>
+    <record id="1526994673dlqjthulzr" name="consik/yii2-websocket" author="" url="https://packagist.org/packages/consik/yii2-websocket" tags="php packagist websocket yii2" ctime="20180522181113" dir="15269946735d1j3as1d3" file="text.html"/>
+    <record id="1527157517up8x0fwjzx" name="Swoole - Production-Grade Async programming Framework for PHP" author="" url="https://www.swoole.co.uk" tags="php websocket swoole" ctime="20180524152517" dir="1527157517t2do2iypsy" file="text.html"/>
+    <record id="1527157620xlsd5zfykk" name="Ratchet - Deployment" author="" url="http://socketo.me/docs/deploy" tags="php ratchet websocket" ctime="20180524152700" dir="1527157620d0ig75g9zi" file="text.html"/>
+    <record id="1527157689zvtcgsv5wa" name="Linux - Increase “Open Files Limit”" author="" url="https://easyengine.io/tutorials/linux/increase-open-files-limit/" tags="linux websocket highload limit" ctime="20180524152809" dir="1527157689yjvvfp31ec" file="text.html"/>
+    <record id="1527164278ax1dyt6cnv" name="Installing nghttp2 &amp; h2load on Ubuntu 14.04" author="" url="https://gist.github.com/hedleysmith/d4fb9d8d2907a373b28079a0d11657fc" tags="ubuntu nghttp2" ctime="20180524171758" dir="152716427835dbismx21" file="text.html"/>
+    <record id="1527232602apga3xy53c" name="observing/thor" author="" url="https://github.com/observing/thor" tags="websocket thor npm nodejs" ctime="20180525121642" dir="1527232602602w9tcmfc" file="text.html"/>
+    <record id="1527243423ylcwbbrpkz" name="The Road to 2 Million Websocket Connections in Phoenix" author="" url="http://phoenixframework.org/blog/the-road-to-2-million-websocket-connections" tags="websocket phoenix test tsung" ctime="20180525151703" dir="1527243423pb9r2ml53i" file="text.html"/>
+    <record id="152724549444g9ua2l13" name="Supervisor: A Process Control System" author="" url="http://supervisord.org" tags="supervisor process control linux" ctime="20180525155134" dir="1527245494d2lhox6vvn" file="text.html"/>
+    <record id="1527487860nd7t3fs49x" name="Докеризируем Socket.io, redis и php" author="" url="https://habr.com/post/353212/" tags="php redis socket io docker websocket" ctime="20180528111100" dir="1527487860exwu6v5jgg" file="text.html"/>
+    <record id="1527598488n7ncpt4ej8" name="How To Install and Manage Supervisor on Ubuntu and Debian VPS" author="" url="https://www.digitalocean.com/community/tutorials/how-to-install-and-manage-supervisor-on-ubuntu-and-debian-vps" tags="linux supervisor install config" ctime="20180529175448" dir="1527598488yi56d1xq1l" file="text.html"/>
+   </recordtable>
+  </node>
+  <node crypt="" id="1526493215rp7n0v265c" name="GRUB">
+   <recordtable>
+    <record id="1526493620uurhjqrk55" name="Начальный загрузчик GRUB - полное руководство" author="" url="http://rus-linux.net/MyLDP/boot/GRUB-bootloader-Full-tutorial.html" tags="grub" ctime="20180516230020" dir="15264936207ewrcz3v0a" file="text.html"/>
+    <record id="1526494193fhenmpcgxi" name="GRUB - загрузчик системы&#10;" author="" url="http://help.ubuntu.ru/wiki/grub" tags="linux grub" ctime="20180516230953" dir="152649419361hpx6h55o" file="text.html"/>
+    <record id="1526494297kimf68cd80" name="Grub 2" author="" url="https://ru.wikibooks.org/wiki/Grub_2" tags="grub linux" ctime="20180516231137" dir="1526494297ex4opbifs6" file="text.html"/>
+   </recordtable>
+  </node>
+  <node crypt="" id="15297234648vt1c38hkj" name="Dark Basic">
+   <recordtable>
+    <record id="15297235006oox7tq9uz" name="disabling the maximize function on a db window" author="" url="https://forum.thegamecreators.com/thread/150649" tags="dark basic window maximize" ctime="20180623081140" dir="1529723500dedcwlyuv1" file="text.html"/>
+    <record id="15297242329anghwcl7h" name="Position window DBC" author="" url="https://forum.thegamecreators.com/thread/107658" tags="dark basic classic window position" ctime="20180623082352" dir="1529724232jfqnj68ma8" file="text.html"/>
+    <record id="15297242851578sxw2my" name="Annoying 'window resize' bug - anyone found a fix?" author="" url="https://forum.thegamecreators.com/thread/98410" tags="dark basic classic window resize bug" ctime="20180623082445" dir="152972428573ync5467b" file="text.html"/>
+    <record id="1529724994yu8vys4hud" name="Useful Windows DLL functions (Kernel32.dll, User32.dll, Advapi32.dll)" author="" url="https://forum.thegamecreators.com/thread/53276" tags="dark basic useful dll functions" ctime="20180623083634" dir="15297249942293izrenl" file="text.html"/>
+   </recordtable>
+  </node>
+  <node crypt="" id="1531375037zdr0rpkgkt" name="Java">
+   <recordtable>
+    <record id="1531375132xcq816m51p" name="Работа с Java в командной строке" author="" url="https://habr.com/post/125210/" tags="java compile jar" ctime="20180712105852" dir="1531375132ikdrjtjzrz" file="text.html"/>
+    <record id="1531375248kwo4rkxk3w" name="Создание и использование архивов Java" author="" url="http://www.javaportal.ru/java/articles/jar.html" tags="java jar archive" ctime="20180712110048" dir="1531375248hkxv7ysjvq" file="text.html"/>
+    <record id="1531375391crdcbldkg4" name="Ликбез" author="" url="http://www.skipy.ru/technics/likbez.html" tags="java basic" ctime="20180712110311" dir="1531375391rvtdq07jz1" file="text.html"/>
+    <record id="1531392796fbih2g8p81" name="Константы в Java" author="" url="https://geekbrains.ru/posts/java_const" tags="java constanst" ctime="20180712155316" dir="1531392796znkawobabj" file="text.html"/>
+    <record id="1531392842oe9sb47l5v" name="Перечисления enum" author="" url="http://developer.alexanderklimov.ru/android/java/enum.php" tags="java enum" ctime="20180712155402" dir="1531392842tn7pd3412c" file="text.html"/>
+    <record id="1531392914rugom60npl" name="Compile and Run Java in Command Line with External Jars" author="" url="https://www.programcreek.com/2014/01/compile-and-run-java-in-command-line-with-external-jars/" tags="java compile external jar" ctime="20180712155514" dir="1531392914l4ralaxvb2" file="text.html"/>
+    <record id="1531411594v6qbrnblmw" name="Updating a JAR File" author="" url="https://docs.oracle.com/javase/tutorial/deployment/jar/update.html" tags="java jar update" ctime="20180712210634" dir="1531411594b5xx0h3cb6" file="text.html"/>
+    <record id="1531413113ish6logwia" name="Compiling a java program into an executable [duplicate]&#10;" author="" url="https://stackoverflow.com/questions/2011664/compiling-a-java-program-into-an-executable#2011746" tags="java compile exe" ctime="20180712213153" dir="1531413113v4gya520b1" file="text.html"/>
+    <record id="1531413176y5wijdpc4b" name="Launch4j - Cross-platform Java executable wrapper" author="" url="http://launch4j.sourceforge.net" tags="java exe launch4j" ctime="20180712213256" dir="15314131768okkygcusj" file="text.html"/>
+    <record id="1531413234wudbtqbgq7" name="Пакетирование и распространение настольных приложений Java" author="" url="https://netbeans.org/kb/73/java/javase-deploy_ru.html" tags="java packet distribution compile" ctime="20180712213354" dir="1531413234tuwndi45s0" file="text.html"/>
+   </recordtable>
+  </node>
+  <node crypt="" id="1531477818rcoh4msht6" name="Python">
+   <recordtable>
+    <record id="14914679422kl37km8k8" name="Awesome Python" author="https://github.com/vinta" url="https://github.com/vinta/awesome-python" tags="python tools awesome" ctime="20180713153018" dir="1491467942zyj1ojq9z4" file="text.html"/>
+    <record id="1531226826xtewy03p6c" name="SimplePrograms" author="" url="https://wiki.python.org/moin/SimplePrograms" tags="python code example simple program" ctime="20180713153018" dir="1531226826c4qyc6p3vy" file="text.html"/>
+    <record id="1531285964v9axvp4pey" name="How to import other Python files?" author="" url="https://stackoverflow.com/questions/2349991/how-to-import-other-python-files" tags="python import py" ctime="20180713153018" dir="1531285964p3abzei1he" file="text.html"/>
+    <record id="1531286075wauan4o4gy" name="How to import a module given the full path?" author="" url="stackoverflow.com/questions/67631/how-to-import-a-module-given-the-full-path" tags="python import module full path" ctime="20180713153018" dir="1531286075jaswa9pfph" file="text.html"/>
+    <record id="1531478007vs8jmncvtl" name="Python: реализуем веб-сервер своими руками" author="" url="https://habr.com/sandbox/28540/" tags="python http server example" ctime="20180713153327" dir="1531478007fk43issi1r" file="text.html"/>
+    <record id="1531478096wde77mnmfn" name="SimpleHTTPServer — Simple HTTP request handler" author="" url="https://docs.python.org/2/library/simplehttpserver.html" tags="python http server" ctime="20180713153456" dir="1531478096xeld895v0i" file="text.html"/>
+    <record id="1531486472yovg3rt0ei" name="Simple Python HTTP(S) Server With GET/POST Examples" author="" url="https://blog.anvileight.com/posts/simple-python-http-server/" tags="python server example get post" ctime="20180713175432" dir="1531486472c4c1pk0jn5" file="text.html"/>
+    <record id="1531718311nil52hemd0" name="Chain-calling parent constructors in python" author="" url="https://stackoverflow.com/questions/904036/chain-calling-parent-constructors-in-python#904081" tags="python oop parent constructor super" ctime="20180716101831" dir="1531718311x8yf9aoijr" file="text.html"/>
+    <record id="15317183703kf2s87qft" name="How to invoke the super constructor?" author="" url="https://stackoverflow.com/questions/2399307/how-to-invoke-the-super-constructor" tags="python oop parent constructor super" ctime="20180716101930" dir="1531718370jomxyvurlr" file="text.html"/>
+    <record id="1531718442zrut5i8jq0" name="Python - Object Oriented" author="" url="https://www.tutorialspoint.com/python/python_classes_objects.htm" tags="python oop example tutorialspoint" ctime="20180716102042" dir="1531718442bk1wvu8nra" file="text.html"/>
+    <record id="1531718522ovk6pfujh7" name="Improve Your Python: Python Classes and Object Oriented Programming" author="" url="https://jeffknupp.com/blog/2014/06/18/improve-your-python-python-classes-and-object-oriented-programming/" tags="python oop example" ctime="20180716102202" dir="1531718522j98i1xjlam" file="text.html"/>
+    <record id="1531718958i4eo8rfhh9" name="A Byte of Python" author="" url="https://legacy.gitbook.com/book/swaroopch/byte-of-python/details" tags="python help book" ctime="20180716102918" dir="1531718958wbl5asmx47" file="text.html"/>
+    <record id="153172008955auct9g4i" name="Check if a given key already exists in a dictionary" author="" url="https://stackoverflow.com/questions/1602934/check-if-a-given-key-already-exists-in-a-dictionary#1602964" tags="python check key dictionary" ctime="20180716104809" dir="1531720089iyj5v4ho8g" file="text.html"/>
+    <record id="1531720394iwzkuy38ii" name="None (null), или немного о типе NoneType" author="" url="https://pythonworld.ru/tipy-dannyx-v-python/none.html" tags="python check none" ctime="20180716105314" dir="1531720394tx8bwuefii" file="text.html"/>
+    <record id="15317224642dnki63b44" name="The difference between sys.stdout.write and print?" author="" url="https://stackoverflow.com/questions/3263672/the-difference-between-sys-stdout-write-and-print#3263763" tags="python stdout write print" ctime="20180716112744" dir="153172246442207k23ig" file="text.html"/>
+    <record id="1531721732hekxxg72pc" name="Is there a built-in function to print all the current properties and values of an object?" author="" url="https://stackoverflow.com/questions/192109/is-there-a-built-in-function-to-print-all-the-current-properties-and-values-of-a" tags="python pretty print object vars" ctime="20180716112802" dir="1531721732ctj8w4p3ol" file="text.html"/>
+    <record id="1531804602ta9gv24l9f" name="Calling a function of a module by using its name (a string)" author="" url="https://stackoverflow.com/questions/3061/calling-a-function-of-a-module-by-using-its-name-a-string" tags="python call function string name" ctime="20180717101642" dir="1531804602uasj72dac5" file="text.html"/>
+    <record id="15318081972j567t04ld" name="importError: no module named _winreg python3" author="" url="https://stackoverflow.com/questions/4320761/importerror-no-module-named-winreg-python3" tags="python python3 python2 compatibility winreg error" ctime="20180717111637" dir="1531808197lv3rtt3sq4" file="text.html"/>
+    <record id="1531809688dspgehhvl4" name="2to3 - Automated Python 2 to 3 code translation" author="" url="https://docs.python.org/3/library/2to3.html#to3-reference" tags="python code translation" ctime="20180717114128" dir="15318096883xzar6n0jo" file="text.html"/>
+    <record id="1531828172miszo4d2xv" name="100 строк кода: Прокси-сервер на Python" author="" url="http://datareview.info/article/100-strok-koda-proksi-server-na-python/" tags="python proxy server example" ctime="20180717164932" dir="153182817247mumkd4cp" file="text.html"/>
+    <record id="1531829903uhperci6dg" name="http.client" author="" url="http://ilnurgi1.ru/docs/python/modules/http_client.html" tags="python http client example" ctime="20180717171823" dir="1531829903zzi4pj1d4g" file="text.html"/>
+    <record id="1531846032ohtvvl9p87" name="Регулярные выражения в Python от простого к сложному. Подробности, примеры, картинки, упражнения" author="" url="https://habr.com/post/349860/" tags="python regexp" ctime="20180717214712" dir="15318460321ljvpiutcj" file="text.html"/>
+   </recordtable>
+  </node>
+  <node crypt="" id="15314778288uzc0jo1wy" name="PHP">
+   <recordtable>
+    <record id="14842808507qf76x8s4b" name="Interesting Projects, Tools and Libraries" author="Eremeev Mikhail" url="" tags="php projects tools libraries" ctime="20180713153028" dir="1484280850mx091j0du4" file="text.html"/>
+    <record id="14858468300qjkcwh5y3" name="PHP 7 - Installing imagick on Ubuntu 14.04" author="https://gist.github.com/nivv" url="https://gist.github.com/nivv/5d9a12af5472b91606e6" tags="php php7 imagick ubuntu 14.04" ctime="20180713153028" dir="1485846830h52dgrjcdf" file="text.html"/>
+    <record id="14902513428sc1h1v2kj" name="Пробелы в URL - '%20' или '+'?" author="http://imm0use.blogspot.ru/" url="http://imm0use.blogspot.ru/2010/02/url-20.html" tags="url space" ctime="20180713153028" dir="1490251342mj2mh9v6zw" file="text.html"/>
+    <record id="1491467837qwz6y6zbp2" name="Awesome PHP" author="https://github.com/ziadoz" url="https://github.com/ziadoz/awesome-php" tags="php tools awesome" ctime="20180713153028" dir="149146783793ih6589rc" file="text.html"/>
+    <record id="1491548122e5sn16o24h" name="PClib - lightweight framework" author="" url="https://github.com/lenochware/pclib" tags="php framework" ctime="20180713153028" dir="1491548122o2294d7w7s" file="text.html"/>
+    <record id="1504239674og9el5618p" name="Rapid Enterprise App Development with Zend Expressive" author="" url="https://www.sitepoint.com/rapid-enterprise-app-development-zend-expressive/" tags="php rapid zend" ctime="20180713153028" dir="15042396740dzg5vlscz" file="text.html"/>
+    <record id="15168138307prozu65a8" name="PHP - how to best determine if the current invocation is from CLI or web server?" author="" url="https://stackoverflow.com/questions/933367/php-how-to-best-determine-if-the-current-invocation-is-from-cli-or-web-server" tags="php sapi cli web" ctime="20180713153028" dir="1516813830w7naevia2h" file="text.html"/>
+    <record id="1526145492xtbj5i4zsl" name="tacnoman/dephpugger - Php Debugger to run in terminal to debug your code easily." author="" url="https://github.com/tacnoman/dephpugger" tags="php debug" ctime="20180713153028" dir="1526145492axf76pjzzh" file="text.html"/>
+    <record id="152748400744tta8cbsd" name="Стартуем работу с Redis и PHP" author="" url="https://ruseller.com/lessons.php?id=2289&amp;rub=37" tags="php redis cache" ctime="20180713153028" dir="1527484007jf6mb8sht2" file="text.html"/>
+    <record id="1527576422raqq5207xo" name="phpredis/phpredis" author="" url="https://github.com/phpredis/phpredis" tags="php redis github" ctime="20180713153028" dir="1527576422zjdu0ajqss" file="text.html"/>
+   </recordtable>
+   <node crypt="" id="15314778288tjrqoim9n" name="Yii2">
+    <recordtable>
+     <record id="1482133431uqlorbdtfx" name="Array validation" author="http://stackoverflow.com/users/57091/robsch" url="http://stackoverflow.com/questions/27252934/yii2-validation-rule-for-array" tags="php yii2 array validate" ctime="20180713153028" dir="1482133431gopjp33m8f" file="text.html"/>
+     <record id="1490958726cc56qnlerc" name="Переопределение классов в Yii2 через автолоадер yii framework" author="" url="https://dev-tips.ru/blog/post/pereopredelenie-klassov-v-yii2-cherez-avtoloader-yii-framework" tags="php yii2 class map" ctime="20180713153028" dir="1490958726dkj08kfib2" file="text.html"/>
+    </recordtable>
+   </node>
+   <node crypt="" id="15314778286tod66mtlv" name="Libraries">
+    <recordtable>
+     <record id="1488784759nc835ulepd" name="Stringy - A PHP string manipulation library with multibyte support " author="https://github.com/danielstjules" url="https://github.com/danielstjules/Stringy" tags="php string library github" ctime="20180713153028" dir="1488784759ue8sc9k9wd" file="text.html"/>
+     <record id="14901683916qk96pbvse" name="Robo - Modern task runner" author="" url="http://robo.li/" tags="php task robo" ctime="20180713153028" dir="14901683911yy7i22rcb" file="text.html"/>
+    </recordtable>
+   </node>
+   <node crypt="" id="1531477828j0qfim8agr" name="PHP Desktop app">
+    <recordtable>
+     <record id="1488862571y53yqvtq1c" name="PHP Desktop" author="https://github.com/cztomczak" url="https://github.com/cztomczak/phpdesktop" tags="php desktop" ctime="20180713153028" dir="1488862571qhzvtyo4cb" file="text.html"/>
+     <record id="14888626565kb8g7j6zu" name="PHP - Source code protection" author="https://github.com/cztomczak" url="https://github.com/cztomczak/phpdesktop/wiki/Source-code-protection#blenc-encoder" tags="php source protect" ctime="20180713153028" dir="1488862656zo1l93wpls" file="text.html"/>
+     <record id="1488862715fw180g7yh7" name="PHP - ColDevLayer" author="" url="http://coldev.blogspot.ru/" tags="php source protect" ctime="20180713153028" dir="1488862715ed9fpqlaew" file="text.html"/>
+     <record id="1488862765zzlm0q3xrv" name="The PHP GTK Bindings" author="https://github.com/php" url="https://github.com/php/php-gtk-src" tags="php desktop gtk" ctime="20180713153028" dir="1488862765i9zi410pwr" file="text.html"/>
+     <record id="1488862820bhk0fzt154" name="RPGet - The PHP-GTK encryption Tool " author="https://github.com/subabrain" url="https://github.com/subabrain/RPGet" tags="php desktop gtk source protect" ctime="20180713153028" dir="1488862820ndagdxf0na" file="text.html"/>
+    </recordtable>
+   </node>
+  </node>
+  <node crypt="" id="1531477840oj6ckr01mb" name="Postgresql">
+   <recordtable>
+    <record id="1481188506mrlse0z1nk" name="Наборы частых команд" author="Mikhail &quot;Velonski&quot; Eremeev" url="" tags="postgresql" ctime="20180713153040" dir="14811885061a50ucfdeg" file="text.html"/>
+    <record id="14815152300k785w8qn0" name="Скрипт с примером подготовки набора таблиц для базы данных" author="Mikhail &quot;Velonski&quot; Eremeev" url="" tags="postgresql example script" ctime="20180713153040" dir="14815152308jsiksy4m6" file="text.html"/>
+    <record id="1490090617hf4clytbvp" name="How To Install and Use PostgreSQL 9.4 on Debian 8" author="" url="https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-9-4-on-debian-8" tags="postresql linux debian install" ctime="20180713153040" dir="1490090617e2852c4o1r" file="text.html"/>
+    <record id="1505734368hpbcjfqsbx" name="Connect to PostgreSQL over SSH tunnel" author="" url="https://stackoverflow.com/questions/16835761/postgresql-via-ssh-tunnel#16838293" tags="postgresql ssh tunnel connect" ctime="20180713153040" dir="15057343684y8u9sae66" file="text.html"/>
+    <record id="15077841861uhjml9dt6" name="Remove uniqueness of index in PostgreSQL" author="" url="https://stackoverflow.com/questions/18514759/remove-uniqueness-of-index-in-postgresql#18515079" tags="postgresql psql unique" ctime="20180713153040" dir="1507784186k4znhvef5d" file="text.html"/>
+    <record id="15077851095ptyqlbjjm" name="How do I ALTER a PostgreSQL table and make a column unique?" author="" url="https://stackoverflow.com/questions/469471/how-do-i-alter-a-postgresql-table-and-make-a-column-unique" tags="postgresql psql unique add" ctime="20180713153040" dir="1507785109kbi5wd06o1" file="text.html"/>
+    <record id="15081477309h3qgnqmcz" name="Postgresql 9.2 “invalid locale name” on Ubuntu 12.04" author="" url="https://serverfault.com/questions/491237/postgresql-9-2-invalid-locale-name-on-ubuntu-12-04#491502" tags="postgresql psql locale name" ctime="20180713153040" dir="1508147730v4hsqvugkq" file="text.html"/>
+    <record id="15269175142fdpz33dfg" name="PostgreSQL Change owner of all tables under a specific schema" author="" url="https://dba.stackexchange.com/questions/52195/postgresql-change-owner-of-all-tables-under-a-specific-schema#83520" tags="postgresql" ctime="20180713153040" dir="1526917514prufosrchr" file="text.html"/>
+    <record id="15269175806zh5mwtvii" name="Modify OWNER on all tables simultaneously in PostgreSQL&#10;" author="" url="https://stackoverflow.com/questions/1348126/modify-owner-on-all-tables-simultaneously-in-postgresql" tags="postgresql" ctime="20180713153040" dir="15269175809ffv88suaj" file="text.html"/>
+    <record id="15282855340r2uk91dan" name="Индексы PostgreSQL: #1 Введение в индексы" author="" url="https://doberbeatzblog.wordpress.com/2017/03/13/postgresql-indexes/" tags="potgresql index" ctime="20180713153040" dir="152828553478xr7qmhdx" file="text.html"/>
+   </recordtable>
+  </node>
+  <node crypt="" id="1531477847aiodnph7a2" name="Javascript">
+   <recordtable>
+    <record id="1481087021o8adwivxnr" name="Check variable to undefined" author="" url="http://stackoverflow.com/questions/3390396/how-to-check-for-undefined-in-javascript" tags="javascript undefined" ctime="20180713153047" dir="1481087021qhngwumjgq" file="text.html"/>
+    <record id="1481175219mykt38l880" name="JSDoc - Документирование кода Javascript" author="" url="" tags="javascript doc" ctime="20180713153047" dir="1481175219i030428aee" file="text.html"/>
+    <record id="1481188912s0u0h1v6vn" name="Наиболее частые функции и методы" author="Mikhail &quot;Velonski&quot; Eremeev" url="" tags="javascript code" ctime="20180713153047" dir="1481188912zsfn0jcxj2" file="text.html"/>
+    <record id="1482208039frzfjp1zgk" name="Load scripts after page has loaded?" author="" url="http://stackoverflow.com/questions/5490996/load-scripts-after-page-has-loaded" tags="javascript script load" ctime="20180713153047" dir="14822080390gqvj60dtf" file="text.html"/>
+    <record id="1523013114i6jsukktws" name="How to check if array element exists or not in javascript?" author="" url="https://stackoverflow.com/questions/13107855/how-to-check-if-array-element-exists-or-not-in-javascript#13107879" tags="javascript array element exists" ctime="20180713153047" dir="1523013114alxz4mdfrp" file="text.html"/>
+    <record id="1528548267yef51ts8lj" name="How do you post to an iframe?&#10;" author="" url="https://stackoverflow.com/questions/168455/how-do-you-post-to-an-iframe#168488" tags="javascript iframe post" ctime="20180713153047" dir="1528548267k95xrvg4uk" file="text.html"/>
+    <record id="1528548321odbdqsb6r0" name="How to post data to iframe with Jquery&#10;" author="" url="https://stackoverflow.com/questions/20353162/how-to-post-data-to-iframe-with-jquery" tags="javascript iframe post jquery" ctime="20180713153047" dir="1528548321fbxk5cwr9v" file="text.html"/>
+    <record id="1529313845nupepkbo5h" name="JavaScript Extending Class" author="" url="https://stackoverflow.com/questions/15192722/javascript-extending-class" tags="javascript extend class prototype" ctime="20180713153047" dir="1529313845i0w9mcqlww" file="text.html"/>
+    <record id="1529565639ustqr4ckjf" name="Create object from string" author="" url="https://stackoverflow.com/questions/9803947/create-object-from-string#9804142" tags="javascript create object string class" ctime="20180713153047" dir="1529565639tvgibrrpc4" file="text.html"/>
+    <record id="1529901959dx1icedo1i" name="get html code using javascript with a url&#10;" author="" url="https://stackoverflow.com/questions/6375461/get-html-code-using-javascript-with-a-url#6375580" tags="javascript get html code" ctime="20180713153047" dir="1529901959y5xisb0eej" file="text.html"/>
+    <record id="15307759049jsnh55lx2" name="How to escape regular expression special characters using javascript?" author="" url="https://stackoverflow.com/questions/3115150/how-to-escape-regular-expression-special-characters-using-javascript#9310752" tags="javascript regexp escape special characters" ctime="20180713153047" dir="1530775904iltlvi8ih7" file="text.html"/>
+    <record id="15307857420p8y8e8n0l" name="How do you clone an Array of Objects in Javascript?" author="" url="https://stackoverflow.com/questions/597588/how-do-you-clone-an-array-of-objects-in-javascript#23481096" tags="javascript clone array" ctime="20180713153047" dir="1530785742ggtmyq4f0b" file="text.html"/>
+    <record id="1530785819lhvciyjn5y" name="What is the most efficient way to deep clone an object in JavaScript?" author="" url="https://stackoverflow.com/questions/122102/what-is-the-most-efficient-way-to-deep-clone-an-object-in-javascript#122704" tags="javascript efficient way clone object" ctime="20180713153047" dir="1530785819wuxcc39euv" file="text.html"/>
+    <record id="1530785889heaf8z538d" name="How do I correctly clone a JavaScript object?" author="" url="https://stackoverflow.com/questions/728360/how-do-i-correctly-clone-a-javascript-object" tags="javascript clone object" ctime="20180713153047" dir="1530785889zw71tqnzb9" file="text.html"/>
+    <record id="1531313908kytt0iwu0l" name="Create GUID / UUID in JavaScript?" author="" url="https://stackoverflow.com/questions/105034/create-guid-uuid-in-javascript" tags="javascript uuid guid" ctime="20180713153047" dir="1531313908x92ebuhs8l" file="text.html"/>
+    <record id="1531720601j5msyi0k8i" name="How do I encode a JavaScript object as JSON?" author="" url="https://stackoverflow.com/questions/10919965/how-do-i-encode-a-javascript-object-as-json" tags="javascript json encode decode" ctime="20180716105641" dir="1531720601dz993fdabm" file="text.html"/>
+    <record id="1531976207pc2igfu3m3" name="How do I redirect with JavaScript?" author="" url="https://stackoverflow.com/questions/4744751/how-do-i-redirect-with-javascript#4745622" tags="javascript redirect" ctime="20180719095647" dir="1531976207csyki9e9s6" file="text.html"/>
+   </recordtable>
+  </node>
+  <node crypt="" id="15314778531bpcn2m0d7" name="MySQL">
+   <recordtable>
+    <record id="1491976851fiwwaai2rw" name="Setting Up a MySQL user account" author="" url="https://www.tutorialspoint.com/mysql/mysql-administration.htm" tags="linux mysql user" ctime="20180713153053" dir="1491976851dujp58ku0n" file="text.html"/>
+    <record id="1491978392vd3mphedko" name="MySQL - How to Reset the Root Password" author="" url="https://dev.mysql.com/doc/refman/5.7/en/resetting-permissions.html" tags="linux mysql root password" ctime="20180713153053" dir="1491978392temgb8vq9b" file="text.html"/>
+    <record id="14919794730lrvdvwmds" name="MySQL Commands" author="" url="" tags="linux mysql command" ctime="20180713153053" dir="1491979473f0e4bbbk2r" file="text.html"/>
+    <record id="1491989976wo2uvzfao5" name="Как создать нового пользователя и настроить права доступа в MySQL" author="" url="https://www.digitalocean.com/community/tutorials/mysql-ru" tags="linux mysql user" ctime="20180713153053" dir="1491989976aiuhfcbp4z" file="text.html"/>
+    <record id="1523514634032xxrbe3y" name="SQL Comments" author="" url="https://www.w3schools.com/Sql/sql_comments.asp" tags="sql comment" ctime="20180713153053" dir="1523514634ggjzotk8ng" file="text.html"/>
+    <record id="1528223783fc75hyveic" name="MySQL DELETE FROM with subquery as condition&#10;" author="" url="https://stackoverflow.com/questions/4471277/mysql-delete-from-with-subquery-as-condition#12969601" tags="mysql delete subquery" ctime="20180713153053" dir="15282237830nop25xlac" file="text.html"/>
+    <record id="1482000594tk9rh3wk3l" name="MySQL strict mode - проблема проверки на DEFAULT значения" author="" url="http://avz.org.ua/wp/2014/04/29/mysql-troubles-after-upgrade-to-5-6/" tags="mysql strict mode" ctime="20180713153153" dir="14820005946j9ibp7o3f" file="text.html"/>
+   </recordtable>
+  </node>
+  <node crypt="" id="15314778893nkhc22pvg" name="SSL">
+   <recordtable>
+    <record id="1517201886pq4uk714jt" name="Настройка Nginx с Let's Encrypt на CentOS 7" author="" url="https://habrahabr.ru/post/306128/" tags="ssl nginx letsencrypt" ctime="20180713153129" dir="1517201886yoochp7xd3" file="text.html"/>
+    <record id="151720203606r692bfo3" name="Создание сертификата Let’s Encrypt для Nginx в Ubuntu 16.04" author="" url="https://www.8host.com/blog/sozdanie-sertifikata-lets-encrypt-dlya-nginx-v-ubuntu-16-04/" tags="cron Let's Encrypt NGINX SSL TLS Ubuntu" ctime="20180713153129" dir="1517202036gy10rqld7r" file="text.html"/>
+    <record id="1517374959yyevq3ibp9" name="Let's Encrypt и nginx: настройка в Debian и Ubuntu" author="Алексей alexkbs" url="https://habrahabr.ru/post/318952/" tags="letsencrypt nginx certbot debian ubuntu apache2&#10;" ctime="20180713153129" dir="1517374959vp7wiab8qd" file="text.html"/>
+    <record id="1517375588zwox19xxia" name="Letsencrypt: webroot или standalone для приложения на node.js?" author="" url="https://toster.ru/q/405925" tags="Nginx SSL Node.js Цифровые сертификаты&#10;&#10;" ctime="20180713153129" dir="1517375588gpm3ht2ux0" file="text.html"/>
+   </recordtable>
+  </node>
+  <node crypt="" id="1531477896vay20z96c4" name="ssh">
+   <recordtable>
+    <record id="1514367727d7qzy59rx0" name="SSH/Debian" author="" url="https://wiki.debian.org/SSH" tags="debian ssh config" ctime="20180713153136" dir="1514367727cn6rucdupz" file="text.html"/>
+    <record id="1514367778vqcu6mst8h" name="SSH/Ubuntu" author="" url="https://help.ubuntu.com/community/SSH/OpenSSH/Configuring" tags="linux ssh config ubuntu" ctime="20180713153136" dir="1514367778y86l38ucdj" file="text.html"/>
+    <record id="1514367835bzmuvos9eh" name="Simplify Your Life With an SSH Config File" author="" url="http://nerderati.com/2011/03/17/simplify-your-life-with-an-ssh-config-file/" tags="linux config simple" ctime="20180713153136" dir="1514367835nwc05gjo50" file="text.html"/>
+   </recordtable>
+  </node>
+  <node crypt="" id="15314779025p0hsy8c3b" name="Nginx">
+   <recordtable>
+    <record id="1481821477slvtj4p76r" name="Типовая настройка Nginx от Veksoftware - файл \etc\nginx\nginx.conf" author="veksoftware" url="" tags="nginx config veksoftware" ctime="20180713153142" dir="14818214770lbismqpx6" file="text.html"/>
+    <record id="1481821091i2z7olqbqu" name="Nginx - настройка сайта для приложения на Yii2" author="veksoftware" url="" tags="nginx yii2" ctime="20180713153142" dir="1481821091ve23uw2s7u" file="text.html"/>
+    <record id="1481820982scz74581zl" name="Nginx - типовая настройка сайта" author="" url="" tags="nginx" ctime="20180713153142" dir="1481820982fbtxqzikbo" file="text.html"/>
+    <record id="1482042464sngx7kbxr2" name="Nginx - настройка от losst.ru" author="" url="https://losst.ru/ustanovka-nginx-ubuntu-16-04" tags="nginx install config" ctime="20180713153142" dir="1482042464faj9stu394" file="text.html"/>
+    <record id="15124580506rzlnyiis6" name="A Guide to Caching with NGINX and NGINX Plus" author="" url="https://www.nginx.com/blog/nginx-caching-guide/" tags="nginx cache" ctime="20180713153142" dir="1512458050s341o8ucrw" file="text.html"/>
+    <record id="1512458115fn81dhmmxi" name="How to Implement Browser Caching with Nginx's header Module on CentOS 7" author="Mateusz Papiernik&#10;" url="https://www.digitalocean.com/community/tutorials/how-to-implement-browser-caching-with-nginx-s-header-module-on-centos-7" tags="nginx cache" ctime="20180713153142" dir="1512458115k3rwximln4" file="text.html"/>
+    <record id="1512458209ja0qt2tokv" name="nginx кэширование статики" author="" url="https://remote-tech-support.ru/nginx-statics-caching/" tags="nginx cache" ctime="20180713153142" dir="1512458209a69fhr3zj4" file="text.html"/>
+    <record id="1512458291vqnak7mt0r" name="Кэширование браузера nginx и PHP" author="" url="https://remote-tech-support.ru/browser-caching-nginx/" tags="nginx cache" ctime="20180713153142" dir="15124582911mn5glg115" file="text.html"/>
+    <record id="151245836738n2jeql2d" name="Использование nginx для кэширования статического контента на frontend-сервере" author="" url="https://www.ylsoftware.com/news/599" tags="nginx cache" ctime="20180713153142" dir="1512458367oovs56feyb" file="text.html"/>
+    <record id="1512458420clku16355o" name="Настройка кэширования статики с помощью nginx в Debian" author="" url="http://debian-help.ru/web-servers/nastroika-keshirovaniya-statiki-s-pomoshyu-nginx-v-debian/" tags="nginx cache" ctime="20180713153142" dir="1512458420aj1sat6ghs" file="text.html"/>
+    <record id="1512458473yzx0na01wm" name="Кешируем статику" author="" url="https://habrahabr.ru/post/202290/" tags="nginx cache" ctime="20180713153142" dir="15124584737jmznfzqdd" file="text.html"/>
+    <record id="1517805516lzl2nrlk4z" name="Оптимизация TLS в NGINX" author="" url="https://ruhighload.com/post/%D0%9E%D0%BF%D1%82%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F+TLS+%D0%B2+NGINX_20160328" tags="nginx ssl tls config" ctime="20180713153142" dir="1517805516pz6tg2odyf" file="text.html"/>
+    <record id="1517805575go6trnkss4" name="Конфигурация nginx + php 7" author="" url="https://ruhighload.com/post/%D0%9A%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B0%D1%86%D0%B8%D1%8F+nginx+%2B+php+7" tags="nginx php php-fpm config" ctime="20180713153142" dir="1517805575a50pwp4yzh" file="text.html"/>
+    <record id="1517805667eil668rxcn" name="Использование Lua в Nginx" author="" url="https://ruhighload.com/post/%D0%98%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5+Lua+%D0%B2+Nginx" tags="nginx lua config" ctime="20180713153142" dir="151780566706cw5e6ab5" file="text.html"/>
+    <record id="151780571343w014t9k0" name="Кэширование с Nginx" author="" url="https://ruhighload.com/post/%D0%9A%D1%8D%D1%88%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5+%D1%81+Nginx" tags="nginx cache config" ctime="20180713153142" dir="15178057139d3w3cf7hj" file="text.html"/>
+    <record id="1517805951u8urjuu1ut" name="Распределенный кеш на основе Nginx и proxy_cache" author="" url="https://ruhighload.com/post/%D0%A0%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9+%D0%BA%D0%B5%D1%88+%D0%BD%D0%B0+%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%B5+Nginx+%D0%B8+proxy_cache" tags="nginx proxy cache config" ctime="20180713153142" dir="1517805951lim2zivjin" file="text.html"/>
+    <record id="1525765961as8a5fefja" name="Nginx - WebSocket proxying" author="" url="http://nginx.org/en/docs/http/websocket.html" tags="websocket nginx" ctime="20180713153142" dir="15257659617zoqyu19sp" file="text.html"/>
+   </recordtable>
+  </node>
+  <node crypt="" id="1531477925ryxvd8o5tm" name="Debian">
+   <recordtable>
+    <record id="1489468363uvxo5mjh1g" name="Установка php 7.0.5 на Debian" author="https://rusadmin.biz/author/rusadmin/" url="https://rusadmin.biz/web-server/ustanovka-php-7-0-5-na-debian/" tags="linux debian php install" ctime="20180713153205" dir="1489468363ob1qpzbpj1" file="text.html"/>
+    <record id="14894684520i0kzkwpeu" name="Установка php-fpm и nginx на Debian 8" author="https://rusadmin.biz/author/rusadmin/" url="https://rusadmin.biz/web-server/setup-nginx-php-fpm-on-debian/" tags="linux debian nginx php install" ctime="20180713153205" dir="1489468452bbyi7ox8c3" file="text.html"/>
+    <record id="1489468545yruzngw1cm" name="Установка apache и php на Debian" author="https://rusadmin.biz/author/rusadmin/" url="https://rusadmin.biz/web-server/ustanovka-apache-i-php-na-debian/" tags="linux debian php apache2 install" ctime="20180713153205" dir="1489468545baxx8hk50q" file="text.html"/>
+    <record id="1490090075yp8yqfhtvv" name="Debian php packets for note" author="" url="" tags="php debian" ctime="20180713153205" dir="1490090075q71ffm3t8d" file="text.html"/>
+   </recordtable>
+  </node>
+  <node crypt="" id="1531477932byqkfkzzcs" name="Ubuntu">
+   <recordtable>
+    <record id="15081321631aht0fgt0y" name="Fixing GPG Keys in UBUNTU" author="" url="https://askubuntu.com/questions/127326/how-to-fix-missing-gpg-keys#141088" tags="ubuntu gpg key fix" ctime="20180713153212" dir="1508132163m900v985np" file="text.html"/>
+    <record id="1526448340to4a123j55" name="RemoveOldKernels" author="" url="https://help.ubuntu.com/community/RemoveOldKernels" tags="linux ubuntu kernel remove" ctime="20180713153212" dir="1526448340t11x5xn0jj" file="text.html"/>
+    <record id="15264484031tj48bdn71" name="False disk full error: apt-get unable to install or remove" author="" url="https://askubuntu.com/questions/668582/false-disk-full-error-apt-get-unable-to-install-or-remove/864624#comment972298_668582" tags="linux ubuntu disk full error" ctime="20180713153212" dir="15264484036jegw8oiu1" file="text.html"/>
+    <record id="1531466366eri4gjtp7i" name="'Some index files failed to download' while updating" author="" url="https://askubuntu.com/questions/208037/some-index-files-failed-to-download-while-updating#244257" tags="ubuntu index files failed download" ctime="20180713153212" dir="1531466366vjs36vluxp" file="text.html"/>
+   </recordtable>
+  </node>
+ </content>
+</root>

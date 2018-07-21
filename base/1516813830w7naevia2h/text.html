@@ -1,0 +1,564 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<html><head><meta name="qrichtext" content="1" /><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><style type="text/css">
+p, li { white-space: pre-wrap; }
+</style></head><body style=" font-family:'DejaVu Sans'; font-size:11pt; font-weight:400; font-style:normal;">
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="answer-933375"></a><span style=" font-family:'Courier New,courier';">p</span><span style=" font-family:'Courier New,courier';">hp_sapi_name</span> is the function you will want to use as it returns a lowercase string of the interface type. In addition, there is the PHP constant <span style=" font-family:'Courier New,courier';">PHP_SAPI</span>. </p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Documentation can be found here: <a href="http://php.net/php_sapi_name"><span style=" text-decoration: underline; color:#0000ff;">http://php.net/php_sapi_name</span></a> </p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">For example, to determine if PHP is being run from the CLI, you could use this function: </p>
+<pre style=" margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier';">function isCommandLineInterface()</span></pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier';">{</span></pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier';">    return (php_sapi_name() === 'cli');</span></pre>
+<pre style=" margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier';">}</span> </pre>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="link-post-933375"></a><a href="https://stackoverflow.com/a/933375"><span style=" text-decoration: underline; color:#0000ff;">s</span></a><span style=" text-decoration: underline; color:#0000ff;">hare</span><a href="https://stackoverflow.com/posts/933375/edit"><span style=" text-decoration: underline; color:#0000ff;">improve this answer</span></a> </p></td>
+<td>
+<p align="right" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a href="https://stackoverflow.com/posts/933375/revisions"><span style=" text-decoration: underline; color:#0000ff;">edited </span></a><a href="https://stackoverflow.com/posts/933375/revisions"><span style=" text-decoration: underline; color:#0000ff;">Mar 12 '12 at 5:34</span></a> </p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p></td>
+<td>
+<p align="right" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">community wiki </p>
+<p align="right" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p align="right" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="history-933375"></a><a href="https://stackoverflow.com/posts/933375/revisions"><span style=" text-decoration: underline; color:#0000ff;">3</span></a><span style=" text-decoration: underline; color:#0000ff;"> revs, 3 users 44%</span><a href="https://stackoverflow.com/posts/933375/revisions"><span style=" text-decoration: underline; color:#0000ff;"><br /></span></a><a href="https://stackoverflow.com/users/18986"><span style=" text-decoration: underline; color:#0000ff;">Joe Lencioni</span></a> </p></td></tr></table></td>
+<td></td></tr>
+<tr>
+<td></td>
+<td>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="comments-933375"></a>8 </p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  </p></td></tr></table></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">More straightforward: <span style=" font-family:'Courier New,courier';">return php_sapi_name() == 'cli';</span> – <a href="https://stackoverflow.com/users/211204/savageman"><span style=" text-decoration: underline; color:#0000ff;">Savageman</span></a> <a href="https://stackoverflow.com/questions/933367/php-how-to-best-determine-if-the-current-invocation-is-from-cli-or-web-server#comment3588285_933375"><span style=" text-decoration: underline; color:#0000ff;">Aug 9 '10 at 19:18</span></a> </p></td></tr>
+<tr>
+<td>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">9 </p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  </p></td></tr></table></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">I did a research: if you invoke the script with <span style=" font-family:'Courier New,courier';">php-cgi</span> this won't work. In turn, it will return <span style=" font-family:'Courier New,courier';">cgi-fcgi</span> String. If you load the script as a web page from a browser, you'll get <span style=" font-family:'Courier New,courier';">apache2handler</span>. Hope this helps. I needed to use <span style=" font-family:'Courier New,courier';">php-cgi</span> in order to introduce <span style=" font-family:'Courier New,courier';">$_GET</span> variables: <span style=" font-family:'Courier New,courier';">php-cgi myscript.php arg1=one arg2=two</span>. Testing for not equal to <span style=" font-family:'Courier New,courier';">apache2handler</span> should be ok for <span style=" font-family:'Courier New,courier';">apache</span>. – <a href="https://stackoverflow.com/users/241750/sebastian"><span style=" text-decoration: underline; color:#0000ff;">Sebastian</span></a> <a href="https://stackoverflow.com/questions/933367/php-how-to-best-determine-if-the-current-invocation-is-from-cli-or-web-server#comment24662227_933375"><span style=" text-decoration: underline; color:#0000ff;">Jun 12 '13 at 1:01</span></a> </p></td></tr>
+<tr>
+<td>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2 </p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  </p></td></tr></table></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">A small caveat about this method: it will <span style=" font-style:italic;">not</span> return <span style=" font-family:'Courier New,courier';">&quot;cli&quot;</span> when run from a cron job. There's a number od differents keys to choose from inside of <span style=" font-family:'Courier New,courier';">$_SERVER</span> to determine more reliably whether the request came via HTTP or not. – <a href="https://stackoverflow.com/users/2133758/omninonsense"><span style=" text-decoration: underline; color:#0000ff;">omninonsense</span></a> <a href="https://stackoverflow.com/questions/933367/php-how-to-best-determine-if-the-current-invocation-is-from-cli-or-web-server#comment62701636_933375"><span style=" text-decoration: underline; color:#0000ff;">Jun 3 '16 at 8:00</span></a> </p></td></tr></table>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="comments-link-933375"></a>add a comment </p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="answer-933376"></a>up vote 20 down vote </p></td>
+<td>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">I think he means if PHP CLI is being invoked or if it is a response from a web request. The best way would be to use <span style=" font-family:'Courier New,courier';">php_sapi_name()</span> which if it was running a web request would echo Apache if that is what it was running. </p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">To list of a few taken from the php <a href="http://php.net/manual/en/function.php-sapi-name.php"><span style=" text-decoration: underline; color:#0000ff;">docs on </span></a><a href="http://php.net/manual/en/function.php-sapi-name.php"><span style=" font-family:'Courier New,courier'; text-decoration: underline; color:#0000ff;">php_sapi_name()</span></a>: </p>
+<ul style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;"><li style="" style=" margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">aolserver </li>
+<li style="" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">apache </li>
+<li style="" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">apache2filter </li>
+<li style="" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">apache2handler </li>
+<li style="" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">caudium </li>
+<li style="" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">cgi (until PHP 5.3) </li>
+<li style="" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">cgi-fcgi </li>
+<li style="" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">cli </li>
+<li style="" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">cli-server (<a href="http://php.net/manual/en/features.commandline.webserver.php"><span style=" text-decoration: underline; color:#0000ff;">Built-in web server</span></a> as of PHP 5.4)</li>
+<li style="" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">continuity </li>
+<li style="" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">embed </li>
+<li style="" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">fpm-fcgi </li>
+<li style="" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">isapi </li>
+<li style="" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">litespeed </li>
+<li style="" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">milter </li>
+<li style="" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">nsapi </li>
+<li style="" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">phttpd </li>
+<li style="" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">pi3web </li>
+<li style="" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">roxen </li>
+<li style="" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">thttpd </li>
+<li style="" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">tux</li>
+<li style="" style=" margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">webjames </li></ul>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="link-post-933376"></a><a href="https://stackoverflow.com/a/933376"><span style=" text-decoration: underline; color:#0000ff;">s</span></a><span style=" text-decoration: underline; color:#0000ff;">hare</span><a href="https://stackoverflow.com/posts/933376/edit"><span style=" text-decoration: underline; color:#0000ff;">improve this answer</span></a> </p></td>
+<td>
+<p align="right" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a href="https://stackoverflow.com/posts/933376/revisions"><span style=" text-decoration: underline; color:#0000ff;">edited </span></a><a href="https://stackoverflow.com/posts/933376/revisions"><span style=" text-decoration: underline; color:#0000ff;">Aug 8 '15 at 6:23</span></a> </p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p></td>
+<td>
+<p align="right" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">community wiki </p>
+<p align="right" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p align="right" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="history-933376"></a><a href="https://stackoverflow.com/posts/933376/revisions"><span style=" text-decoration: underline; color:#0000ff;">3</span></a><span style=" text-decoration: underline; color:#0000ff;"> revs, 2 users 69%</span><a href="https://stackoverflow.com/posts/933376/revisions"><span style=" text-decoration: underline; color:#0000ff;"><br /></span></a><a href="https://stackoverflow.com/users/107612"><span style=" text-decoration: underline; color:#0000ff;">Marc Towler</span></a> </p></td></tr></table></td></tr>
+<tr>
+<td></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="comments-link-933376"></a>add a comment </p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="answer-21184718"></a>up vote 11 down vote </p></td>
+<td>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">This should handle all the cases (including php-cgi) </p>
+<pre style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier';">return (php_sapi_name() === 'cli' OR defined('STDIN'));</span> </pre>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="link-post-21184718"></a><a href="https://stackoverflow.com/a/21184718"><span style=" text-decoration: underline; color:#0000ff;">s</span></a><span style=" text-decoration: underline; color:#0000ff;">hare</span><a href="https://stackoverflow.com/posts/21184718/edit"><span style=" text-decoration: underline; color:#0000ff;">improve this answer</span></a> </p></td>
+<td>
+<p align="right" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">answered <a href="https://stackoverflow.com/posts/21184718/revisions"><span style=" text-decoration: underline; color:#0000ff;">Jan 17 '14 at 11:22</span></a> </p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p></td>
+<td>
+<p align="right" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">community wiki </p>
+<p align="right" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p align="right" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="history-21184718"></a><a href="https://stackoverflow.com/posts/21184718/revisions"><span style=" text-decoration: underline; color:#0000ff;">r</span></a><span style=" text-decoration: underline; color:#0000ff;">bawaskar </span></p></td></tr></table></td></tr>
+<tr>
+<td></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="comments-link-21184718"></a>add a comment </p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="answer-25967493"></a>up vote 11 down vote </p></td>
+<td>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">I have been using this function for a few years </p>
+<pre style=" margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier';">function is_cli()</span></pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier';">{</span></pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier';">    if ( defined('STDIN') )</span></pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier';">    {</span></pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier';">        return true;</span></pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier';">    }</span></pre>
+<pre style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Courier New,courier';"><br /></pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier';">    if ( php_sapi_name() === 'cli' )</span></pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier';">    {</span></pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier';">        return true;</span></pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier';">    }</span></pre>
+<pre style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Courier New,courier';"><br /></pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier';">    if ( array_key_exists('SHELL', $_ENV) ) {</span></pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier';">        return true;</span></pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier';">    }</span></pre>
+<pre style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Courier New,courier';"><br /></pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier';">    if ( empty($_SERVER['REMOTE_ADDR']) and !isset($_SERVER['HTTP_USER_AGENT']) and count($_SERVER['argv']) &gt; 0) </span></pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier';">    {</span></pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier';">        return true;</span></pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier';">    } </span></pre>
+<pre style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Courier New,courier';"><br /></pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier';">    if ( !array_key_exists('REQUEST_METHOD', $_SERVER) )</span></pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier';">    {</span></pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier';">        return true;</span></pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier';">    }</span></pre>
+<pre style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Courier New,courier';"><br /></pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier';">    return false;</span></pre>
+<pre style=" margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier';">}</span> </pre>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Let me know what you think </p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="link-post-25967493"></a><a href="https://stackoverflow.com/a/25967493"><span style=" text-decoration: underline; color:#0000ff;">s</span></a><span style=" text-decoration: underline; color:#0000ff;">hare</span><a href="https://stackoverflow.com/posts/25967493/edit"><span style=" text-decoration: underline; color:#0000ff;">improve this answer</span></a> </p></td>
+<td>
+<p align="right" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a href="https://stackoverflow.com/posts/25967493/revisions"><span style=" text-decoration: underline; color:#0000ff;">edited </span></a><a href="https://stackoverflow.com/posts/25967493/revisions"><span style=" text-decoration: underline; color:#0000ff;">Oct 26 '16 at 14:50</span></a> </p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p></td>
+<td>
+<p align="right" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">community wiki </p>
+<p align="right" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p align="right" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="history-25967493"></a><a href="https://stackoverflow.com/posts/25967493/revisions"><span style=" text-decoration: underline; color:#0000ff;">3</span></a><span style=" text-decoration: underline; color:#0000ff;"> revs, 3 users 63%</span><a href="https://stackoverflow.com/posts/25967493/revisions"><span style=" text-decoration: underline; color:#0000ff;"><br /></span></a><a href="https://stackoverflow.com/users/936182"><span style=" text-decoration: underline; color:#0000ff;">Silver Moon</span></a> </p></td></tr></table></td></tr>
+<tr>
+<td></td>
+<td>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="comments-25967493"></a>7 </p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  </p></td></tr></table></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier';">array_key_exists('REQUEST_METHOD', $_SERVER) return true;</span> WAT? – <a href="https://stackoverflow.com/users/260007/biziclop"><span style=" text-decoration: underline; color:#0000ff;">biziclop</span></a> <a href="https://stackoverflow.com/questions/933367/php-how-to-best-determine-if-the-current-invocation-is-from-cli-or-web-server#comment59144465_25967493"><span style=" text-decoration: underline; color:#0000ff;">Mar 1 '16 at 22:42</span></a> </p></td></tr>
+<tr>
+<td>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">   </p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  </p></td></tr></table></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">@biziclop, the check for <span style=" font-family:'Courier New,courier';">array_key_exists('REQUEST_METHOD', $_SERVER)</span> is correct to assist the detection of the <span style=" font-style:italic;">source of the request</span>. When in <span style=" font-weight:600;">CLI</span>, the <span style=" font-family:'Courier New,courier';">$_SERVER</span> Super Global array WILL <span style=" font-weight:600;">NOT</span> HAVE the key <span style=" font-family:'Courier New,courier';">REQUEST_METHOD</span>, it only exists when the request is made via Web, hence, the author is absolutely on target when checking for it. – <a href="https://stackoverflow.com/users/4616249/julio-marchi"><span style=" text-decoration: underline; color:#0000ff;">Julio Marchi</span></a> <a href="https://stackoverflow.com/questions/933367/php-how-to-best-determine-if-the-current-invocation-is-from-cli-or-web-server#comment66287777_25967493"><span style=" text-decoration: underline; color:#0000ff;">Sep 14 '16 at 7:28</span></a> </p></td></tr>
+<tr>
+<td>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">1 </p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  </p></td></tr></table></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">@JulioMarchi: but shouldn't it <span style=" font-family:'Courier New,courier';">return false;</span> or do <span style=" font-family:'Courier New,courier';">if ( ! array_key_exists(…)) return true;</span>? – <a href="https://stackoverflow.com/users/260007/biziclop"><span style=" text-decoration: underline; color:#0000ff;">biziclop</span></a> <a href="https://stackoverflow.com/questions/933367/php-how-to-best-determine-if-the-current-invocation-is-from-cli-or-web-server#comment66305764_25967493"><span style=" text-decoration: underline; color:#0000ff;">Sep 14 '16 at 15:20</span></a> </p></td></tr>
+<tr>
+<td>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2 </p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  </p></td></tr></table></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">@biziclop, you are entirely right!!!! How could I miss such <span style=" font-weight:600;">enormous</span> small detail??? Shame on me... :). Surely, if the KEY <span style=" font-family:'Courier New,courier';">'REQUEST_METHOD'</span> is <span style=" font-weight:600;">NOT</span> found, then the function should return <span style=" font-family:'Courier New,courier';">FALSE</span> to indicate &quot;CLI&quot;. My apologies for not paying attention to the scope of the function itself... The author should fix it because the function actually works! – <a href="https://stackoverflow.com/users/4616249/julio-marchi"><span style=" text-decoration: underline; color:#0000ff;">Julio Marchi</span></a> <a href="https://stackoverflow.com/questions/933367/php-how-to-best-determine-if-the-current-invocation-is-from-cli-or-web-server#comment66421640_25967493"><span style=" text-decoration: underline; color:#0000ff;">Sep 18 '16 at 7:37</span></a> </p></td></tr></table>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="comments-link-25967493"></a>add a comment </p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="answer-41403285"></a>up vote 9 down vote </p></td>
+<td>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier';">php_sapi_name()</span> is really not the best way to perform this check because it depends on checking against many possible values. The php-cgi binary can be called from the command line, from a shell script or as a cron job and (in most cases) these should also be treated as 'cli' but <span style=" font-family:'Courier New,courier';">php_sapi_name()</span> will return different values for these (note that this isn't the case with the plain version of PHP but you want your code to work anywhere, right?). Not to mention that next year there may be new ways to use PHP that we can't possibly know now. I'd rather not think about it when all I care about is weather I should wrap my output in HTML or not. </p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Fortunately, PHP has a way to check for this specifically. Just use <span style=" font-family:'Courier New,courier';">http_response_code()</span> without any parameters and it'll return TRUE if ran from a web server type environment and FALSE if ran from a CLI type environment. Here is the code: </p>
+<pre style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier';">$is_web=http_response_code()!==FALSE;</span> </pre>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">This will even work if you accidentally(?) set a response code from a script running from the CLI (or something like the CLI) before you call this. </p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="link-post-41403285"></a><a href="https://stackoverflow.com/a/41403285"><span style=" text-decoration: underline; color:#0000ff;">s</span></a><span style=" text-decoration: underline; color:#0000ff;">hare</span><a href="https://stackoverflow.com/posts/41403285/edit"><span style=" text-decoration: underline; color:#0000ff;">improve this answer</span></a> </p></td>
+<td>
+<p align="right" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a href="https://stackoverflow.com/posts/41403285/revisions"><span style=" text-decoration: underline; color:#0000ff;">edited </span></a><a href="https://stackoverflow.com/posts/41403285/revisions"><span style=" text-decoration: underline; color:#0000ff;">Dec 30 '16 at 22:16</span></a> </p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p></td>
+<td>
+<p align="right" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">community wiki </p>
+<p align="right" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p align="right" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="history-41403285"></a><a href="https://stackoverflow.com/posts/41403285/revisions"><span style=" text-decoration: underline; color:#0000ff;">2</span></a><span style=" text-decoration: underline; color:#0000ff;"> revs</span><a href="https://stackoverflow.com/posts/41403285/revisions"><span style=" text-decoration: underline; color:#0000ff;"><br /></span></a><a href="https://stackoverflow.com/users/4138090"><span style=" text-decoration: underline; color:#0000ff;">krowe2</span></a> </p></td></tr></table></td></tr>
+<tr>
+<td></td>
+<td>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="comments-41403285"></a>1 </p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  </p></td></tr></table></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">You're right but why no one voted for your answer? – <a href="https://stackoverflow.com/users/1839495/terry-lin"><span style=" text-decoration: underline; color:#0000ff;">Terry Lin</span></a> <a href="https://stackoverflow.com/questions/933367/php-how-to-best-determine-if-the-current-invocation-is-from-cli-or-web-server#comment71651815_41403285"><span style=" text-decoration: underline; color:#0000ff;">Feb 15 '17 at 10:30</span></a> </p></td></tr>
+<tr>
+<td>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">2 </p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  </p></td></tr></table></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">This question was already old when I answered it. Up-voting this answer would've probably been more useful than posting another answer that is a duplicate except without the explanation. – <a href="https://stackoverflow.com/users/4138090/krowe2"><span style=" text-decoration: underline; color:#0000ff;">krowe2</span></a> <a href="https://stackoverflow.com/questions/933367/php-how-to-best-determine-if-the-current-invocation-is-from-cli-or-web-server#comment71665627_41403285"><span style=" text-decoration: underline; color:#0000ff;">Feb 15 '17 at 15:49</span></a> </p></td></tr></table>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="comments-link-41403285"></a>add a comment </p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="answer-42247484"></a>up vote 6 down vote </p></td>
+<td>
+<pre style=" margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier';">function is_cli() {</span></pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier';">    return !http_response_code();</span></pre>
+<pre style=" margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier';">}</span> </pre>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">example: </p>
+<pre style=" margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier';">if (is_cli()) {</span></pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier';">    echo 'command line';</span></pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier';">} else {</span></pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier';">    echo 'browser';</span></pre>
+<pre style=" margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier';">}</span> </pre>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="link-post-42247484"></a><a href="https://stackoverflow.com/a/42247484"><span style=" text-decoration: underline; color:#0000ff;">s</span></a><span style=" text-decoration: underline; color:#0000ff;">hare</span><a href="https://stackoverflow.com/posts/42247484/edit"><span style=" text-decoration: underline; color:#0000ff;">improve this answer</span></a> </p></td>
+<td>
+<p align="right" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a href="https://stackoverflow.com/posts/42247484/revisions"><span style=" text-decoration: underline; color:#0000ff;">edited </span></a><a href="https://stackoverflow.com/posts/42247484/revisions"><span style=" text-decoration: underline; color:#0000ff;">Feb 15 '17 at 18:06</span></a> </p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p></td>
+<td>
+<p align="right" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">community wiki </p>
+<p align="right" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p align="right" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="history-42247484"></a><a href="https://stackoverflow.com/posts/42247484/revisions"><span style=" text-decoration: underline; color:#0000ff;">2</span></a><span style=" text-decoration: underline; color:#0000ff;"> revs, 2 users 95%</span><a href="https://stackoverflow.com/posts/42247484/revisions"><span style=" text-decoration: underline; color:#0000ff;"><br /></span></a><a href="https://stackoverflow.com/users/1839495"><span style=" text-decoration: underline; color:#0000ff;">Terry Lin</span></a> </p></td></tr></table></td></tr>
+<tr>
+<td></td>
+<td>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="comments-42247484"></a>2 </p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  </p></td></tr></table></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">From the manual, &quot;FALSE will be returned if response_code is not provided and it is not invoked in a web server environment (such as from a CLI application). TRUE will be returned if response_code is provided and it is not invoked in a web server environment (but only when no previous response status has been set)&quot;. You've gotten your logic backwards. – <a href="https://stackoverflow.com/users/4138090/krowe2"><span style=" text-decoration: underline; color:#0000ff;">krowe2</span></a> <a href="https://stackoverflow.com/questions/933367/php-how-to-best-determine-if-the-current-invocation-is-from-cli-or-web-server#comment71666409_42247484"><span style=" text-decoration: underline; color:#0000ff;">Feb 15 '17 at 16:04</span></a> </p></td></tr>
+<tr>
+<td>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">1 </p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  </p></td></tr></table></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">+1. Amazing. After so many years of fruitless research... I hereby award you the Nobel Memorial Prize in PHPics, shared with @krowe2 for his invaluable contribution of actually making it work. Congratulations! – <a href="https://stackoverflow.com/users/1479945/sz"><span style=" text-decoration: underline; color:#0000ff;">Sz.</span></a> <a href="https://stackoverflow.com/questions/933367/php-how-to-best-determine-if-the-current-invocation-is-from-cli-or-web-server#comment71671910_42247484"><span style=" text-decoration: underline; color:#0000ff;">Feb 15 '17 at 18:14</span></a> </p></td></tr></table>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="comments-link-42247484"></a>add a comment </p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="answer-933373"></a>up vote 3 down vote </p></td>
+<td>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Try </p>
+<pre style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier';">isset($_SERVER['REQUEST_METHOD'])</span> </pre>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">if it's set, you're in a browser. </p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Alternatlely, you could check if </p>
+<pre style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier';">isset($_SERVER['argv'])</span> </pre>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">but that might not be true on windows CLI, IDK. </p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="link-post-933373"></a><a href="https://stackoverflow.com/a/933373"><span style=" text-decoration: underline; color:#0000ff;">s</span></a><span style=" text-decoration: underline; color:#0000ff;">hare</span><a href="https://stackoverflow.com/posts/933373/edit"><span style=" text-decoration: underline; color:#0000ff;">improve this answer</span></a> </p></td>
+<td>
+<p align="right" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">answered <a href="https://stackoverflow.com/posts/933373/revisions"><span style=" text-decoration: underline; color:#0000ff;">Jun 1 '09 at 2:33</span></a> </p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p></td>
+<td>
+<p align="right" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">community wiki </p>
+<p align="right" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p align="right" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="history-933373"></a><a href="https://stackoverflow.com/posts/933373/revisions"><span style=" text-decoration: underline; color:#0000ff;">g</span></a><span style=" text-decoration: underline; color:#0000ff;">nud </span></p></td></tr></table></td></tr>
+<tr>
+<td></td>
+<td>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="comments-933373"></a>1 </p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  </p></td></tr></table></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Though it is not the &quot;correct&quot; answer it might be the more reliable – <a href="https://stackoverflow.com/users/463012/challet"><span style=" text-decoration: underline; color:#0000ff;">challet</span></a> <a href="https://stackoverflow.com/questions/933367/php-how-to-best-determine-if-the-current-invocation-is-from-cli-or-web-server#comment66991042_933373"><span style=" text-decoration: underline; color:#0000ff;">Oct 4 '16 at 11:56</span></a> </p></td></tr></table>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="comments-link-933373"></a>add a comment </p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="answer-16044755"></a>up vote 3 down vote </p></td>
+<td>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">I used this: </p>
+<pre style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier';">php_sapi_name() == 'cli' || (is_numeric($_SERVER['argc']) &amp;&amp; $_SERVER['argc'] &gt; 0)</span> </pre>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">This is from Drush codebase, environment.inc where they have similar check to make. </p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="link-post-16044755"></a><a href="https://stackoverflow.com/a/16044755"><span style=" text-decoration: underline; color:#0000ff;">s</span></a><span style=" text-decoration: underline; color:#0000ff;">hare</span><a href="https://stackoverflow.com/posts/16044755/edit"><span style=" text-decoration: underline; color:#0000ff;">improve this answer</span></a> </p></td>
+<td>
+<p align="right" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">answered <a href="https://stackoverflow.com/posts/16044755/revisions"><span style=" text-decoration: underline; color:#0000ff;">Apr 16 '13 at 18:48</span></a> </p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p></td>
+<td>
+<p align="right" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">community wiki </p>
+<p align="right" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p align="right" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="history-16044755"></a><a href="https://stackoverflow.com/posts/16044755/revisions"><span style=" text-decoration: underline; color:#0000ff;">R</span></a><span style=" text-decoration: underline; color:#0000ff;">anjan </span></p></td></tr></table></td></tr>
+<tr>
+<td></td>
+<td>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="comments-16044755"></a>3 </p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  </p></td></tr></table></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">If <span style=" font-family:'Courier New,courier';">register_argc_argv</span> is set, then passing in any amount of GET values will cause <span style=" font-family:'Courier New,courier';">argc</span> to not be 0. – <a href="https://stackoverflow.com/users/3477804/simon-w"><span style=" text-decoration: underline; color:#0000ff;">simon_w</span></a> <a href="https://stackoverflow.com/questions/933367/php-how-to-best-determine-if-the-current-invocation-is-from-cli-or-web-server#comment38489857_16044755"><span style=" text-decoration: underline; color:#0000ff;">Jul 17 '14 at 8:23</span></a> </p></td></tr></table>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="comments-link-16044755"></a>add a comment </p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="answer-933380"></a>up vote 1 down vote </p></td>
+<td>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">According to <a href="http://jp2.php.net/manual/en/features.commandline.php"><span style=" text-decoration: underline; color:#0000ff;">http://jp2.php.net/manual/en/features.commandline.php</span></a> There are a number of constants set only when running from the CLI. These constants are STDIN, STDOUT and STDERR. Testing for one of those will tell you if it is in cli mode </p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="link-post-933380"></a><a href="https://stackoverflow.com/a/933380"><span style=" text-decoration: underline; color:#0000ff;">s</span></a><span style=" text-decoration: underline; color:#0000ff;">hare</span><a href="https://stackoverflow.com/posts/933380/edit"><span style=" text-decoration: underline; color:#0000ff;">improve this answer</span></a> </p></td>
+<td>
+<p align="right" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">answered <a href="https://stackoverflow.com/posts/933380/revisions"><span style=" text-decoration: underline; color:#0000ff;">Jun 1 '09 at 2:36</span></a> </p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p></td>
+<td>
+<p align="right" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">community wiki </p>
+<p align="right" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p align="right" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="history-933380"></a><a href="https://stackoverflow.com/posts/933380/revisions"><span style=" text-decoration: underline; color:#0000ff;">J</span></a><span style=" text-decoration: underline; color:#0000ff;">onathan Fingland </span></p></td></tr></table></td></tr>
+<tr>
+<td></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="comments-link-933380"></a>add a comment </p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="answer-933374"></a>up vote 0 down vote </p></td>
+<td>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">I would suggest to check if some of the entries of the <a href="http://de.php.net/manual/en/reserved.variables.server.php"><span style=" text-decoration: underline; color:#0000ff;">$_SERVER</span></a> array are set. </p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">E.g.: </p>
+<pre style=" margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier';">if (isset($_SERVER['REQUEST_METHOD'])) {</span></pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier';">        print &quot;HTTP request\n&quot;;</span></pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier';">} else {</span></pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier';">        print &quot;CLI invocation\n&quot;;</span></pre>
+<pre style=" margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier';">}</span> </pre>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="link-post-933374"></a><a href="https://stackoverflow.com/a/933374"><span style=" text-decoration: underline; color:#0000ff;">s</span></a><span style=" text-decoration: underline; color:#0000ff;">hare</span><a href="https://stackoverflow.com/posts/933374/edit"><span style=" text-decoration: underline; color:#0000ff;">improve this answer</span></a> </p></td>
+<td>
+<p align="right" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">answered <a href="https://stackoverflow.com/posts/933374/revisions"><span style=" text-decoration: underline; color:#0000ff;">Jun 1 '09 at 2:34</span></a> </p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p></td>
+<td>
+<p align="right" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">community wiki </p>
+<p align="right" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p align="right" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="history-933374"></a><a href="https://stackoverflow.com/posts/933374/revisions"><span style=" text-decoration: underline; color:#0000ff;">r</span></a><span style=" text-decoration: underline; color:#0000ff;">odion </span></p></td></tr></table></td></tr>
+<tr>
+<td></td>
+<td>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="comments-933374"></a>   </p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  </p></td></tr></table></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">This won't work with <span style=" font-family:'Courier New,courier';">php-cgi</span> command line, it will set it to <span style=" font-family:'Courier New,courier';">GET</span> for: <span style=" font-family:'Courier New,courier';">php-cgi -f file.php arg1=2</span> – <a href="https://stackoverflow.com/users/241750/sebastian"><span style=" text-decoration: underline; color:#0000ff;">Sebastian</span></a> <a href="https://stackoverflow.com/questions/933367/php-how-to-best-determine-if-the-current-invocation-is-from-cli-or-web-server#comment24770270_933374"><span style=" text-decoration: underline; color:#0000ff;">Jun 14 '13 at 23:57</span></a> </p></td></tr>
+<tr>
+<td>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">   </p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  </p></td></tr></table></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">@Sebastian thanks for the observation – <a href="https://stackoverflow.com/users/936182/silver-moon"><span style=" text-decoration: underline; color:#0000ff;">Silver Moon</span></a> <a href="https://stackoverflow.com/questions/933367/php-how-to-best-determine-if-the-current-invocation-is-from-cli-or-web-server#comment40658607_933374"><span style=" text-decoration: underline; color:#0000ff;">Sep 22 '14 at 5:55</span></a> </p></td></tr></table>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="comments-link-933374"></a>add a comment </p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="answer-935142"></a>up vote 0 down vote </p></td>
+<td>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">My preferred method: </p>
+<pre style=" margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier';">if (array_key_exists('SHELL', $_ENV)) {</span></pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier';">  echo &quot;Console invocation&quot;;</span></pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier';">}</span></pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier';">else {</span></pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier';">  echo &quot;HTTP invocation&quot;;</span></pre>
+<pre style=" margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier';">}</span> </pre>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="link-post-935142"></a><a href="https://stackoverflow.com/a/935142"><span style=" text-decoration: underline; color:#0000ff;">s</span></a><span style=" text-decoration: underline; color:#0000ff;">hare</span><a href="https://stackoverflow.com/posts/935142/edit"><span style=" text-decoration: underline; color:#0000ff;">improve this answer</span></a> </p></td>
+<td>
+<p align="right" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">answered <a href="https://stackoverflow.com/posts/935142/revisions"><span style=" text-decoration: underline; color:#0000ff;">Jun 1 '09 at 14:45</span></a> </p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p></td>
+<td>
+<p align="right" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">community wiki </p>
+<p align="right" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p align="right" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="history-935142"></a><a href="https://stackoverflow.com/posts/935142/revisions"><span style=" text-decoration: underline; color:#0000ff;">T</span></a><span style=" text-decoration: underline; color:#0000ff;">ravis Beale </span></p></td></tr></table></td></tr>
+<tr>
+<td></td>
+<td>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="comments-935142"></a>   </p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  </p></td></tr></table></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">This won't work with <span style=" font-family:'Courier New,courier';">php-cgi</span> command line. – <a href="https://stackoverflow.com/users/241750/sebastian"><span style=" text-decoration: underline; color:#0000ff;">Sebastian</span></a> <a href="https://stackoverflow.com/questions/933367/php-how-to-best-determine-if-the-current-invocation-is-from-cli-or-web-server#comment24767355_935142"><span style=" text-decoration: underline; color:#0000ff;">Jun 14 '13 at 20:53</span></a> </p></td></tr></table>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="comments-link-935142"></a>add a comment </p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="answer-19513327"></a>up vote 0 down vote </p></td>
+<td>
+<pre style=" margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier';">// Detect CLI calls</span></pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier';">define(&quot;IS_CLI_CALL&quot;,( strcmp(php_sapi_name(),'cli') == 0 ));</span></pre>
+<pre style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Courier New,courier';"><br /></pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier';">if(IS_CLI_CALL){</span></pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier';">   //do you stuff here</span></pre>
+<pre style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Courier New,courier';"><br /></pre>
+<pre style=" margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier';">}</span> </pre>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="link-post-19513327"></a><a href="https://stackoverflow.com/a/19513327"><span style=" text-decoration: underline; color:#0000ff;">s</span></a><span style=" text-decoration: underline; color:#0000ff;">hare</span><a href="https://stackoverflow.com/posts/19513327/edit"><span style=" text-decoration: underline; color:#0000ff;">improve this answer</span></a> </p></td>
+<td>
+<p align="right" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">answered <a href="https://stackoverflow.com/posts/19513327/revisions"><span style=" text-decoration: underline; color:#0000ff;">Oct 22 '13 at 8:55</span></a> </p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p></td>
+<td>
+<p align="right" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">community wiki </p>
+<p align="right" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p align="right" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="history-19513327"></a><a href="https://stackoverflow.com/posts/19513327/revisions"><span style=" text-decoration: underline; color:#0000ff;">H</span></a><span style=" text-decoration: underline; color:#0000ff;">ắc Huyền Minh </span></p></td></tr></table></td></tr>
+<tr>
+<td></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="comments-link-19513327"></a>add a comment </p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="answer-25624010"></a>up vote 0 down vote </p></td>
+<td>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">joomla way </p>
+<pre style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier';">if (array_key_exists('REQUEST_METHOD', $_SERVER)) die();</span> </pre>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="link-post-25624010"></a><a href="https://stackoverflow.com/a/25624010"><span style=" text-decoration: underline; color:#0000ff;">s</span></a><span style=" text-decoration: underline; color:#0000ff;">hare</span><a href="https://stackoverflow.com/posts/25624010/edit"><span style=" text-decoration: underline; color:#0000ff;">improve this answer</span></a> </p></td>
+<td>
+<p align="right" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">answered <a href="https://stackoverflow.com/posts/25624010/revisions"><span style=" text-decoration: underline; color:#0000ff;">Sep 2 '14 at 12:57</span></a> </p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p></td>
+<td>
+<p align="right" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">community wiki </p>
+<p align="right" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p align="right" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="history-25624010"></a><a href="https://stackoverflow.com/posts/25624010/revisions"><span style=" text-decoration: underline; color:#0000ff;">S</span></a><span style=" text-decoration: underline; color:#0000ff;">ander </span></p></td></tr></table></td></tr>
+<tr>
+<td></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="comments-link-25624010"></a>add a comment </p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="answer-38510863"></a>up vote 0 down vote </p></td>
+<td>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">An easy way is to interrogate the <span style=" font-family:'Courier New,courier';">$argv</span> variable, (Which you will probably do for command line parameters anyway). Even if there are no parameters <span style=" font-family:'Courier New,courier';">$argv</span> returns an empty array. </p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">If it is set, then cli was used. You may then assume all other invocations are via some web server or other. </p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">eg: </p>
+<pre style=" margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier';">if (isset($argv)) {</span></pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier';">  // Do the cli thing.</span></pre>
+<pre style=" margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier';">}</span> </pre></td></tr></table></body></html>

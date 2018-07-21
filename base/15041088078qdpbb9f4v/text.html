@@ -1,0 +1,544 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<html><head><meta name="qrichtext" content="1" /><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><style type="text/css">
+p, li { white-space: pre-wrap; }
+</style></head><body style=" font-family:'DejaVu Sans'; font-size:11pt; font-weight:400; font-style:normal;">
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" width="98%" cellspacing="2" cellpadding="0">
+<tr>
+<td>
+<p align="right" style=" margin-top:18px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:xx-large; font-weight:600; color:#000080;">Basic vi Commands</span></p></td></tr>
+<tr>
+<td></td></tr></table>
+<hr />
+<hr />
+<p style=" margin-top:14px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:large; font-weight:600; color:#000000;">What is </span><span style=" font-family:'Courier New,courier'; font-size:large; font-weight:600; color:#000000;">vi</span><span style=" font-family:'Times New Roman'; font-size:large; font-weight:600; color:#000000;">?</span></p>
+<p style=" margin-top:8px; margin-bottom:0px; margin-left:30px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; color:#000000;">The default editor that comes with the UNIX operating system is called </span><span style=" font-family:'Courier New,courier'; font-size:medium; color:#000000;">vi</span><span style=" font-family:'Times New Roman'; font-size:medium; color:#000000;"> (</span><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;">vi</span><span style=" font-family:'Times New Roman'; font-size:medium; color:#000000;">sual editor). [Alternate editors for UNIX environments include </span><span style=" font-family:'Courier New,courier'; font-size:medium; color:#000000;">pico</span><span style=" font-family:'Times New Roman'; font-size:medium; color:#000000;"> and </span><span style=" font-family:'Courier New,courier'; font-size:medium; color:#000000;">emacs</span><span style=" font-family:'Times New Roman'; font-size:medium; color:#000000;">, a product of GNU.]</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:30px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; color:#000000;">The UNIX </span><span style=" font-family:'Courier New,courier'; font-size:medium; color:#000000;">vi</span><span style=" font-family:'Times New Roman'; font-size:medium; color:#000000;"> editor is a full screen editor and has two modes of operation:</span></p>
+<ol style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;"><li style=" font-family:'Times New Roman'; font-size:medium; color:#000000;" style=" margin-top:12px; margin-bottom:0px; margin-left:30px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:medium; font-style:italic;">Command mode</span><span style=" font-size:medium;"> commands which cause action to be taken on the file, and</span></li>
+<li style=" font-family:'Times New Roman'; font-size:medium; color:#000000;" style=" margin-top:0px; margin-bottom:12px; margin-left:30px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:medium; font-style:italic;">Insert mode</span><span style=" font-size:medium;"> in which entered text is inserted into the file.</span></li></ol>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; color:#000000;">In the command mode, every character typed is a command that does something to the text file being edited; a character typed in the command mode may even cause the </span><span style=" font-family:'Courier New,courier'; font-size:medium; color:#000000;">vi</span><span style=" font-family:'Times New Roman'; font-size:medium; color:#000000;"> editor to enter the insert mode. In the insert mode, every character typed is added to the text in the file; pressing the </span><span style=" font-family:'Courier New,courier'; font-size:medium; color:#000000;">&lt;Esc&gt;</span><span style=" font-family:'Times New Roman'; font-size:medium; color:#000000;"> (</span><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;">Escape</span><span style=" font-family:'Times New Roman'; font-size:medium; color:#000000;">) key turns off the Insert mode.</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:30px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; color:#000000;">While there are a number of </span><span style=" font-family:'Courier New,courier'; font-size:medium; color:#000000;">vi</span><span style=" font-family:'Times New Roman'; font-size:medium; color:#000000;"> commands, just a handful of these is usually sufficient for beginning </span><span style=" font-family:'Courier New,courier'; font-size:medium; color:#000000;">vi</span><span style=" font-family:'Times New Roman'; font-size:medium; color:#000000;"> users. To assist such users, this Web page contains a sampling of basic </span><span style=" font-family:'Courier New,courier'; font-size:medium; color:#000000;">vi</span><span style=" font-family:'Times New Roman'; font-size:medium; color:#000000;"> commands. The most basic and useful commands are marked with an asterisk (</span><span style=" font-family:'Courier New,courier'; font-size:medium; color:#000000;">*</span><span style=" font-family:'Times New Roman'; font-size:medium; color:#000000;"> or star) in the tables below. With practice, these commands should become automatic.</span></p>
+<p style=" margin-top:0px; margin-bottom:8px; margin-left:30px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;">NOTE:</span><span style=" font-family:'Times New Roman'; font-size:medium; color:#000000;"> Both UNIX and </span><span style=" font-family:'Courier New,courier'; font-size:medium; color:#000000;">vi</span><span style=" font-family:'Times New Roman'; font-size:medium; color:#000000;"> are </span><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;">case-sensitive</span><span style=" font-family:'Times New Roman'; font-size:medium; color:#000000;">. Be sure not to use a capital letter in place of a lowercase letter; the results will not be what you expect.</span></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Times New Roman'; font-size:medium; color:#000000;"><br /></p>
+<hr />
+<p style=" margin-top:14px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:large; font-weight:600; color:#000000;">To Get Into and Out Of </span><span style=" font-family:'Courier New,courier'; font-size:large; font-weight:600; color:#000000;">vi</span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;">To Start </span><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; color:#000000;">vi</span></p>
+<p style=" margin-top:0px; margin-bottom:8px; margin-left:30px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; color:#000000;">To use </span><span style=" font-family:'Courier New,courier'; font-size:medium; color:#000000;">vi</span><span style=" font-family:'Times New Roman'; font-size:medium; color:#000000;"> on a file, type in </span><span style=" font-family:'Courier New,courier'; font-size:medium; color:#000000;">vi filename</span><span style=" font-family:'Times New Roman'; font-size:medium; color:#000000;">. If the file named </span><span style=" font-family:'Courier New,courier'; font-size:medium; color:#000000;">filename</span><span style=" font-family:'Times New Roman'; font-size:medium; color:#000000;"> exists, then the first page (or screen) of the file will be displayed; if the file does not exist, then an empty file and screen are created into which you may enter text.</span></p>
+<p align="center" style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Times New Roman'; font-size:medium; color:#000000;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" align="center" cellspacing="2" cellpadding="0">
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;">*</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; color:#000000;">vi filename</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;">edit </span><span style=" font-family:'Courier New,courier'; font-size:medium; font-style:italic; color:#000000;">filename</span><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;"> starting at line 1</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; color:#000000;">vi -r filename</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;">recover </span><span style=" font-family:'Courier New,courier'; font-size:medium; font-style:italic; color:#000000;">filename</span><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;"> that was being edited when system crashed</span></p></td></tr>
+<tr>
+<td></td>
+<td></td>
+<td></td></tr></table>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;">To Exit </span><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; color:#000000;">vi</span></p>
+<p style=" margin-top:8px; margin-bottom:0px; margin-left:30px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; color:#000000;">Usually the new or modified file is saved when you leave </span><span style=" font-family:'Courier New,courier'; font-size:medium; color:#000000;">vi</span><span style=" font-family:'Times New Roman'; font-size:medium; color:#000000;">. However, it is also possible to quit </span><span style=" font-family:'Courier New,courier'; font-size:medium; color:#000000;">vi</span><span style=" font-family:'Times New Roman'; font-size:medium; color:#000000;"> without saving the file.</span></p>
+<p style=" margin-top:0px; margin-bottom:8px; margin-left:30px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;">Note:</span><span style=" font-family:'Times New Roman'; font-size:medium; color:#000000;"> The cursor moves to bottom of screen whenever a colon (</span><span style=" font-family:'Courier New,courier'; font-size:medium; color:#000000;">:</span><span style=" font-family:'Times New Roman'; font-size:medium; color:#000000;">) is typed. This type of command is completed by hitting the </span><span style=" font-family:'Courier New,courier'; font-size:medium; color:#000000;">&lt;Return&gt;</span><span style=" font-family:'Times New Roman'; font-size:medium; color:#000000;"> (or </span><span style=" font-family:'Courier New,courier'; font-size:medium; color:#000000;">&lt;Enter&gt;</span><span style=" font-family:'Times New Roman'; font-size:medium; color:#000000;">) key.</span></p>
+<p align="center" style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Times New Roman'; font-size:medium; color:#000000;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" align="center" cellspacing="2" cellpadding="0">
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;">*</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; color:#000000;">:x&lt;Return&gt;</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;">quit </span><span style=" font-family:'Courier New,courier'; font-size:medium; font-style:italic; color:#000000;">vi</span><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;">, writing out modified file to file named in original invocation</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; color:#000000;">:wq&lt;Return&gt;</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;">quit </span><span style=" font-family:'Courier New,courier'; font-size:medium; font-style:italic; color:#000000;">vi</span><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;">, writing out modified file to file named in original invocation</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; color:#000000;">:q&lt;Return&gt;</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;">quit (or exit) </span><span style=" font-family:'Courier New,courier'; font-size:medium; font-style:italic; color:#000000;">vi</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;">*</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; color:#000000;">:q!&lt;Return&gt;</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;">quit </span><span style=" font-family:'Courier New,courier'; font-size:medium; font-style:italic; color:#000000;">vi</span><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;"> even though latest changes have not been saved for this </span><span style=" font-family:'Courier New,courier'; font-size:medium; font-style:italic; color:#000000;">vi</span><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;"> call</span></p></td></tr>
+<tr>
+<td></td>
+<td></td>
+<td></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Times New Roman'; font-size:medium; color:#000000;"><br /></p>
+<hr />
+<p style=" margin-top:14px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:large; font-weight:600; color:#000000;">Moving the Cursor</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:30px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; color:#000000;">Unlike many of the PC and MacIntosh editors, </span><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;">the mouse does not move the cursor</span><span style=" font-family:'Times New Roman'; font-size:medium; color:#000000;"> within the </span><span style=" font-family:'Courier New,courier'; font-size:medium; color:#000000;">vi</span><span style=" font-family:'Times New Roman'; font-size:medium; color:#000000;"> editor screen (or window). You must use the the key commands listed below. On some UNIX platforms, the arrow keys may be used as well; however, since </span><span style=" font-family:'Courier New,courier'; font-size:medium; color:#000000;">vi</span><span style=" font-family:'Times New Roman'; font-size:medium; color:#000000;"> was designed with the Qwerty keyboard (containing no arrow keys) in mind, the arrow keys sometimes produce strange effects in </span><span style=" font-family:'Courier New,courier'; font-size:medium; color:#000000;">vi</span><span style=" font-family:'Times New Roman'; font-size:medium; color:#000000;"> and should be avoided.</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:30px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; color:#000000;">If you go back and forth between a PC environment and a UNIX environment, you may find that this dissimilarity in methods for cursor movement is the most frustrating difference between the two.</span></p>
+<p style=" margin-top:0px; margin-bottom:8px; margin-left:30px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; color:#000000;">In the table below, the symbol </span><span style=" font-family:'Courier New,courier'; font-size:medium; color:#000000;">^</span><span style=" font-family:'Times New Roman'; font-size:medium; color:#000000;"> before a letter means that the </span><span style=" font-family:'Courier New,courier'; font-size:medium; color:#000000;">&lt;Ctrl&gt;</span><span style=" font-family:'Times New Roman'; font-size:medium; color:#000000;"> key should be held down while the letter key is pressed.</span></p>
+<p align="center" style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Times New Roman'; font-size:medium; color:#000000;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" align="center" cellspacing="2" cellpadding="0">
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;">*</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; color:#000000;">j</span><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;"> </span><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; font-style:italic; color:#000000;">or</span><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;"> </span><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; color:#000000;">&lt;Return&gt;</span><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;"> <br />  [</span><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; font-style:italic; color:#000000;">or</span><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;"> down-arrow]</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;">move cursor down one line</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;">*</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; color:#000000;">k</span><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;"> [</span><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; font-style:italic; color:#000000;">or</span><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;"> up-arrow]</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;">move cursor up one line</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;">*</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; color:#000000;">h</span><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;"> </span><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; font-style:italic; color:#000000;">or</span><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;"> </span><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; color:#000000;">&lt;Backspace&gt;</span><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;"> <br />  [</span><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; font-style:italic; color:#000000;">or</span><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;"> left-arrow]</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;">move cursor left one character</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;">*</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; color:#000000;">l</span><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;"> </span><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; font-style:italic; color:#000000;">or</span><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;"> </span><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; color:#000000;">&lt;Space&gt;</span><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;"> <br />  [</span><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; font-style:italic; color:#000000;">or</span><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;"> right-arrow]</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;">move cursor right one character</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;">*</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; color:#000000;">0</span><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;"> (zero)</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;">move cursor to start of current line (the one with the cursor)</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;">*</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; color:#000000;">$</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;">move cursor to end of current line</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; color:#000000;">w</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;">move cursor to beginning of next word</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; color:#000000;">b</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;">move cursor back to beginning of preceding word</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; color:#000000;">:0&lt;Return&gt; </span><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; font-style:italic; color:#000000;">or</span><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; color:#000000;"> 1G</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;">move cursor to first line in file</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; color:#000000;">:n&lt;Return&gt; </span><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; font-style:italic; color:#000000;">or</span><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; color:#000000;"> nG</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;">move cursor to line </span><span style=" font-family:'Courier New,courier'; font-size:medium; font-style:italic; color:#000000;">n</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; color:#000000;">:$&lt;Return&gt; </span><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; font-style:italic; color:#000000;">or</span><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; color:#000000;"> G</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;">move cursor to last line in file</span></p></td></tr>
+<tr>
+<td></td>
+<td></td>
+<td></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Times New Roman'; font-size:medium; color:#000000;"><br /></p>
+<hr />
+<p style=" margin-top:14px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:large; font-weight:600; color:#000000;">Screen Manipulation</span></p>
+<p style=" margin-top:0px; margin-bottom:8px; margin-left:30px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; color:#000000;">The following commands allow the </span><span style=" font-family:'Courier New,courier'; font-size:medium; color:#000000;">vi</span><span style=" font-family:'Times New Roman'; font-size:medium; color:#000000;"> editor screen (or window) to move up or down several lines and to be refreshed.</span></p>
+<p align="center" style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Times New Roman'; font-size:medium; color:#000000;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" align="center" cellspacing="2" cellpadding="0">
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; color:#000000;">^f</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;">move forward one screen</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; color:#000000;">^b</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;">move backward one screen</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; color:#000000;">^d</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;">move down (forward) one half screen</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; color:#000000;">^u</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;">move up (back) one half screen</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; color:#000000;">^l</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;">redraws the screen</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; color:#000000;">^r</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;">redraws the screen, removing deleted lines</span></p></td></tr>
+<tr>
+<td></td>
+<td></td>
+<td></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Times New Roman'; font-size:medium; color:#000000;"><br /></p>
+<hr />
+<p style=" margin-top:14px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:large; font-weight:600; color:#000000;">Adding, Changing, and Deleting Text</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:30px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; color:#000000;">Unlike PC editors, you cannot replace or delete text by highlighting it with the mouse. Instead use the commands in the following tables.</span></p>
+<p style=" margin-top:0px; margin-bottom:8px; margin-left:30px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; color:#000000;">Perhaps the most important command is the one that allows you to back up and </span><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;">undo</span><span style=" font-family:'Times New Roman'; font-size:medium; color:#000000;"> your last action. Unfortunately, this command acts like a toggle, undoing and redoing your most recent action. You cannot go back more than one step.</span></p>
+<p align="center" style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Times New Roman'; font-size:medium; color:#000000;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" align="center" cellspacing="2" cellpadding="0">
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;">*</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; color:#000000;">u</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;">UNDO WHATEVER YOU JUST DID; a simple toggle</span></p></td></tr>
+<tr>
+<td></td>
+<td></td>
+<td></td></tr></table>
+<p style=" margin-top:0px; margin-bottom:8px; margin-left:30px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; color:#000000;">The main purpose of an editor is to create, add, or modify text for a file.</span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;">Inserting or Adding Text</span></p>
+<p style=" margin-top:0px; margin-bottom:8px; margin-left:30px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; color:#000000;">The following commands allow you to insert and add text. Each of these commands puts the </span><span style=" font-family:'Courier New,courier'; font-size:medium; color:#000000;">vi</span><span style=" font-family:'Times New Roman'; font-size:medium; color:#000000;"> editor into insert mode; thus, the </span><span style=" font-family:'Courier New,courier'; font-size:medium; color:#000000;">&lt;Esc&gt;</span><span style=" font-family:'Times New Roman'; font-size:medium; color:#000000;"> key must be pressed to terminate the entry of text and to put the </span><span style=" font-family:'Courier New,courier'; font-size:medium; color:#000000;">vi</span><span style=" font-family:'Times New Roman'; font-size:medium; color:#000000;"> editor back into command mode.</span></p>
+<p align="center" style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Times New Roman'; font-size:medium; color:#000000;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" align="center" cellspacing="2" cellpadding="0">
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;">*</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; color:#000000;">i</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;">insert text before cursor, until </span><span style=" font-family:'Courier New,courier'; font-size:medium; font-style:italic; color:#000000;">&lt;Esc&gt;</span><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;"> hit</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; color:#000000;">I</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;">insert text at beginning of current line, until </span><span style=" font-family:'Courier New,courier'; font-size:medium; font-style:italic; color:#000000;">&lt;Esc&gt;</span><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;"> hit</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;">*</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; color:#000000;">a</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;">append text after cursor, until </span><span style=" font-family:'Courier New,courier'; font-size:medium; font-style:italic; color:#000000;">&lt;Esc&gt;</span><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;"> hit</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; color:#000000;">A</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;">append text to end of current line, until </span><span style=" font-family:'Courier New,courier'; font-size:medium; font-style:italic; color:#000000;">&lt;Esc&gt;</span><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;"> hit</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;">*</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; color:#000000;">o</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;">open and put text in a new line below current line, until </span><span style=" font-family:'Courier New,courier'; font-size:medium; font-style:italic; color:#000000;">&lt;Esc&gt;</span><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;"> hit</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;">*</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; color:#000000;">O</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;">open and put text in a new line above current line, until </span><span style=" font-family:'Courier New,courier'; font-size:medium; font-style:italic; color:#000000;">&lt;Esc&gt;</span><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;"> hit</span></p></td></tr>
+<tr>
+<td></td>
+<td></td>
+<td></td></tr></table>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;">Changing Text</span></p>
+<p style=" margin-top:0px; margin-bottom:8px; margin-left:30px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; color:#000000;">The following commands allow you to modify text.</span></p>
+<p align="center" style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Times New Roman'; font-size:medium; color:#000000;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" align="center" cellspacing="2" cellpadding="0">
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;">*</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; color:#000000;">r</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;">replace single character under cursor (no </span><span style=" font-family:'Courier New,courier'; font-size:medium; font-style:italic; color:#000000;">&lt;Esc&gt;</span><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;"> needed)</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; color:#000000;">R</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;">replace characters, starting with current cursor position, until </span><span style=" font-family:'Courier New,courier'; font-size:medium; font-style:italic; color:#000000;">&lt;Esc&gt;</span><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;"> hit</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; color:#000000;">cw</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;">change the current word with new text, <br />starting with the character under cursor, until </span><span style=" font-family:'Courier New,courier'; font-size:medium; font-style:italic; color:#000000;">&lt;Esc&gt;</span><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;"> hit</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; color:#000000;">cNw</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;">change </span><span style=" font-family:'Courier New,courier'; font-size:medium; font-style:italic; color:#000000;">N</span><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;"> words beginning with character under cursor, until </span><span style=" font-family:'Courier New,courier'; font-size:medium; font-style:italic; color:#000000;">&lt;Esc&gt;</span><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;"> hit; <br />  e.g., </span><span style=" font-family:'Courier New,courier'; font-size:medium; font-style:italic; color:#000000;">c5w</span><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;"> changes 5 words</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; color:#000000;">C</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;">change (replace) the characters in the current line, until </span><span style=" font-family:'Courier New,courier'; font-size:medium; font-style:italic; color:#000000;">&lt;Esc&gt;</span><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;"> hit</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; color:#000000;">cc</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;">change (replace) the entire current line, stopping when </span><span style=" font-family:'Courier New,courier'; font-size:medium; font-style:italic; color:#000000;">&lt;Esc&gt;</span><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;"> is hit</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; color:#000000;">Ncc</span><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;"> </span><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; font-style:italic; color:#000000;">or</span><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;"> </span><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; color:#000000;">cNc</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;">change (replace) the next N lines, starting with the current line,<br />stopping when </span><span style=" font-family:'Courier New,courier'; font-size:medium; font-style:italic; color:#000000;">&lt;Esc&gt;</span><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;"> is hit</span></p></td></tr>
+<tr>
+<td></td>
+<td></td>
+<td></td></tr></table>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;">Deleting Text</span></p>
+<p style=" margin-top:0px; margin-bottom:8px; margin-left:30px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; color:#000000;">The following commands allow you to delete text.</span></p>
+<p align="center" style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Times New Roman'; font-size:medium; color:#000000;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" align="center" cellspacing="2" cellpadding="0">
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;">*</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; color:#000000;">x</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;">delete single character under cursor</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; color:#000000;">Nx</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;">delete N characters, starting with character under cursor</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; color:#000000;">dw</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;">delete the single word beginning with character under cursor</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; color:#000000;">dNw</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;">delete </span><span style=" font-family:'Courier New,courier'; font-size:medium; font-style:italic; color:#000000;">N</span><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;"> words beginning with character under cursor; <br />  e.g., </span><span style=" font-family:'Courier New,courier'; font-size:medium; font-style:italic; color:#000000;">d5w</span><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;"> deletes 5 words</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; color:#000000;">D</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;">delete the remainder of the line, starting with current cursor position</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;">*</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; color:#000000;">dd</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;">delete entire current line</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; color:#000000;">Ndd</span><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;"> </span><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; font-style:italic; color:#000000;">or</span><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;"> </span><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; color:#000000;">dNd</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;">delete </span><span style=" font-family:'Courier New,courier'; font-size:medium; font-style:italic; color:#000000;">N</span><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;"> lines, beginning with the current line; <br />  e.g., </span><span style=" font-family:'Courier New,courier'; font-size:medium; font-style:italic; color:#000000;">5dd</span><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;"> deletes 5 lines</span></p></td></tr>
+<tr>
+<td></td>
+<td></td>
+<td></td></tr></table>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;">Cutting and Pasting Text</span></p>
+<p style=" margin-top:0px; margin-bottom:8px; margin-left:30px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; color:#000000;">The following commands allow you to copy and paste text.</span></p>
+<p align="center" style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Times New Roman'; font-size:medium; color:#000000;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" align="center" cellspacing="2" cellpadding="0">
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; color:#000000;">yy</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;">copy (yank, cut) the current line into the buffer</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; color:#000000;">Nyy</span><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;"> </span><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; font-style:italic; color:#000000;">or</span><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;"> </span><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; color:#000000;">yNy</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;">copy (yank, cut) the next N lines, including the current line, into the buffer</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; color:#000000;">p</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;">put (paste) the line(s) in the buffer into the text after the current line</span></p></td></tr>
+<tr>
+<td></td>
+<td></td>
+<td></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Times New Roman'; font-size:medium; color:#000000;"><br /></p>
+<hr />
+<p style=" margin-top:14px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:large; font-weight:600; color:#000000;">Other Commands</span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;">Searching Text</span></p>
+<p style=" margin-top:0px; margin-bottom:8px; margin-left:30px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; color:#000000;">A common occurrence in text editing is to replace one word or phase by another. To locate instances of particular sets of characters (or strings), use the following commands.</span></p>
+<p align="center" style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Times New Roman'; font-size:medium; color:#000000;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" align="center" cellspacing="2" cellpadding="0">
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; color:#000000;">/string</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;">search forward for occurrence of </span><span style=" font-family:'Courier New,courier'; font-size:medium; font-style:italic; color:#000000;">string</span><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;"> in text</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; color:#000000;">?string</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;">search backward for occurrence of </span><span style=" font-family:'Courier New,courier'; font-size:medium; font-style:italic; color:#000000;">string</span><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;"> in text</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; color:#000000;">n</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;">move to next occurrence of search string</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; color:#000000;">N</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;">move to next occurrence of search string in opposite direction</span></p></td></tr>
+<tr>
+<td></td>
+<td></td>
+<td></td></tr></table>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;">Determining Line Numbers</span></p>
+<p style=" margin-top:0px; margin-bottom:8px; margin-left:30px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; color:#000000;">Being able to determine the line number of the current line or the total number of lines in the file being edited is sometimes useful.</span></p>
+<p align="center" style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Times New Roman'; font-size:medium; color:#000000;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" align="center" cellspacing="2" cellpadding="0">
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; color:#000000;">:.=</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;">returns line number of current line at bottom of screen</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; color:#000000;">:=</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;">returns the total number of lines at bottom of screen</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; color:#000000;">^g</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;">provides the current line number, along with the total number of lines,<br />in the file at the bottom of the screen</span></p></td></tr>
+<tr>
+<td></td>
+<td></td>
+<td></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Times New Roman'; font-size:medium; color:#000000;"><br /></p>
+<hr />
+<p style=" margin-top:14px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:large; font-weight:600; color:#000000;">Saving and Reading Files</span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; color:#000000;">These commands permit you to input and output files other than the named file with which you are currently working.</span></p>
+<p align="center" style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Times New Roman'; font-size:medium; color:#000000;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" align="center" cellspacing="2" cellpadding="0">
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; color:#000000;">:r filename&lt;Return&gt;</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;">read file named </span><span style=" font-family:'Courier New,courier'; font-size:medium; font-style:italic; color:#000000;">filename</span><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;"> and insert after current line <br />(the line with cursor)</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; color:#000000;">:w&lt;Return&gt;</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;">write current contents to file named in original </span><span style=" font-family:'Courier New,courier'; font-size:medium; font-style:italic; color:#000000;">vi</span><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;"> call</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; color:#000000;">:w newfile&lt;Return&gt;</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;">write current contents to a new file named </span><span style=" font-family:'Courier New,courier'; font-size:medium; font-style:italic; color:#000000;">newfile</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; color:#000000;">:12,35w smallfile&lt;Return&gt;</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;">write the contents of the lines numbered 12 through 35 to a new file named </span><span style=" font-family:'Courier New,courier'; font-size:medium; font-style:italic; color:#000000;">smallfile</span></p></td></tr>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-weight:600; color:#000000;"> </span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:medium; font-weight:600; color:#000000;">:w! prevfile&lt;Return&gt;</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:medium; font-style:italic; color:#000000;">write current contents over a pre-existing file named </span><span style=" font-family:'Courier New,courier'; font-size:medium; font-style:italic; color:#000000;">prevfile</span></p></td></tr></table></body></html>
