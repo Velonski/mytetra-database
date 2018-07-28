@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<html><head><meta name="qrichtext" content="1" /><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><style type="text/css">
+p, li { white-space: pre-wrap; }
+</style></head><body style=" font-family:'DejaVu Sans'; font-size:11pt; font-weight:400; font-style:normal;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">В IIS 5.0 все службы Интернет могут быть остановлены и перезапущены из оснастки IIS. Это делает необязательным перезапуск компьютера при неправильном функционировании или недоступности приложений.</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Чтобы перезапустить IIS</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">В оснастке IIS щелкните значок Компьютер в левой панели.</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Нажмите кнопку Действие и выберите команду Перезапуск IIS.</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">В раскрывающемся меню выберите Перезапуск служб Интернета, Остановка служб Интернета, Запуск служб Интернета или Перезагрузка имя_компьютера.</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Важно!   Перезапуск останавливает все процессы Drwtsn32.exe, Mtx.exe и Dllhost.exe для перезапуска служб Интернета. IIS не может быть перезапущен с помощью диспетчера служб Интернета (HTML).</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Примечание.</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Для перезапуска служб Интернета следует использовать метод обрисованный выше, а не оснастку для служб Windows 2000. Поскольку несколько служб Интернета запускаются в одном процессе, службы Интернета останавливаются и перезапускаются отдельно от служб Windows. Для регулярных перезапусков или интеграции со специальными средствами или средствами, полученными из независимых источников, предлагается версия средства перезапуска оснастки IIS, запускаемая из командной строки: Iisreset.exe. Ниже описано использование командной строки и параметров.</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">iisreset [ИмяКомпьютера]</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> </p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">/RESTART	Останавливает и перезапускает все службы Интернета.</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">/START	Запускает все службы Интернета.</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">/STOP	Останавливает все службы Интернета.</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">/REBOOT	Перезагружает компьютер.</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">/REBOOTONERROR &amp;nbsp	Перезагружает компьютер, если произошла ошибка при запуске, остановке или перезапуске служб Интернета.</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">/NOFORCE	Принудительно не завершает службы Интернета при неудачных попытках остановить их.</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">/TIMEOUT:знач	Указывает значение времени ожидания (в секундах) успешной остановки служб Интернета. По истечении этого времени, если указан параметр /REBOOTONERROR, компьютер может быть перезагружен. Значения по умолчанию: 20 сек. для перезапуска, 60 сек. для остановки и 0 сек. для перезагрузки.</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">/STATUS	Отображает состояние всех служб Интернета.</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">/ENABLE	Включает перезапуск служб Интернета на локальной системе.</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">/DISABLE	Отключает перезапуск служб Интернета на локальной системе.</p></body></html>

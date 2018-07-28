@@ -121,6 +121,10 @@
     <record id="15312924445zd0a2axeh" name="Registering an Application to a URI Scheme" author="" url="https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa767914(v=vs.85)" tags="windows uri scheme register launch program web page" ctime="20180711120044" dir="153129244438qqro08wb" file="text.html"/>
     <record id="1531378615kdxmtincs3" name="Windows: как добавить что-либо в PATH" author="" url="http://nicothin.pro/page/windows-path" tags="windows path" ctime="20180712115655" dir="1531378615lk7sgrbw2d" file="text.html"/>
     <record id="1531388064vf05wuiwog" name="Справочник команд Windows (CMD )" author="" url="https://sysadmin.ru/docs/cmd" tags="windows cmd commands" ctime="20180712143424" dir="1531388064izf3ybjo6t" file="text.html"/>
+    <record id="1532319120o3iuvd6y08" name="Создание службы в Windows 10" author="" url="http://prostocomp.net/sistema/sozdanie-sluzhby-v-windows.html" tags="windows create set service" ctime="20180723091200" dir="15323191201y7y3mzfce" file="text.html"/>
+    <record id="1532589324izyrwbqxdw" name="Запуск Проводника Windows от имени администратора" author="" url="http://winitpro.ru/index.php/2016/07/28/zapusk-provodnika-windows-ot-imeni-administratora/" tags="windows проводник администратор" ctime="20180726121524" dir="1532589324g3d8wuprz6" file="text.html"/>
+    <record id="15325954252u1qafmrfn" name="IIS - Перезапуск IIS" author="" url="http://www.codenet.ru/webmast/iis/htm/core/iicodira.php" tags="windows iis перезапуск" ctime="20180726135705" dir="1532595425plrlhq8huk" file="text.html"/>
+    <record id="15326062534ocmin0e8b" name="Как выключить или перезагрузить компьютер в Windows 8.1" author="" url="https://sysitplus.ru/nastrojka-pk/windows-8-1/76-kak-vyklyuchit-ili-perezagruzit-kompyuter-v-windows-8-1.html" tags="windows reboot shutdown" ctime="20180726165733" dir="15326062531kc7sfb4su" file="text.html"/>
    </recordtable>
   </node>
   <node crypt="" id="1504108400vxxba6csn9" name="Vim">
@@ -310,6 +314,7 @@
     <record id="1531828172miszo4d2xv" name="100 строк кода: Прокси-сервер на Python" author="" url="http://datareview.info/article/100-strok-koda-proksi-server-na-python/" tags="python proxy server example" ctime="20180717164932" dir="153182817247mumkd4cp" file="text.html"/>
     <record id="1531829903uhperci6dg" name="http.client" author="" url="http://ilnurgi1.ru/docs/python/modules/http_client.html" tags="python http client example" ctime="20180717171823" dir="1531829903zzi4pj1d4g" file="text.html"/>
     <record id="1531846032ohtvvl9p87" name="Регулярные выражения в Python от простого к сложному. Подробности, примеры, картинки, упражнения" author="" url="https://habr.com/post/349860/" tags="python regexp" ctime="20180717214712" dir="15318460321ljvpiutcj" file="text.html"/>
+    <record id="1532319474bybp0nrksj" name="Собираем проект на python3&amp;PyQT5 под Windows, используя PyInstaller" author="https://habr.com/users/FUNNYDMAN/" url="https://habr.com/post/325626/" tags="python exe pyinstaller" ctime="20180723091754" dir="1532319474jedfvwfjxu" file="text.html"/>
    </recordtable>
   </node>
   <node crypt="" id="15314778288uzc0jo1wy" name="PHP">
@@ -324,6 +329,7 @@
     <record id="1526145492xtbj5i4zsl" name="tacnoman/dephpugger - Php Debugger to run in terminal to debug your code easily." author="" url="https://github.com/tacnoman/dephpugger" tags="php debug" ctime="20180713153028" dir="1526145492axf76pjzzh" file="text.html"/>
     <record id="152748400744tta8cbsd" name="Стартуем работу с Redis и PHP" author="" url="https://ruseller.com/lessons.php?id=2289&amp;rub=37" tags="php redis cache" ctime="20180713153028" dir="1527484007jf6mb8sht2" file="text.html"/>
     <record id="1527576422raqq5207xo" name="phpredis/phpredis" author="" url="https://github.com/phpredis/phpredis" tags="php redis github" ctime="20180713153028" dir="1527576422zjdu0ajqss" file="text.html"/>
+    <record id="153220110933nhw2gnri" name="php SimpleXML check if a child exists" author="" url="https://stackoverflow.com/questions/1560827/php-simplexml-check-if-a-child-exists#1562158" tags="php simplexml exist node" ctime="20180722002509" dir="1532201109u4yyoh2g5m" file="text.html"/>
    </recordtable>
    <node crypt="" id="15314778288tjrqoim9n" name="Yii2">
     <recordtable>
@@ -380,6 +386,7 @@
     <record id="1531313908kytt0iwu0l" name="Create GUID / UUID in JavaScript?" author="" url="https://stackoverflow.com/questions/105034/create-guid-uuid-in-javascript" tags="javascript uuid guid" ctime="20180713153047" dir="1531313908x92ebuhs8l" file="text.html"/>
     <record id="1531720601j5msyi0k8i" name="How do I encode a JavaScript object as JSON?" author="" url="https://stackoverflow.com/questions/10919965/how-do-i-encode-a-javascript-object-as-json" tags="javascript json encode decode" ctime="20180716105641" dir="1531720601dz993fdabm" file="text.html"/>
     <record id="1531976207pc2igfu3m3" name="How do I redirect with JavaScript?" author="" url="https://stackoverflow.com/questions/4744751/how-do-i-redirect-with-javascript#4745622" tags="javascript redirect" ctime="20180719095647" dir="1531976207csyki9e9s6" file="text.html"/>
+    <record id="1532321876x770qt02rx" name="How to reload a page using JavaScript?" author="" url="https://stackoverflow.com/questions/3715047/how-to-reload-a-page-using-javascript#3715123" tags="javascript reload page" ctime="20180723095756" dir="1532321876chjpvx2teo" file="text.html"/>
    </recordtable>
   </node>
   <node crypt="" id="15314778531bpcn2m0d7" name="MySQL">
@@ -443,6 +450,18 @@
     <record id="1526448340to4a123j55" name="RemoveOldKernels" author="" url="https://help.ubuntu.com/community/RemoveOldKernels" tags="linux ubuntu kernel remove" ctime="20180713153212" dir="1526448340t11x5xn0jj" file="text.html"/>
     <record id="15264484031tj48bdn71" name="False disk full error: apt-get unable to install or remove" author="" url="https://askubuntu.com/questions/668582/false-disk-full-error-apt-get-unable-to-install-or-remove/864624#comment972298_668582" tags="linux ubuntu disk full error" ctime="20180713153212" dir="15264484036jegw8oiu1" file="text.html"/>
     <record id="1531466366eri4gjtp7i" name="'Some index files failed to download' while updating" author="" url="https://askubuntu.com/questions/208037/some-index-files-failed-to-download-while-updating#244257" tags="ubuntu index files failed download" ctime="20180713153212" dir="1531466366vjs36vluxp" file="text.html"/>
+   </recordtable>
+  </node>
+  <node crypt="" id="1532423904f1999esni9" name="Бухгалтерия">
+   <recordtable>
+    <record id="1532424132xn9woyh2qd" name="Требования к кассовому чеку при получении аванса (частичной оплаты)&#10;Источник: https://onlainkassy.ru/info/predoplata.html" author="" url="https://onlainkassy.ru/info/predoplata.html" tags="касса чек предоплата аванс" ctime="20180724142212" dir="1532424132yldj6zzn8d" file="text.html"/>
+    <record id="1532424656xs803fqt4x" name="Как пробить чек ККМ с предоплатой?" author="" url="http://nalog-nalog.ru/kkt_kkm_kassa/kak_probit_chek_kkm_s_predoplatoj/" tags="касса чек аванс предоплата" ctime="20180724143056" dir="153242465644ffl70u03" file="text.html"/>
+    <record id="1532425268uk0rsz4t1l" name="Кассовый чек на предоплату" author="" url="https://taxcom.ru/about/news/prepay-e-check/" tags="касса чек аванс предоплата" ctime="20180724144108" dir="15324252681kolc76sf7" file="text.html"/>
+   </recordtable>
+  </node>
+  <node crypt="" id="1532757381uewu72bj1c" name="Туризм">
+   <recordtable>
+    <record id="15327664384see1gf1fy" name="Абхазия - Памятка туристу от &quot;Библио Глобус&quot;" author="Туроператор &quot;Библио Глобус&quot;" url="https://www.bgoperator.ru/price.shtml?flt=100420695633&amp;tid=64" tags="туризм абхазия" ctime="20180728132718" dir="1532766438rdhpghq0he" file="text.html"/>
    </recordtable>
   </node>
  </content>
