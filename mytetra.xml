@@ -12,6 +12,7 @@
    <recordtable>
     <record id="1481020001gt5hprqzlg" name="Веб-сервисы для разных задач" author="" url="habrahabr.ru" tags="веб-сервис" ctime="20161206162641" dir="1481020001a3fm1r8q7p" file="text.html"/>
     <record id="14810201211c8kk9ckem" name="Интересные сайты" author="" url="" tags="" ctime="20161206162841" dir="1481020121q2w2b9ltns" file="text.html"/>
+    <record id="1533008469nihua7ex1b" name="https://electron.fm - Некоммерческая радиостанция «Электронная Волна»" author="" url="https://electron.fm" tags="music radio" ctime="20180731084109" dir="1533008469ml0h9xlr44" file="text.html"/>
    </recordtable>
    <node crypt="" id="1481020203nxeow4iru8" name="habrahabr.ru">
     <recordtable>
@@ -316,6 +317,13 @@
     <record id="1531846032ohtvvl9p87" name="Регулярные выражения в Python от простого к сложному. Подробности, примеры, картинки, упражнения" author="" url="https://habr.com/post/349860/" tags="python regexp" ctime="20180717214712" dir="15318460321ljvpiutcj" file="text.html"/>
     <record id="1532319474bybp0nrksj" name="Собираем проект на python3&amp;PyQT5 под Windows, используя PyInstaller" author="https://habr.com/users/FUNNYDMAN/" url="https://habr.com/post/325626/" tags="python exe pyinstaller" ctime="20180723091754" dir="1532319474jedfvwfjxu" file="text.html"/>
    </recordtable>
+   <node crypt="" id="1533009814n2f8fpquzd" name="Pyinstaller">
+    <recordtable>
+     <record id="15330098676ulrim0fej" name="PyInstaller - Quickstart" author="" url="http://www.pyinstaller.org" tags="python pyinstaller" ctime="20180731090427" dir="15330098675jyjrg1utl" file="text.html"/>
+     <record id="15330102242tyt68h890" name="PyInstaller - Using PyInstaller" author="" url="https://pyinstaller.readthedocs.io/en/v3.3.1/usage.html#options" tags="python pyinstaller manual using commands" ctime="20180731091024" dir="15330102248k1dfvx06q" file="text.html"/>
+     <record id="1533011109mesh6xp7qg" name="Собираем проект на python3&amp;PyQT5 под Windows, используя PyInstaller" author="" url="https://habr.com/post/325626/" tags="python pyinstaller guide" ctime="20180731092509" dir="1533011109g0ok5jqjbn" file="text.html"/>
+    </recordtable>
+   </node>
   </node>
   <node crypt="" id="15314778288uzc0jo1wy" name="PHP">
    <recordtable>
@@ -365,6 +373,7 @@
     <record id="15269175142fdpz33dfg" name="PostgreSQL Change owner of all tables under a specific schema" author="" url="https://dba.stackexchange.com/questions/52195/postgresql-change-owner-of-all-tables-under-a-specific-schema#83520" tags="postgresql" ctime="20180713153040" dir="1526917514prufosrchr" file="text.html"/>
     <record id="15269175806zh5mwtvii" name="Modify OWNER on all tables simultaneously in PostgreSQL&#10;" author="" url="https://stackoverflow.com/questions/1348126/modify-owner-on-all-tables-simultaneously-in-postgresql" tags="postgresql" ctime="20180713153040" dir="15269175809ffv88suaj" file="text.html"/>
     <record id="15282855340r2uk91dan" name="Индексы PostgreSQL: #1 Введение в индексы" author="" url="https://doberbeatzblog.wordpress.com/2017/03/13/postgresql-indexes/" tags="potgresql index" ctime="20180713153040" dir="152828553478xr7qmhdx" file="text.html"/>
+    <record id="1532951298arw7hivu7b" name="Using regex in WHERE in Postgres" author="" url="https://stackoverflow.com/questions/4945477/using-regex-in-where-in-postgres#4945529" tags="postgresql where regexp" ctime="20180730164818" dir="1532951298ueot51puw3" file="text.html"/>
    </recordtable>
   </node>
   <node crypt="" id="1531477847aiodnph7a2" name="Javascript">
@@ -462,6 +471,27 @@
   <node crypt="" id="1532757381uewu72bj1c" name="Туризм">
    <recordtable>
     <record id="15327664384see1gf1fy" name="Абхазия - Памятка туристу от &quot;Библио Глобус&quot;" author="Туроператор &quot;Библио Глобус&quot;" url="https://www.bgoperator.ru/price.shtml?flt=100420695633&amp;tid=64" tags="туризм абхазия" ctime="20180728132718" dir="1532766438rdhpghq0he" file="text.html"/>
+   </recordtable>
+  </node>
+  <node crypt="" id="153295552383gg13gxcz" name="Алгоритмы">
+   <recordtable>
+    <record id="15329556295wqafx3qxf" name="Алгоритм Луна (Luhn Algorithm)" author="" url="http://lektsii.com/1-6252.html" tags="lunh algorithm" ctime="20180730180029" dir="15329556296thdxjtw4b" file="text.html"/>
+    <record id="1533017374376pa9bn3x" name="Вычисление контрольной цифры IMEI - Алгоритм Луна" author="" url="https://sndeep.info/ru/tools/checksum_calculator" tags="imei lunh algorithm" ctime="20180731110934" dir="1533017374sdnfgsialx" file="text.html"/>
+   </recordtable>
+  </node>
+  <node crypt="" id="1533097805njpg9bph36" name="Кулинарные рецепты">
+   <recordtable>
+    <record id="1533097925b10alzxiyz" name="Татарские лепешки" author="" url="https://www.russianfood.com/recipes/recipe.php?rid=60696" tags="рецепт лепешка" ctime="20180801093205" dir="1533097925w74slddrx6" file="text.html"/>
+   </recordtable>
+  </node>
+  <node crypt="" id="1533180587zm658yy6g0" name="Android">
+   <recordtable>
+    <record id="153318068154zqr2vk5h" name="Android x86 на Asus Eee PC 900" author="" url="https://habr.com/post/139112/" tags="android x86 asus eee pc" ctime="20180802083121" dir="1533180681nj1dxjjatf" file="text.html"/>
+    <record id="1533180780bb1v0egbz4" name="Android x86 с эмулятором ARM на большом экране" author="" url="https://habr.com/post/156415/" tags="android x86" ctime="20180802083300" dir="153318078060w387nlu1" file="text.html"/>
+    <record id="1533180879yry5c0q8uy" name="android-x86 4.0 RC1 on the Eee 1015PX" author="" url="https://ranf.wordpress.com/2012/03/30/android-x86-on-the-eee-1015px/" tags="android x86 eee pc" ctime="20180802083439" dir="15331808797fdtnoq6sl" file="text.html"/>
+    <record id="1533181110t36t3ary5d" name="Разрешение экрана для Android android x86" author="" url="http://www.ohandroid.com/android-android-x86.html" tags="android x86 virtual box" ctime="20180802083830" dir="1533181110rzkjivo5ws" file="text.html"/>
+    <record id="1533181335wjeib0c1gy" name="[android-x86] External Monitor Support on my Asus EEE 701&#10;" author="" url="http://grokbase.com/t/gg/android-x86/127mfgt82p/external-monitor-support-on-my-asus-eee-701" tags="android x86 asus eee pc external monitor" ctime="20180802084215" dir="1533181335wwgcuasfsp" file="text.html"/>
+    <record id="15331816248zj1r0z15j" name="Как использовать Android на обычном компе" author="" url="https://xakep.ru/2012/11/16/dekstop-android/" tags="android-x86 virtual" ctime="20180802084704" dir="15331816249nrqy8fijb" file="text.html"/>
    </recordtable>
   </node>
  </content>
