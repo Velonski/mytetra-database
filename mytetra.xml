@@ -103,12 +103,6 @@
     <record id="1488263274bwsbihcr32" name="7 VLC command lines you need to know " author="https://twitter.com/Christi_smithe" url="https://www.wondershare.com/vlc/7-vlc-command-lines-you-need-to-know.html" tags="video vlc cli console" ctime="20170228112754" dir="1488263274buqzr4q94t" file="text.html"/>
    </recordtable>
   </node>
-  <node crypt="" id="1488264265nact8wiezx" name="Ubuntu">
-   <recordtable>
-    <record id="1488264331tjhsly99fe" name="Поддержка русского языка в консоли" author="" url="http://help.ubuntu.ru/wiki/russian_font_in_console" tags="linux ubuntu console cyrillic" ctime="20170228114531" dir="1488264331m5k1njaan6" file="text.html"/>
-    <record id="1516076769yk0bnzfz35" name="RootSudo" author="" url="https://help.ubuntu.com/community/RootSudo#Allowing_other_users_to_run_sudo" tags="linux ubuntu sudo root user" ctime="20180116092609" dir="1516076769kw5dss42p7" file="text.html"/>
-   </recordtable>
-  </node>
   <node crypt="" id="14902527864c3pu5t93i" name="Telnet">
    <recordtable>
     <record id="1490252850vgpx3g6jit" name="Доступ к почтовому ящику pop3 на сервере mail.belpak.by через Telnet-клиента" author="" url="http://adm-exter.narod.ru/b/POP3_Telnet.htm" tags="telnet pop" ctime="20170323120730" dir="1490252850d9uexqdukc" file="text.html"/>
@@ -126,6 +120,8 @@
     <record id="1532589324izyrwbqxdw" name="Запуск Проводника Windows от имени администратора" author="" url="http://winitpro.ru/index.php/2016/07/28/zapusk-provodnika-windows-ot-imeni-administratora/" tags="windows проводник администратор" ctime="20180726121524" dir="1532589324g3d8wuprz6" file="text.html"/>
     <record id="15325954252u1qafmrfn" name="IIS - Перезапуск IIS" author="" url="http://www.codenet.ru/webmast/iis/htm/core/iicodira.php" tags="windows iis перезапуск" ctime="20180726135705" dir="1532595425plrlhq8huk" file="text.html"/>
     <record id="15326062534ocmin0e8b" name="Как выключить или перезагрузить компьютер в Windows 8.1" author="" url="https://sysitplus.ru/nastrojka-pk/windows-8-1/76-kak-vyklyuchit-ili-perezagruzit-kompyuter-v-windows-8-1.html" tags="windows reboot shutdown" ctime="20180726165733" dir="15326062531kc7sfb4su" file="text.html"/>
+    <record id="1533278226n0jmm701or" name="Как запустить приложение в виде службы Windows - NSSM" author="" url="https://windowsnotes.ru/programs/kak-zapustit-prilozhenie-v-vide-sluzhby-windows/" tags="windows service create nssm" ctime="20180803113706" dir="1533278226r920peekkr" file="text.html"/>
+    <record id="1533292126piv5uvk5kc" name="NSSM - the Non-Sucking Service Manager" author="" url="https://nssm.cc/usage" tags="windows service nssm" ctime="20180803152846" dir="1533292126tba6skh8r4" file="text.html"/>
    </recordtable>
   </node>
   <node crypt="" id="1504108400vxxba6csn9" name="Vim">
@@ -260,6 +256,8 @@
     <record id="152724549444g9ua2l13" name="Supervisor: A Process Control System" author="" url="http://supervisord.org" tags="supervisor process control linux" ctime="20180525155134" dir="1527245494d2lhox6vvn" file="text.html"/>
     <record id="1527487860nd7t3fs49x" name="Докеризируем Socket.io, redis и php" author="" url="https://habr.com/post/353212/" tags="php redis socket io docker websocket" ctime="20180528111100" dir="1527487860exwu6v5jgg" file="text.html"/>
     <record id="1527598488n7ncpt4ej8" name="How To Install and Manage Supervisor on Ubuntu and Debian VPS" author="" url="https://www.digitalocean.com/community/tutorials/how-to-install-and-manage-supervisor-on-ubuntu-and-debian-vps" tags="linux supervisor install config" ctime="20180529175448" dir="1527598488yi56d1xq1l" file="text.html"/>
+    <record id="1533532774pyvoai3zmx" name="Sending custom headers in websocket handshake&#10;" author="" url="https://stackoverflow.com/questions/15381414/sending-custom-headers-in-websocket-handshake" tags="websocket python" ctime="20180806101934" dir="153353277493xgn93dvj" file="text.html"/>
+    <record id="1533534794hge9owfbjs" name="python - websocket-client" author="" url="https://github.com/websocket-client/websocket-client" tags="websocket python client" ctime="20180806105314" dir="1533534794zk6qo9otft" file="text.html"/>
    </recordtable>
   </node>
   <node crypt="" id="1526493215rp7n0v265c" name="GRUB">
@@ -459,6 +457,8 @@
     <record id="1526448340to4a123j55" name="RemoveOldKernels" author="" url="https://help.ubuntu.com/community/RemoveOldKernels" tags="linux ubuntu kernel remove" ctime="20180713153212" dir="1526448340t11x5xn0jj" file="text.html"/>
     <record id="15264484031tj48bdn71" name="False disk full error: apt-get unable to install or remove" author="" url="https://askubuntu.com/questions/668582/false-disk-full-error-apt-get-unable-to-install-or-remove/864624#comment972298_668582" tags="linux ubuntu disk full error" ctime="20180713153212" dir="15264484036jegw8oiu1" file="text.html"/>
     <record id="1531466366eri4gjtp7i" name="'Some index files failed to download' while updating" author="" url="https://askubuntu.com/questions/208037/some-index-files-failed-to-download-while-updating#244257" tags="ubuntu index files failed download" ctime="20180713153212" dir="1531466366vjs36vluxp" file="text.html"/>
+    <record id="1516076769yk0bnzfz35" name="RootSudo" author="" url="https://help.ubuntu.com/community/RootSudo#Allowing_other_users_to_run_sudo" tags="linux ubuntu sudo root user" ctime="20180806120827" dir="1516076769kw5dss42p7" file="text.html"/>
+    <record id="1488264331tjhsly99fe" name="Поддержка русского языка в консоли" author="" url="http://help.ubuntu.ru/wiki/russian_font_in_console" tags="linux ubuntu console cyrillic" ctime="20180806120830" dir="1488264331m5k1njaan6" file="text.html"/>
    </recordtable>
   </node>
   <node crypt="" id="1532423904f1999esni9" name="Бухгалтерия">
@@ -492,6 +492,12 @@
     <record id="1533181110t36t3ary5d" name="Разрешение экрана для Android android x86" author="" url="http://www.ohandroid.com/android-android-x86.html" tags="android x86 virtual box" ctime="20180802083830" dir="1533181110rzkjivo5ws" file="text.html"/>
     <record id="1533181335wjeib0c1gy" name="[android-x86] External Monitor Support on my Asus EEE 701&#10;" author="" url="http://grokbase.com/t/gg/android-x86/127mfgt82p/external-monitor-support-on-my-asus-eee-701" tags="android x86 asus eee pc external monitor" ctime="20180802084215" dir="1533181335wwgcuasfsp" file="text.html"/>
     <record id="15331816248zj1r0z15j" name="Как использовать Android на обычном компе" author="" url="https://xakep.ru/2012/11/16/dekstop-android/" tags="android-x86 virtual" ctime="20180802084704" dir="15331816249nrqy8fijb" file="text.html"/>
+   </recordtable>
+  </node>
+  <node crypt="" id="1533273302nj4u5exjar" name="Сетевые сокеты">
+   <recordtable>
+    <record id="1533273377kjnqhykktd" name="Сокеты в Python для начинающих" author="" url="https://habr.com/post/149077/" tags="socket python" ctime="20180803101617" dir="1533273377uo4sdkhvr4" file="text.html"/>
+    <record id="1533276284d0xvaozvd7" name="Сокеты в Python 3: TCP, клиент, сервер" author="" url="https://andreymal.org/21" tags="socket python" ctime="20180803110444" dir="15332762843eaazfnh6b" file="text.html"/>
    </recordtable>
   </node>
  </content>
