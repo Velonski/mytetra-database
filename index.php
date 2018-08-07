@@ -45,7 +45,8 @@ function echoNodeList($xmlnode, int $level = 1)
     if (isset($xmlnode->recordtable->record)) {
         foreach ($xmlnode->recordtable->record as $record) {
             
-            echo '<li><a href="base/'.$record['dir'].'/'.$record['file'].'">'.$record['name'].'</a></li>';
+            // echo '<li><a href="base/'.$record['dir'].'/'.$record['file'].'">'.$record['name'].'</a></li>';
+            echo '<li><a href="'.$_SERVER['REQUEST_URI'].'?recordId='.$record['dir'].'">'.$record['name'].'</a></li>';
             
         }
     }
@@ -162,12 +163,19 @@ function echoPageRecord($recordId)
  */
 function getPageRecordBody(string $filePath)
 {
-    $file = fopen($filePath);
+    $file = fopen($filePath, 'r');
+    if ($file === false) throw new \Exception('Cannot to open file.');
     
     $bodyFound = false;
     
     $charCount = 0;
     $chars = '';
+    
+    $bodyStartLabel = '</head>';
+    $bodyEndLabel = '</body>';
+    
+    $bodyStartLabelLength = mb_strlen($bodyStartLabel);
+    $bodyEndLabelLength = mb_strlen($bodyEndLabel);
     
     while (feof($file) !== true) {
         
@@ -175,10 +183,48 @@ function getPageRecordBody(string $filePath)
         $charCount++;
         
         if ($bodyFound === false) {
-            if ($charCount )
+            
+            if (mb_substr($bodyStartLabel, 0, $charCount) === $chars) {
+                
+                if ($bodyStartLabelLength === ($charCount)) {
+                    
+                    $chars = '';
+                    $charCount = 0;
+                    
+                    $bodyFound = true;
+                    
+                }
+                
+            } else {
+                
+                $chars = '';
+                $charCount = 0;
+                
+            }
+                
+        } else if ($bodyFound === true) {
+            
+            if (
+                ($charCount >= $bodyEndLabelLength)
+                && (mb_substr($chars, $charCount - $bodyEndLabelLength, $bodyEndLabelLength) === $bodyEndLabel)
+            ) {
+                
+                break;
+                
+            } else if ($charCount >= 1000) {
+                
+                yield $chars;
+                
+                $chars = '';
+                $charCount = 0;
+                
+            }
+            
         }
         
     }
+    
+    yield $chars;
     
     fclose($file);
 }
@@ -193,6 +239,7 @@ function echoPage404($message)
     http_response_code(404);
     
     echo $message;
+    exit(0);
 }
 
 /**
