@@ -12,6 +12,7 @@
    <recordtable>
     <record id="1481020001gt5hprqzlg" name="Веб-сервисы для разных задач" author="" url="habrahabr.ru" tags="веб-сервис" ctime="20161206162641" dir="1481020001a3fm1r8q7p" file="text.html"/>
     <record id="14810201211c8kk9ckem" name="Интересные сайты" author="" url="" tags="" ctime="20161206162841" dir="1481020121q2w2b9ltns" file="text.html"/>
+    <record id="1533008469nihua7ex1b" name="https://electron.fm - Некоммерческая радиостанция «Электронная Волна»" author="" url="https://electron.fm" tags="music radio" ctime="20180731084109" dir="1533008469ml0h9xlr44" file="text.html"/>
    </recordtable>
    <node crypt="" id="1481020203nxeow4iru8" name="habrahabr.ru">
     <recordtable>
@@ -102,12 +103,6 @@
     <record id="1488263274bwsbihcr32" name="7 VLC command lines you need to know " author="https://twitter.com/Christi_smithe" url="https://www.wondershare.com/vlc/7-vlc-command-lines-you-need-to-know.html" tags="video vlc cli console" ctime="20170228112754" dir="1488263274buqzr4q94t" file="text.html"/>
    </recordtable>
   </node>
-  <node crypt="" id="1488264265nact8wiezx" name="Ubuntu">
-   <recordtable>
-    <record id="1488264331tjhsly99fe" name="Поддержка русского языка в консоли" author="" url="http://help.ubuntu.ru/wiki/russian_font_in_console" tags="linux ubuntu console cyrillic" ctime="20170228114531" dir="1488264331m5k1njaan6" file="text.html"/>
-    <record id="1516076769yk0bnzfz35" name="RootSudo" author="" url="https://help.ubuntu.com/community/RootSudo#Allowing_other_users_to_run_sudo" tags="linux ubuntu sudo root user" ctime="20180116092609" dir="1516076769kw5dss42p7" file="text.html"/>
-   </recordtable>
-  </node>
   <node crypt="" id="14902527864c3pu5t93i" name="Telnet">
    <recordtable>
     <record id="1490252850vgpx3g6jit" name="Доступ к почтовому ящику pop3 на сервере mail.belpak.by через Telnet-клиента" author="" url="http://adm-exter.narod.ru/b/POP3_Telnet.htm" tags="telnet pop" ctime="20170323120730" dir="1490252850d9uexqdukc" file="text.html"/>
@@ -121,6 +116,12 @@
     <record id="15312924445zd0a2axeh" name="Registering an Application to a URI Scheme" author="" url="https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa767914(v=vs.85)" tags="windows uri scheme register launch program web page" ctime="20180711120044" dir="153129244438qqro08wb" file="text.html"/>
     <record id="1531378615kdxmtincs3" name="Windows: как добавить что-либо в PATH" author="" url="http://nicothin.pro/page/windows-path" tags="windows path" ctime="20180712115655" dir="1531378615lk7sgrbw2d" file="text.html"/>
     <record id="1531388064vf05wuiwog" name="Справочник команд Windows (CMD )" author="" url="https://sysadmin.ru/docs/cmd" tags="windows cmd commands" ctime="20180712143424" dir="1531388064izf3ybjo6t" file="text.html"/>
+    <record id="1532319120o3iuvd6y08" name="Создание службы в Windows 10" author="" url="http://prostocomp.net/sistema/sozdanie-sluzhby-v-windows.html" tags="windows create set service" ctime="20180723091200" dir="15323191201y7y3mzfce" file="text.html"/>
+    <record id="1532589324izyrwbqxdw" name="Запуск Проводника Windows от имени администратора" author="" url="http://winitpro.ru/index.php/2016/07/28/zapusk-provodnika-windows-ot-imeni-administratora/" tags="windows проводник администратор" ctime="20180726121524" dir="1532589324g3d8wuprz6" file="text.html"/>
+    <record id="15325954252u1qafmrfn" name="IIS - Перезапуск IIS" author="" url="http://www.codenet.ru/webmast/iis/htm/core/iicodira.php" tags="windows iis перезапуск" ctime="20180726135705" dir="1532595425plrlhq8huk" file="text.html"/>
+    <record id="15326062534ocmin0e8b" name="Как выключить или перезагрузить компьютер в Windows 8.1" author="" url="https://sysitplus.ru/nastrojka-pk/windows-8-1/76-kak-vyklyuchit-ili-perezagruzit-kompyuter-v-windows-8-1.html" tags="windows reboot shutdown" ctime="20180726165733" dir="15326062531kc7sfb4su" file="text.html"/>
+    <record id="1533278226n0jmm701or" name="Как запустить приложение в виде службы Windows - NSSM" author="" url="https://windowsnotes.ru/programs/kak-zapustit-prilozhenie-v-vide-sluzhby-windows/" tags="windows service create nssm" ctime="20180803113706" dir="1533278226r920peekkr" file="text.html"/>
+    <record id="1533292126piv5uvk5kc" name="NSSM - the Non-Sucking Service Manager" author="" url="https://nssm.cc/usage" tags="windows service nssm" ctime="20180803152846" dir="1533292126tba6skh8r4" file="text.html"/>
    </recordtable>
   </node>
   <node crypt="" id="1504108400vxxba6csn9" name="Vim">
@@ -255,6 +256,8 @@
     <record id="152724549444g9ua2l13" name="Supervisor: A Process Control System" author="" url="http://supervisord.org" tags="supervisor process control linux" ctime="20180525155134" dir="1527245494d2lhox6vvn" file="text.html"/>
     <record id="1527487860nd7t3fs49x" name="Докеризируем Socket.io, redis и php" author="" url="https://habr.com/post/353212/" tags="php redis socket io docker websocket" ctime="20180528111100" dir="1527487860exwu6v5jgg" file="text.html"/>
     <record id="1527598488n7ncpt4ej8" name="How To Install and Manage Supervisor on Ubuntu and Debian VPS" author="" url="https://www.digitalocean.com/community/tutorials/how-to-install-and-manage-supervisor-on-ubuntu-and-debian-vps" tags="linux supervisor install config" ctime="20180529175448" dir="1527598488yi56d1xq1l" file="text.html"/>
+    <record id="1533532774pyvoai3zmx" name="Sending custom headers in websocket handshake&#10;" author="" url="https://stackoverflow.com/questions/15381414/sending-custom-headers-in-websocket-handshake" tags="websocket python" ctime="20180806101934" dir="153353277493xgn93dvj" file="text.html"/>
+    <record id="1533534794hge9owfbjs" name="python - websocket-client" author="" url="https://github.com/websocket-client/websocket-client" tags="websocket python client" ctime="20180806105314" dir="1533534794zk6qo9otft" file="text.html"/>
    </recordtable>
   </node>
   <node crypt="" id="1526493215rp7n0v265c" name="GRUB">
@@ -310,7 +313,15 @@
     <record id="1531828172miszo4d2xv" name="100 строк кода: Прокси-сервер на Python" author="" url="http://datareview.info/article/100-strok-koda-proksi-server-na-python/" tags="python proxy server example" ctime="20180717164932" dir="153182817247mumkd4cp" file="text.html"/>
     <record id="1531829903uhperci6dg" name="http.client" author="" url="http://ilnurgi1.ru/docs/python/modules/http_client.html" tags="python http client example" ctime="20180717171823" dir="1531829903zzi4pj1d4g" file="text.html"/>
     <record id="1531846032ohtvvl9p87" name="Регулярные выражения в Python от простого к сложному. Подробности, примеры, картинки, упражнения" author="" url="https://habr.com/post/349860/" tags="python regexp" ctime="20180717214712" dir="15318460321ljvpiutcj" file="text.html"/>
+    <record id="1532319474bybp0nrksj" name="Собираем проект на python3&amp;PyQT5 под Windows, используя PyInstaller" author="https://habr.com/users/FUNNYDMAN/" url="https://habr.com/post/325626/" tags="python exe pyinstaller" ctime="20180723091754" dir="1532319474jedfvwfjxu" file="text.html"/>
    </recordtable>
+   <node crypt="" id="1533009814n2f8fpquzd" name="Pyinstaller">
+    <recordtable>
+     <record id="15330098676ulrim0fej" name="PyInstaller - Quickstart" author="" url="http://www.pyinstaller.org" tags="python pyinstaller" ctime="20180731090427" dir="15330098675jyjrg1utl" file="text.html"/>
+     <record id="15330102242tyt68h890" name="PyInstaller - Using PyInstaller" author="" url="https://pyinstaller.readthedocs.io/en/v3.3.1/usage.html#options" tags="python pyinstaller manual using commands" ctime="20180731091024" dir="15330102248k1dfvx06q" file="text.html"/>
+     <record id="1533011109mesh6xp7qg" name="Собираем проект на python3&amp;PyQT5 под Windows, используя PyInstaller" author="" url="https://habr.com/post/325626/" tags="python pyinstaller guide" ctime="20180731092509" dir="1533011109g0ok5jqjbn" file="text.html"/>
+    </recordtable>
+   </node>
   </node>
   <node crypt="" id="15314778288uzc0jo1wy" name="PHP">
    <recordtable>
@@ -324,6 +335,7 @@
     <record id="1526145492xtbj5i4zsl" name="tacnoman/dephpugger - Php Debugger to run in terminal to debug your code easily." author="" url="https://github.com/tacnoman/dephpugger" tags="php debug" ctime="20180713153028" dir="1526145492axf76pjzzh" file="text.html"/>
     <record id="152748400744tta8cbsd" name="Стартуем работу с Redis и PHP" author="" url="https://ruseller.com/lessons.php?id=2289&amp;rub=37" tags="php redis cache" ctime="20180713153028" dir="1527484007jf6mb8sht2" file="text.html"/>
     <record id="1527576422raqq5207xo" name="phpredis/phpredis" author="" url="https://github.com/phpredis/phpredis" tags="php redis github" ctime="20180713153028" dir="1527576422zjdu0ajqss" file="text.html"/>
+    <record id="153220110933nhw2gnri" name="php SimpleXML check if a child exists" author="" url="https://stackoverflow.com/questions/1560827/php-simplexml-check-if-a-child-exists#1562158" tags="php simplexml exist node" ctime="20180722002509" dir="1532201109u4yyoh2g5m" file="text.html"/>
    </recordtable>
    <node crypt="" id="15314778288tjrqoim9n" name="Yii2">
     <recordtable>
@@ -359,6 +371,7 @@
     <record id="15269175142fdpz33dfg" name="PostgreSQL Change owner of all tables under a specific schema" author="" url="https://dba.stackexchange.com/questions/52195/postgresql-change-owner-of-all-tables-under-a-specific-schema#83520" tags="postgresql" ctime="20180713153040" dir="1526917514prufosrchr" file="text.html"/>
     <record id="15269175806zh5mwtvii" name="Modify OWNER on all tables simultaneously in PostgreSQL&#10;" author="" url="https://stackoverflow.com/questions/1348126/modify-owner-on-all-tables-simultaneously-in-postgresql" tags="postgresql" ctime="20180713153040" dir="15269175809ffv88suaj" file="text.html"/>
     <record id="15282855340r2uk91dan" name="Индексы PostgreSQL: #1 Введение в индексы" author="" url="https://doberbeatzblog.wordpress.com/2017/03/13/postgresql-indexes/" tags="potgresql index" ctime="20180713153040" dir="152828553478xr7qmhdx" file="text.html"/>
+    <record id="1532951298arw7hivu7b" name="Using regex in WHERE in Postgres" author="" url="https://stackoverflow.com/questions/4945477/using-regex-in-where-in-postgres#4945529" tags="postgresql where regexp" ctime="20180730164818" dir="1532951298ueot51puw3" file="text.html"/>
    </recordtable>
   </node>
   <node crypt="" id="1531477847aiodnph7a2" name="Javascript">
@@ -380,6 +393,7 @@
     <record id="1531313908kytt0iwu0l" name="Create GUID / UUID in JavaScript?" author="" url="https://stackoverflow.com/questions/105034/create-guid-uuid-in-javascript" tags="javascript uuid guid" ctime="20180713153047" dir="1531313908x92ebuhs8l" file="text.html"/>
     <record id="1531720601j5msyi0k8i" name="How do I encode a JavaScript object as JSON?" author="" url="https://stackoverflow.com/questions/10919965/how-do-i-encode-a-javascript-object-as-json" tags="javascript json encode decode" ctime="20180716105641" dir="1531720601dz993fdabm" file="text.html"/>
     <record id="1531976207pc2igfu3m3" name="How do I redirect with JavaScript?" author="" url="https://stackoverflow.com/questions/4744751/how-do-i-redirect-with-javascript#4745622" tags="javascript redirect" ctime="20180719095647" dir="1531976207csyki9e9s6" file="text.html"/>
+    <record id="1532321876x770qt02rx" name="How to reload a page using JavaScript?" author="" url="https://stackoverflow.com/questions/3715047/how-to-reload-a-page-using-javascript#3715123" tags="javascript reload page" ctime="20180723095756" dir="1532321876chjpvx2teo" file="text.html"/>
    </recordtable>
   </node>
   <node crypt="" id="15314778531bpcn2m0d7" name="MySQL">
@@ -443,6 +457,47 @@
     <record id="1526448340to4a123j55" name="RemoveOldKernels" author="" url="https://help.ubuntu.com/community/RemoveOldKernels" tags="linux ubuntu kernel remove" ctime="20180713153212" dir="1526448340t11x5xn0jj" file="text.html"/>
     <record id="15264484031tj48bdn71" name="False disk full error: apt-get unable to install or remove" author="" url="https://askubuntu.com/questions/668582/false-disk-full-error-apt-get-unable-to-install-or-remove/864624#comment972298_668582" tags="linux ubuntu disk full error" ctime="20180713153212" dir="15264484036jegw8oiu1" file="text.html"/>
     <record id="1531466366eri4gjtp7i" name="'Some index files failed to download' while updating" author="" url="https://askubuntu.com/questions/208037/some-index-files-failed-to-download-while-updating#244257" tags="ubuntu index files failed download" ctime="20180713153212" dir="1531466366vjs36vluxp" file="text.html"/>
+    <record id="1516076769yk0bnzfz35" name="RootSudo" author="" url="https://help.ubuntu.com/community/RootSudo#Allowing_other_users_to_run_sudo" tags="linux ubuntu sudo root user" ctime="20180806120827" dir="1516076769kw5dss42p7" file="text.html"/>
+    <record id="1488264331tjhsly99fe" name="Поддержка русского языка в консоли" author="" url="http://help.ubuntu.ru/wiki/russian_font_in_console" tags="linux ubuntu console cyrillic" ctime="20180806120830" dir="1488264331m5k1njaan6" file="text.html"/>
+   </recordtable>
+  </node>
+  <node crypt="" id="1532423904f1999esni9" name="Бухгалтерия">
+   <recordtable>
+    <record id="1532424132xn9woyh2qd" name="Требования к кассовому чеку при получении аванса (частичной оплаты)&#10;Источник: https://onlainkassy.ru/info/predoplata.html" author="" url="https://onlainkassy.ru/info/predoplata.html" tags="касса чек предоплата аванс" ctime="20180724142212" dir="1532424132yldj6zzn8d" file="text.html"/>
+    <record id="1532424656xs803fqt4x" name="Как пробить чек ККМ с предоплатой?" author="" url="http://nalog-nalog.ru/kkt_kkm_kassa/kak_probit_chek_kkm_s_predoplatoj/" tags="касса чек аванс предоплата" ctime="20180724143056" dir="153242465644ffl70u03" file="text.html"/>
+    <record id="1532425268uk0rsz4t1l" name="Кассовый чек на предоплату" author="" url="https://taxcom.ru/about/news/prepay-e-check/" tags="касса чек аванс предоплата" ctime="20180724144108" dir="15324252681kolc76sf7" file="text.html"/>
+   </recordtable>
+  </node>
+  <node crypt="" id="1532757381uewu72bj1c" name="Туризм">
+   <recordtable>
+    <record id="15327664384see1gf1fy" name="Абхазия - Памятка туристу от &quot;Библио Глобус&quot;" author="Туроператор &quot;Библио Глобус&quot;" url="https://www.bgoperator.ru/price.shtml?flt=100420695633&amp;tid=64" tags="туризм абхазия" ctime="20180728132718" dir="1532766438rdhpghq0he" file="text.html"/>
+   </recordtable>
+  </node>
+  <node crypt="" id="153295552383gg13gxcz" name="Алгоритмы">
+   <recordtable>
+    <record id="15329556295wqafx3qxf" name="Алгоритм Луна (Luhn Algorithm)" author="" url="http://lektsii.com/1-6252.html" tags="lunh algorithm" ctime="20180730180029" dir="15329556296thdxjtw4b" file="text.html"/>
+    <record id="1533017374376pa9bn3x" name="Вычисление контрольной цифры IMEI - Алгоритм Луна" author="" url="https://sndeep.info/ru/tools/checksum_calculator" tags="imei lunh algorithm" ctime="20180731110934" dir="1533017374sdnfgsialx" file="text.html"/>
+   </recordtable>
+  </node>
+  <node crypt="" id="1533097805njpg9bph36" name="Кулинарные рецепты">
+   <recordtable>
+    <record id="1533097925b10alzxiyz" name="Татарские лепешки" author="" url="https://www.russianfood.com/recipes/recipe.php?rid=60696" tags="рецепт лепешка" ctime="20180801093205" dir="1533097925w74slddrx6" file="text.html"/>
+   </recordtable>
+  </node>
+  <node crypt="" id="1533180587zm658yy6g0" name="Android">
+   <recordtable>
+    <record id="153318068154zqr2vk5h" name="Android x86 на Asus Eee PC 900" author="" url="https://habr.com/post/139112/" tags="android x86 asus eee pc" ctime="20180802083121" dir="1533180681nj1dxjjatf" file="text.html"/>
+    <record id="1533180780bb1v0egbz4" name="Android x86 с эмулятором ARM на большом экране" author="" url="https://habr.com/post/156415/" tags="android x86" ctime="20180802083300" dir="153318078060w387nlu1" file="text.html"/>
+    <record id="1533180879yry5c0q8uy" name="android-x86 4.0 RC1 on the Eee 1015PX" author="" url="https://ranf.wordpress.com/2012/03/30/android-x86-on-the-eee-1015px/" tags="android x86 eee pc" ctime="20180802083439" dir="15331808797fdtnoq6sl" file="text.html"/>
+    <record id="1533181110t36t3ary5d" name="Разрешение экрана для Android android x86" author="" url="http://www.ohandroid.com/android-android-x86.html" tags="android x86 virtual box" ctime="20180802083830" dir="1533181110rzkjivo5ws" file="text.html"/>
+    <record id="1533181335wjeib0c1gy" name="[android-x86] External Monitor Support on my Asus EEE 701&#10;" author="" url="http://grokbase.com/t/gg/android-x86/127mfgt82p/external-monitor-support-on-my-asus-eee-701" tags="android x86 asus eee pc external monitor" ctime="20180802084215" dir="1533181335wwgcuasfsp" file="text.html"/>
+    <record id="15331816248zj1r0z15j" name="Как использовать Android на обычном компе" author="" url="https://xakep.ru/2012/11/16/dekstop-android/" tags="android-x86 virtual" ctime="20180802084704" dir="15331816249nrqy8fijb" file="text.html"/>
+   </recordtable>
+  </node>
+  <node crypt="" id="1533273302nj4u5exjar" name="Сетевые сокеты">
+   <recordtable>
+    <record id="1533273377kjnqhykktd" name="Сокеты в Python для начинающих" author="" url="https://habr.com/post/149077/" tags="socket python" ctime="20180803101617" dir="1533273377uo4sdkhvr4" file="text.html"/>
+    <record id="1533276284d0xvaozvd7" name="Сокеты в Python 3: TCP, клиент, сервер" author="" url="https://andreymal.org/21" tags="socket python" ctime="20180803110444" dir="15332762843eaazfnh6b" file="text.html"/>
    </recordtable>
   </node>
  </content>
