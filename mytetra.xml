@@ -82,6 +82,16 @@
     <record id="1527243052r5n5jvw95p" name="sed - 20 examples to remove / delete characters from a file" author="" url="http://www.theunixschool.com/2014/08/sed-examples-remove-delete-chars-from-line-file.html" tags="linux sed remove delete file character" ctime="20180525151052" dir="15272430527qrqqqmt71" file="text.html"/>
     <record id="1528205444r7exltmqih" name="Linux Check Disk Space Command To View System Disk Usage" author="" url="https://www.cyberciti.biz/faq/linux-check-disk-space-command/" tags="linux df disk space terminal" ctime="20180605183044" dir="1528205444yjydvr0ziy" file="text.html"/>
     <record id="1532169829spai0zm2tb" name="Linux mv command" author="" url="https://www.computerhope.com/unix/umv.htm" tags="linux man mv" ctime="20180721154349" dir="1532169829tgzegykhaj" file="text.html"/>
+    <record id="1537253901r2gidc9etx" name="Linux Command Line Cheat Sheet" author="" url="https://www.cheatography.com/davechild/cheat-sheets/linux-command-line/" tags="linux command cheatsheet" ctime="20180918115821" dir="1537253901l6e5trg6v2" file="text.html"/>
+    <record id="1537341124pmiysja3h5" name="How To Add Swap Space on Ubuntu 16.04" author="" url="https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-16-04" tags="linux add swap space ubuntu" ctime="20180919121204" dir="1537341124flf3xl00ez" file="text.html"/>
+    <record id="1537442430wh0reqf7e0" name="13 Linux Network Configuration and Troubleshooting Commands" author="" url="https://www.tecmint.com/linux-network-configuration-and-troubleshooting-commands/" tags="linux network commands" ctime="20180920162030" dir="15374424306xdavrlng1" file="text.html"/>
+    <record id="1537442507js2q72b4cy" name="How do i edit resolv.conf" author="" url="https://stackoverflow.com/questions/19432026/linux-how-do-i-edit-resolv-conf#19468035" tags="linux resolv.conf" ctime="20180920162147" dir="1537442507qt9cwsh846" file="text.html"/>
+    <record id="1539142062pgby711xiy" name="How to create a file with a given size in Linux?" author="" url="https://stackoverflow.com/questions/139261/how-to-create-a-file-with-a-given-size-in-linux#139289" tags="linux create file given size" ctime="20181010082742" dir="15391420620337flw3ep" file="text.html"/>
+    <record id="15403742470u59dtt3w2" name="Is there a way to create multiple directories at once with mkdir?" author="" url="https://askubuntu.com/questions/731721/is-there-a-way-to-create-multiple-directories-at-once-with-mkdir#731724" tags="linux mkdir multiple directory" ctime="20181024144407" dir="1540374247yyr3aeznd3" file="text.html"/>
+    <record id="15405246730srvmigc21" name="Keyboard configuration in Xorg" author="" url="https://wiki.archlinux.org/index.php/Keyboard_configuration_in_Xorg_(Русский)" tags="linux xorg keyboard layout xkb" ctime="20181026083113" dir="1540524673vlasr3rqyj" file="text.html"/>
+    <record id="1540524818e91u50pjqi" name="Раскладка клавиатуры в Xorg" author="" url="http://nix.zeya.org/wiki/настройка_переключения_раскладки_клавиатуры_в_xorg" tags="linux xorg keyboard layout" ctime="20181026083338" dir="15405248182vwjtq9vzb" file="text.html"/>
+    <record id="1542777248al8rjgtr2h" name="Clear contents of clipboard" author="" url="https://ubuntuforums.org/showthread.php?t=1234219" tags="linux xserver clipboard clear xclip" ctime="20181121101408" dir="1542777248zxtledcetv" file="text.html"/>
+    <record id="1543816561gwd4ncztvg" name="How to Clear RAM Memory Cache, Buffer and Swap Space on Linux" author="" url="https://www.tecmint.com/clear-ram-memory-cache-buffer-and-swap-space-on-linux/" tags="linux clear ram cache swap memory buffer" ctime="20181203105601" dir="1543816561kmdrutpfy9" file="text.html"/>
    </recordtable>
   </node>
   <node crypt="" id="1486717776lz9o1gzppb" name="Virtual">
@@ -89,6 +99,9 @@
     <record id="1486717856h64ilbq2p8" name="x86 virtualization in JavaScript, running in your browser and NodeJS" author="https://github.com/copy" url="https://github.com/copy/v86" tags="javascript x86 virtual virtualization" ctime="20170210141056" dir="1486717856em4yoptuzr" file="text.html"/>
     <record id="1490760221yyz4mbhvfy" name="Виртуальная Windows под виртуальным Debian" author="https://habrahabr.ru/users/passerby" url="https://habrahabr.ru/post/107471/" tags="linux debian vds qemu windows" ctime="20170329090341" dir="14907602212cp58wctu5" file="text.html"/>
     <record id="1517561615hea2wmhzlw" name="Vagrant: Руководство для Начинающих — За 5 Минут" author="" url="https://www.shellhacks.com/ru/vagrant-tutorial-for-beginners/" tags="vagrant" ctime="20180202135335" dir="1517561615w41u85gipj" file="text.html"/>
+    <record id="1539916764d8do6lpm44" name="How to convert RAW image to VDI and otherwise" author="" url="https://blog.sleeplessbeastie.eu/2012/04/29/virtualbox-convert-raw-image-to-vdi-and-otherwise/" tags="virtualbox vmware raw vdi vmdk image" ctime="20181019073924" dir="15399167647f8jsx63oh" file="text.html"/>
+    <record id="1539920805hxla5uj63v" name="How to convert .img to usable VirtualBox format" author="" url="https://superuser.com/questions/554862/how-to-convert-img-to-usable-virtualbox-format" tags="virtualbox img iso vdi convert" ctime="20181019084645" dir="15399208053eobfekfna" file="text.html"/>
+    <record id="1540111108qzqi72io29" name="Marshmallow in VirtualBox:installation stuck on GRUB" author="" url="https://superuser.com/questions/1052597/marshmallow-in-virtualboxinstallation-stuck-on-grub/1270769#1270769" tags="virtualbox andoid x86 install grub" ctime="20181021133828" dir="1540111108z63i2ojsdf" file="text.html"/>
    </recordtable>
   </node>
   <node crypt="" id="148826287614fry7q58g" name="Видеонаблюдение">
@@ -143,6 +156,7 @@
     <record id="1505040073icnjkrstzi" name="Git - вывести историю изменений в терминал" author="" url="https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History" tags="git" ctime="20170910154113" dir="15050400731xrks5tbnq" file="text.html"/>
     <record id="1525669114a7hpxzu47o" name="Самые типичные ошибки и вопросы, связанные с Git, и удобные способы их решения" author="" url="https://tproger.ru/translations/most-common-git-screwupsquestions-and-solutions/" tags="git help" ctime="20180507095834" dir="1525669114re3qizybr6" file="text.html"/>
     <record id="1526476341qjgj4wb4yg" name="Reset local repository branch to be just like remote repository HEAD&#10;" author="" url="https://stackoverflow.com/questions/1628088/reset-local-repository-branch-to-be-just-like-remote-repository-head" tags="git reset local master to remote" ctime="20180516181221" dir="15264763414omb9tfisu" file="text.html"/>
+    <record id="1542014882ttqi68xj6r" name="How to add file to a previous commit?" author="" url="https://stackoverflow.com/questions/14096721/how-to-add-file-to-a-previous-commit" tags="git add last commit file" ctime="20181112142802" dir="1542014882pg7rb4ifvb" file="text.html"/>
    </recordtable>
   </node>
   <node crypt="" id="1506336652wmdu2jx2nn" name="Веб-разработка">
@@ -177,6 +191,8 @@
     <record id="1517561448y1cizcj5qe" name="Виртуализация процесса разработки, часть 1: Docker" author="Андрей Двояк" url="https://dou.ua/lenta/articles/docker/" tags="docker development tutorial" ctime="20180202135048" dir="15175614486e3p3bwlnu" file="text.html"/>
     <record id="15175615384etehhdvlc" name="Виртуализация процесса разработки, часть 2: Docker и Vagrant" author="Andrii Dvoiak" url="https://dou.ua/lenta/articles/vagrant/" tags="docker vagrant virtual" ctime="20180202135218" dir="15175615387wlwujpdve" file="text.html"/>
     <record id="1517568427m06qgmvva3" name="Docker Cheat Sheet" author="wsargent" url="https://github.com/wsargent/docker-cheat-sheet" tags="dockrt cheat" ctime="20180202154707" dir="1517568427yj7xcw0hry" file="text.html"/>
+    <record id="1537254532uqor73rcnb" name="Docker logs: how to use options, tail and grep to debug effectively" author="" url="https://medium.com/the-code-review/to-boldly-log-debug-docker-apps-effectively-using-logs-options-tail-and-grep-53d2e655abcb" tags="docker logs" ctime="20180918120852" dir="1537254532sefbadxk5p" file="text.html"/>
+    <record id="15372693600k51u9q27u" name="Как в docker-compose перезапустить запущенный контейнер с пересборкой" author="" url="https://evilinside.ru/kak-v-docker-compose-perezapustit-zapushhennyj-kontejner-s-peresborkoj/#" tags="docker rebuild" ctime="20180918161600" dir="1537269360hsmgm72cgo" file="text.html"/>
    </recordtable>
   </node>
   <node crypt="" id="1516102808v15wtjs1g3" name="cURL, wget">
@@ -258,6 +274,7 @@
     <record id="1527598488n7ncpt4ej8" name="How To Install and Manage Supervisor on Ubuntu and Debian VPS" author="" url="https://www.digitalocean.com/community/tutorials/how-to-install-and-manage-supervisor-on-ubuntu-and-debian-vps" tags="linux supervisor install config" ctime="20180529175448" dir="1527598488yi56d1xq1l" file="text.html"/>
     <record id="1533532774pyvoai3zmx" name="Sending custom headers in websocket handshake&#10;" author="" url="https://stackoverflow.com/questions/15381414/sending-custom-headers-in-websocket-handshake" tags="websocket python" ctime="20180806101934" dir="153353277493xgn93dvj" file="text.html"/>
     <record id="1533534794hge9owfbjs" name="python - websocket-client" author="" url="https://github.com/websocket-client/websocket-client" tags="websocket python client" ctime="20180806105314" dir="1533534794zk6qo9otft" file="text.html"/>
+    <record id="1534309683f06y6zwosq" name="ws: a Node.js WebSocket library" author="" url="https://www.npmjs.com/package/ws" tags="websocket npm nodejs ws" ctime="20180815100803" dir="1534309683lyse96tw4p" file="text.html"/>
    </recordtable>
   </node>
   <node crypt="" id="1526493215rp7n0v265c" name="GRUB">
@@ -347,6 +364,8 @@
     <recordtable>
      <record id="1488784759nc835ulepd" name="Stringy - A PHP string manipulation library with multibyte support " author="https://github.com/danielstjules" url="https://github.com/danielstjules/Stringy" tags="php string library github" ctime="20180713153028" dir="1488784759ue8sc9k9wd" file="text.html"/>
      <record id="14901683916qk96pbvse" name="Robo - Modern task runner" author="" url="http://robo.li/" tags="php task robo" ctime="20180713153028" dir="14901683911yy7i22rcb" file="text.html"/>
+     <record id="1539086870geek6hgjhb" name="PHP Spreadsheet extension to the export excel file from excel template" author="" url="https://github.com/alhimik1986/php-excel-templator" tags="" ctime="20181009170750" dir="1539086870030oh955h4" file="text.html"/>
+     <record id="1539362888pnun8o02x6" name="atk4/ui - Build beautiful dynamic and interactive web UI in PHP " author="" url="https://github.com/atk4/ui" tags="php ui web framework" ctime="20181012214808" dir="1539362888zirwmtj8at" file="text.html"/>
     </recordtable>
    </node>
    <node crypt="" id="1531477828j0qfim8agr" name="PHP Desktop app">
@@ -372,6 +391,9 @@
     <record id="15269175806zh5mwtvii" name="Modify OWNER on all tables simultaneously in PostgreSQL&#10;" author="" url="https://stackoverflow.com/questions/1348126/modify-owner-on-all-tables-simultaneously-in-postgresql" tags="postgresql" ctime="20180713153040" dir="15269175809ffv88suaj" file="text.html"/>
     <record id="15282855340r2uk91dan" name="Индексы PostgreSQL: #1 Введение в индексы" author="" url="https://doberbeatzblog.wordpress.com/2017/03/13/postgresql-indexes/" tags="potgresql index" ctime="20180713153040" dir="152828553478xr7qmhdx" file="text.html"/>
     <record id="1532951298arw7hivu7b" name="Using regex in WHERE in Postgres" author="" url="https://stackoverflow.com/questions/4945477/using-regex-in-where-in-postgres#4945529" tags="postgresql where regexp" ctime="20180730164818" dir="1532951298ueot51puw3" file="text.html"/>
+    <record id="1533818543t160g2184g" name="How to get the number of days in a month?" author="" url="https://stackoverflow.com/questions/6927113/how-to-get-the-number-of-days-in-a-month" tags="psql postgresql number days month" ctime="20180809174223" dir="1533818543nlpym6lx78" file="text.html"/>
+    <record id="1536744498xun6uorplr" name="Creating a copy of a database in PostgreSQL&#10;" author="" url="https://stackoverflow.com/questions/876522/creating-a-copy-of-a-database-in-postgresql#876565" tags="psql clone database" ctime="20180912142818" dir="1536744498wu2aowu11c" file="text.html"/>
+    <record id="1539146479kcnjh018wg" name="PostgreSQL ROW_NUMBER function" author="" url="http://www.postgresqltutorial.com/postgresql-row_number/" tags="psql row number" ctime="20181010094119" dir="1539146479sqeqphvtlx" file="text.html"/>
    </recordtable>
   </node>
   <node crypt="" id="1531477847aiodnph7a2" name="Javascript">
@@ -394,6 +416,8 @@
     <record id="1531720601j5msyi0k8i" name="How do I encode a JavaScript object as JSON?" author="" url="https://stackoverflow.com/questions/10919965/how-do-i-encode-a-javascript-object-as-json" tags="javascript json encode decode" ctime="20180716105641" dir="1531720601dz993fdabm" file="text.html"/>
     <record id="1531976207pc2igfu3m3" name="How do I redirect with JavaScript?" author="" url="https://stackoverflow.com/questions/4744751/how-do-i-redirect-with-javascript#4745622" tags="javascript redirect" ctime="20180719095647" dir="1531976207csyki9e9s6" file="text.html"/>
     <record id="1532321876x770qt02rx" name="How to reload a page using JavaScript?" author="" url="https://stackoverflow.com/questions/3715047/how-to-reload-a-page-using-javascript#3715123" tags="javascript reload page" ctime="20180723095756" dir="1532321876chjpvx2teo" file="text.html"/>
+    <record id="1537164087thjn7ojg8l" name="JSDoc - Examples" author="" url="http://usejsdoc.org" tags="javascript jsdoc documentation" ctime="20180917110127" dir="1537164087dpiedfk17n" file="text.html"/>
+    <record id="1542266188wn1y1a1s9m" name="How to interpolate variables in strings in JavaScript, without concatenation?&#10;" author="" url="https://stackoverflow.com/questions/3304014/how-to-interpolate-variables-in-strings-in-javascript-without-concatenation" tags="javascript variable string interpolate" ctime="20181115121628" dir="1542266188bsi5pqe683" file="text.html"/>
    </recordtable>
   </node>
   <node crypt="" id="15314778531bpcn2m0d7" name="MySQL">
@@ -413,6 +437,8 @@
     <record id="151720203606r692bfo3" name="Создание сертификата Let’s Encrypt для Nginx в Ubuntu 16.04" author="" url="https://www.8host.com/blog/sozdanie-sertifikata-lets-encrypt-dlya-nginx-v-ubuntu-16-04/" tags="cron Let's Encrypt NGINX SSL TLS Ubuntu" ctime="20180713153129" dir="1517202036gy10rqld7r" file="text.html"/>
     <record id="1517374959yyevq3ibp9" name="Let's Encrypt и nginx: настройка в Debian и Ubuntu" author="Алексей alexkbs" url="https://habrahabr.ru/post/318952/" tags="letsencrypt nginx certbot debian ubuntu apache2&#10;" ctime="20180713153129" dir="1517374959vp7wiab8qd" file="text.html"/>
     <record id="1517375588zwox19xxia" name="Letsencrypt: webroot или standalone для приложения на node.js?" author="" url="https://toster.ru/q/405925" tags="Nginx SSL Node.js Цифровые сертификаты&#10;&#10;" ctime="20180713153129" dir="1517375588gpm3ht2ux0" file="text.html"/>
+    <record id="1538375909ak7yzsnbxf" name="How To Secure Nginx with Let's Encrypt on Ubuntu 14.04" author="" url="https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-14-04" tags="nginx ubuntu ssl cerbot" ctime="20181001113829" dir="1538375909svztiw1cdw" file="text.html"/>
+    <record id="1538375964s8ydtd9exl" name="How To Install an SSL Certificate from a Commercial Certificate Authority" author="" url="https://www.digitalocean.com/community/tutorials/how-to-install-an-ssl-certificate-from-a-commercial-certificate-authority" tags="ssl nginx apache ssl" ctime="20181001113924" dir="1538375964molhcjfyz7" file="text.html"/>
    </recordtable>
   </node>
   <node crypt="" id="1531477896vay20z96c4" name="ssh">
@@ -420,6 +446,7 @@
     <record id="1514367727d7qzy59rx0" name="SSH/Debian" author="" url="https://wiki.debian.org/SSH" tags="debian ssh config" ctime="20180713153136" dir="1514367727cn6rucdupz" file="text.html"/>
     <record id="1514367778vqcu6mst8h" name="SSH/Ubuntu" author="" url="https://help.ubuntu.com/community/SSH/OpenSSH/Configuring" tags="linux ssh config ubuntu" ctime="20180713153136" dir="1514367778y86l38ucdj" file="text.html"/>
     <record id="1514367835bzmuvos9eh" name="Simplify Your Life With an SSH Config File" author="" url="http://nerderati.com/2011/03/17/simplify-your-life-with-an-ssh-config-file/" tags="linux config simple" ctime="20180713153136" dir="1514367835nwc05gjo50" file="text.html"/>
+    <record id="1541648251wkgo0liu59" name="Installing SFTP/SSH Server on Windows using OpenSSH" author="" url="https://winscp.net/eng/docs/guide_windows_openssh_server" tags="windows ssh server sftp" ctime="20181108083731" dir="15416482510xujxck6js" file="text.html"/>
    </recordtable>
   </node>
   <node crypt="" id="15314779025p0hsy8c3b" name="Nginx">
@@ -441,6 +468,7 @@
     <record id="151780571343w014t9k0" name="Кэширование с Nginx" author="" url="https://ruhighload.com/post/%D0%9A%D1%8D%D1%88%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5+%D1%81+Nginx" tags="nginx cache config" ctime="20180713153142" dir="15178057139d3w3cf7hj" file="text.html"/>
     <record id="1517805951u8urjuu1ut" name="Распределенный кеш на основе Nginx и proxy_cache" author="" url="https://ruhighload.com/post/%D0%A0%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9+%D0%BA%D0%B5%D1%88+%D0%BD%D0%B0+%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%B5+Nginx+%D0%B8+proxy_cache" tags="nginx proxy cache config" ctime="20180713153142" dir="1517805951lim2zivjin" file="text.html"/>
     <record id="1525765961as8a5fefja" name="Nginx - WebSocket proxying" author="" url="http://nginx.org/en/docs/http/websocket.html" tags="websocket nginx" ctime="20180713153142" dir="15257659617zoqyu19sp" file="text.html"/>
+    <record id="153838828598rcl6yd2h" name="Nginx Configuration Examples" author="" url="http://kbeezie.com/nginx-configuration-examples" tags="nginx config examples" ctime="20181001150445" dir="15383882854w2k9420yi" file="text.html"/>
    </recordtable>
   </node>
   <node crypt="" id="1531477925ryxvd8o5tm" name="Debian">
@@ -459,6 +487,13 @@
     <record id="1531466366eri4gjtp7i" name="'Some index files failed to download' while updating" author="" url="https://askubuntu.com/questions/208037/some-index-files-failed-to-download-while-updating#244257" tags="ubuntu index files failed download" ctime="20180713153212" dir="1531466366vjs36vluxp" file="text.html"/>
     <record id="1516076769yk0bnzfz35" name="RootSudo" author="" url="https://help.ubuntu.com/community/RootSudo#Allowing_other_users_to_run_sudo" tags="linux ubuntu sudo root user" ctime="20180806120827" dir="1516076769kw5dss42p7" file="text.html"/>
     <record id="1488264331tjhsly99fe" name="Поддержка русского языка в консоли" author="" url="http://help.ubuntu.ru/wiki/russian_font_in_console" tags="linux ubuntu console cyrillic" ctime="20180806120830" dir="1488264331m5k1njaan6" file="text.html"/>
+    <record id="15339208490671rkr4xy" name="Enable ZSwap to increase performance" author="" url="https://ubuntu-mate.community/t/enable-zswap-to-increase-performance/11302" tags="ubuntu zswap perfomance" ctime="20180810220729" dir="1533920849u6rjtrto6x" file="text.html"/>
+    <record id="1533921054uw39dfxif9" name="6 простых способов ускорить Ubuntu 16.04 в разы" author="" url="http://liberatum.ru/exclusive/6-sposobov-zastavit-ubuntu-rabotat-bystree" tags="ubuntu perfomance" ctime="20180810221054" dir="1533921054wuezncui4e" file="text.html"/>
+    <record id="1533922347fejueywe9v" name="Lubuntu/MultiDisplay" author="" url="https://help.ubuntu.com/community/Lubuntu/MultiDisplay" tags="ubuntu multi display" ctime="20180810223227" dir="15339223475yxfgqikv1" file="text.html"/>
+    <record id="1541651076x1ddzv73bb" name="PartitionImaging" author="" url="https://help.ubuntu.com/community/PartitionImaging" tags="ubuntu partition gpt mbr parted" ctime="20181108092436" dir="1541651076ig88iu4snb" file="text.html"/>
+    <record id="1541651252z0to2llv1w" name="LiveCD/Persistence" author="" url="https://help.ubuntu.com/community/LiveCD/Persistence" tags="ubuntu live cd persistence fdisk" ctime="20181108092732" dir="1541651252y0lk1pb79v" file="text.html"/>
+    <record id="1541655245awoa9zvn9a" name="How to select the output device of audio in ubuntu manually?" author="" url="https://stackoverflow.com/questions/5972932/how-to-select-the-output-device-of-audio-in-ubuntu-manually#5974900" tags="ubuntu set default sound output device" ctime="20181108103405" dir="1541655245urtqkijq8l" file="text.html"/>
+    <record id="1543816427yrqzj0pe5c" name="5 Simple Ways To Free Up Space on Ubuntu" author="" url="https://www.omgubuntu.co.uk/2016/08/5-ways-free-up-space-on-ubuntu" tags="ubuntu linux clear space cache" ctime="20181203105354" dir="1543816427zwb163d78e" file="text.html"/>
    </recordtable>
   </node>
   <node crypt="" id="1532423904f1999esni9" name="Бухгалтерия">
@@ -498,6 +533,79 @@
    <recordtable>
     <record id="1533273377kjnqhykktd" name="Сокеты в Python для начинающих" author="" url="https://habr.com/post/149077/" tags="socket python" ctime="20180803101617" dir="1533273377uo4sdkhvr4" file="text.html"/>
     <record id="1533276284d0xvaozvd7" name="Сокеты в Python 3: TCP, клиент, сервер" author="" url="https://andreymal.org/21" tags="socket python" ctime="20180803110444" dir="15332762843eaazfnh6b" file="text.html"/>
+   </recordtable>
+  </node>
+  <node crypt="" id="1533702237n28myngt3v" name="Apache">
+   <recordtable>
+    <record id="1533702680k1z5kc0zh6" name="Learn Apache mod_rewrite: 13 Real-world Examples" author="" url="https://www.sitepoint.com/apache-mod_rewrite-examples/" tags="apache rewrite htaccess" ctime="20180808093120" dir="1533702680s11adtvnco" file="text.html"/>
+   </recordtable>
+  </node>
+  <node crypt="" id="1533921816zeatudd9lj" name="LXC">
+   <recordtable>
+    <record id="1533921875xat85xgxc7" name="LXC&#10;в Ubuntu" author="" url="https://help.ubuntu.ru/wiki/руководство_по_ubuntu_server/виртуализация/lxc" tags="lxc ubuntu" ctime="20180810222435" dir="1533921875b988z6kuht" file="text.html"/>
+    <record id="1533921946mx34p4uvzw" name="КОНТЕЙНЕРЫ LINUX — УСТАНОВКА И НАСТРОЙКА LXC" author="" url="https://losst.ru/kontejnery-linux-ustanovka-i-nastrojka-lxc" tags="lxc ubuntu install config" ctime="20180810222546" dir="1533921946jwa4sxmgbb" file="text.html"/>
+   </recordtable>
+  </node>
+  <node crypt="" id="15341593396gknowxfqk" name="Excel">
+   <recordtable>
+    <record id="1534159612wr9is9q1by" name="SheetJS Community Edition -- Spreadsheet Parser and Writer https://sheetjs.com/" author="" url="https://github.com/SheetJS/js-xlsx" tags="excel parse write browser javascript" ctime="20180813162652" dir="1534159612ou2zd64yvu" file="text.html"/>
+   </recordtable>
+  </node>
+  <node crypt="" id="1534313355ulnyx0109i" name="QEMU">
+   <recordtable>
+    <record id="15343137762v3v37rl1i" name="QEMU: Run guest OSes on a locked-down Windows machine" author="" url="https://www.gleescape.com/posts/541" tags="qemu windows xp guest" ctime="20180815111616" dir="1534313776zs5blo5uwk" file="text.html"/>
+    <record id="1534313831qdzqjh2r8r" name="Simple Portable Linux QEMU VM on a USB Drive" author="" url="https://willhaley.com/blog/simple-portable-linux-qemu-vm-usb/" tags="qemu portable windows linux" ctime="20180815111711" dir="15343138311q917ykwbi" file="text.html"/>
+    <record id="1536944615lbqgpb3lf5" name="QEMU version 3.0.0 User Documentation" author="" url="https://qemu.weilnetz.de/doc/qemu-doc.html" tags="qemu documentation" ctime="20180914220335" dir="1536944615wnh6wgq7eb" file="text.html"/>
+   </recordtable>
+  </node>
+  <node crypt="" id="1537008710gtopy9hy5p" name="FreeDos">
+   <recordtable>
+    <record id="1537008768fdvndrxvpt" name="Русский язык в FreeDOS 1.1" author="" url="http://www.phantom.sannata.ru/forum/index.php?t=12399" tags="freedos rus" ctime="20180915155248" dir="153700876836728kfnog" file="text.html"/>
+    <record id="1537008909nca0j9ykss" name="FreeDos 1.1 - поддержка русского языка" author="" url="http://old-dos.ru/files/file_925.html" tags="freedos rus" ctime="20180915155509" dir="15370089099u37ymvtl5" file="text.html"/>
+    <record id="1537105085a3bmhdl6xe" name="FreeDOS 1.2 - установка и настройка" author="" url="http://club.radioscanner.ru/topic2066.html" tags="freedos install config" ctime="20180916183805" dir="1537105085dixwtt92uf" file="text.html"/>
+    <record id="1537105160ycruox7nom" name="FreeDOS 1.2 Обзор" author="" url="http://stoplinux.org.ru/reviews/freedos.html" tags="freedos install config" ctime="20180916183920" dir="1537105160nhqne1rw1j" file="text.html"/>
+   </recordtable>
+  </node>
+  <node crypt="" id="15372435948uk0vir1hi" name="Автомобили">
+   <node crypt="" id="153724360752va5us7vt" name="Chevrolet Lanos">
+    <recordtable>
+     <record id="1537243686ww433i7w6i" name="Каталожные номера расходников и запчастей" author="" url="https://www.drive2.ru/l/450861615990965059/" tags="lanos chevrolet car" ctime="20180918090806" dir="1537243686rk3ky6059q" file="text.html"/>
+    </recordtable>
+   </node>
+  </node>
+  <node crypt="" id="153745927993yknasnga" name="Английский язык">
+   <recordtable>
+    <record id="1537514065d8cdrj628u" name="The Ultimate English Grammar Cheat Sheet For Students" author="" url="https://uk.urbanest.com/journal/the-ultimate-english-grammar-cheat-sheet-for-students/" tags="english grammar cheatsheet" ctime="20180921121425" dir="15375140654qcowmqsvg" file="text.html"/>
+   </recordtable>
+  </node>
+  <node crypt="" id="1538113598xiblfzaj57" name="NodeJS">
+   <recordtable>
+    <record id="153811495349jvypdq1z" name="How To Set Up a Node.js Application for Production on Ubuntu 14.04" author="" url="https://www.digitalocean.com/community/tutorials/how-to-set-up-a-node-js-application-for-production-on-ubuntu-14-04" tags="nodejs server ubuntu linux script" ctime="20180928110913" dir="1538114953uddq2x7arm" file="text.html"/>
+    <record id="1538115064a5aefyoqie" name="PM2 - P(rocess) M(anager) 2" author="" url="https://www.npmjs.com/package/pm2" tags="nodejs npm process manager pm2" ctime="20180928111104" dir="1538115064lwji1g0e15" file="text.html"/>
+   </recordtable>
+  </node>
+  <node crypt="" id="15392409503gbrd4r752" name="HTML">
+   <recordtable>
+    <record id="1539241056llov6yh4s3" name="HTML - Спецсимволы" author="" url="http://htmlbook.ru/samhtml/tekst/spetssimvoly" tags="html nbsp symbol" ctime="20181011115736" dir="15392410562o33ad6g9d" file="text.html"/>
+   </recordtable>
+  </node>
+  <node crypt="" id="1540448332e7ukljaj9u" name="CygWin">
+   <recordtable>
+    <record id="15404483871unc74yqgz" name="Переключение раскладки клавиатуры в Cygwin/X" author="" url="http://dmitriy5181.github.io/2014-04-04-cygwin-x-keyboard-layout.html" tags="cygwin x server layout" ctime="20181025111947" dir="15404483870dnuefs1lt" file="text.html"/>
+    <record id="15405245518fu8nj7d0x" name="XServer под Cygwin" author="" url="http://beggytech.blogspot.com/2007/10/xserver-cygwin.html" tags="cygwin xserver xorg xkb keyboard layout" ctime="20181026082911" dir="1540524551z49bv5a011" file="text.html"/>
+   </recordtable>
+  </node>
+  <node crypt="" id="1540611797cje2yqvyms" name="Xming">
+   <recordtable>
+    <record id="154063538991k8umqwfw" name="PuTTY+Xming - удалённый запуск графических программ Linux из Windows по SSH" author="" url="http://palexa.pp.ua/blog/terminalnye-resheniya/putty-telnet-ssh-klient/putty-xming-udaljonnyj-zapusk-graficheskikh-programm-linux-iz-windows-po-ssh.html" tags="xming xserver putty ssh" ctime="20181027151629" dir="1540635389tzkov860hs" file="text.html"/>
+    <record id="154063550931x1jbtcj7" name="Xming и удаленная работа с графическим терминалом Linux" author="" url="https://white55.ru/xsystem.html" tags="xming xserver windows ssh linux" ctime="20181027151829" dir="1540635509zn3rq4q7w2" file="text.html"/>
+    <record id="15406357570z3bnntike" name="Xming X Server" author="" url="http://www.straightrunning.com/XmingNotes/" tags="xming xserver lunux windows" ctime="20181027152237" dir="15406357577mppn2r4op" file="text.html"/>
+    <record id="1540635843fs6ujhb5rp" name="Подключение к X-Window Linux из Microsoft Windows" author="" url="https://bozza.ru/art-134.html" tags="xserver xming linux windows ssh putty" ctime="20181027152403" dir="1540635843a17y503p2r" file="text.html"/>
+   </recordtable>
+  </node>
+  <node crypt="" id="15434935771h0u3o3gjp" name="Hacking">
+   <recordtable>
+    <record id="1543493718pjkrgs8g9k" name="Defeating HTTP Basic Auth with Hydra" author="" url="http://tylerrockwell.github.io/defeating-basic-auth-with-hydra/" tags="linux hydra ip camera hack http basic brute force password" ctime="20181129171518" dir="1543493718eklaq1df5u" file="text.html"/>
    </recordtable>
   </node>
  </content>
