@@ -92,6 +92,7 @@
     <record id="1540524818e91u50pjqi" name="Раскладка клавиатуры в Xorg" author="" url="http://nix.zeya.org/wiki/настройка_переключения_раскладки_клавиатуры_в_xorg" tags="linux xorg keyboard layout" ctime="20181026083338" dir="15405248182vwjtq9vzb" file="text.html"/>
     <record id="1542777248al8rjgtr2h" name="Clear contents of clipboard" author="" url="https://ubuntuforums.org/showthread.php?t=1234219" tags="linux xserver clipboard clear xclip" ctime="20181121101408" dir="1542777248zxtledcetv" file="text.html"/>
     <record id="1543816561gwd4ncztvg" name="How to Clear RAM Memory Cache, Buffer and Swap Space on Linux" author="" url="https://www.tecmint.com/clear-ram-memory-cache-buffer-and-swap-space-on-linux/" tags="linux clear ram cache swap memory buffer" ctime="20181203105601" dir="1543816561kmdrutpfy9" file="text.html"/>
+    <record id="1546621191yfnocp06tg" name="История команд Linux" author="" url="https://losst.ru/istoriya-komand-linux" tags="linux bash history" ctime="20190104215951" dir="1546621191pto54xk227" file="text.html"/>
    </recordtable>
   </node>
   <node crypt="" id="1486717776lz9o1gzppb" name="Virtual">
@@ -135,6 +136,7 @@
     <record id="15326062534ocmin0e8b" name="Как выключить или перезагрузить компьютер в Windows 8.1" author="" url="https://sysitplus.ru/nastrojka-pk/windows-8-1/76-kak-vyklyuchit-ili-perezagruzit-kompyuter-v-windows-8-1.html" tags="windows reboot shutdown" ctime="20180726165733" dir="15326062531kc7sfb4su" file="text.html"/>
     <record id="1533278226n0jmm701or" name="Как запустить приложение в виде службы Windows - NSSM" author="" url="https://windowsnotes.ru/programs/kak-zapustit-prilozhenie-v-vide-sluzhby-windows/" tags="windows service create nssm" ctime="20180803113706" dir="1533278226r920peekkr" file="text.html"/>
     <record id="1533292126piv5uvk5kc" name="NSSM - the Non-Sucking Service Manager" author="" url="https://nssm.cc/usage" tags="windows service nssm" ctime="20180803152846" dir="1533292126tba6skh8r4" file="text.html"/>
+    <record id="15477829616fw5b02q7t" name="Windows 7 и сброс прав доступа и владельца файлов" author="" url="http://tt.erinome.net/2012/07/265" tags="windows access rights takeown icacls" ctime="20190118084241" dir="1547782961rek95djw5j" file="text.html"/>
    </recordtable>
   </node>
   <node crypt="" id="1504108400vxxba6csn9" name="Vim">
@@ -206,6 +208,7 @@
     <record id="1517554318f9pq202sjx" name="Curl output to display in the readable JSON format in UNIX shell script" author="" url="https://stackoverflow.com/questions/27238411/curl-output-to-display-in-the-readable-json-format-in-unix-shell-script" tags="curl json output format" ctime="20180202115158" dir="1517554318jd7taqb89i" file="text.html"/>
     <record id="1517561375wspwnokjcb" name="Проверяем Время Ответа Сайта из Командной строки Linux" author="" url="https://www.shellhacks.com/ru/check-website-response-time-linux-command-line/" tags="curl test response speed time" ctime="20180202134935" dir="1517561375iu0nj6djdc" file="text.html"/>
     <record id="1517561684mqx5n53x6c" name="Проверка скорости в терминале" author="" url="https://losst.ru/kak-proverit-skorost-zagruzki-sajta" tags="curl bash tcp speed test web" ctime="20180202135444" dir="1517561684mr1gnstf4t" file="text.html"/>
+    <record id="1547610538val3u86vtt" name="CURL для WebDAV на примере с Яндекс Диском" author="" url="http://fritool.ru/curl-for-webdav/" tags="linux curl example yandex disk" ctime="20190116084858" dir="1547610538fffu5soztd" file="text.html"/>
    </recordtable>
   </node>
   <node crypt="" id="1516594305e0kzg3ilz3" name="DevOps">
@@ -394,6 +397,7 @@
     <record id="1533818543t160g2184g" name="How to get the number of days in a month?" author="" url="https://stackoverflow.com/questions/6927113/how-to-get-the-number-of-days-in-a-month" tags="psql postgresql number days month" ctime="20180809174223" dir="1533818543nlpym6lx78" file="text.html"/>
     <record id="1536744498xun6uorplr" name="Creating a copy of a database in PostgreSQL&#10;" author="" url="https://stackoverflow.com/questions/876522/creating-a-copy-of-a-database-in-postgresql#876565" tags="psql clone database" ctime="20180912142818" dir="1536744498wu2aowu11c" file="text.html"/>
     <record id="1539146479kcnjh018wg" name="PostgreSQL ROW_NUMBER function" author="" url="http://www.postgresqltutorial.com/postgresql-row_number/" tags="psql row number" ctime="20181010094119" dir="1539146479sqeqphvtlx" file="text.html"/>
+    <record id="1545030429if3jtwyer6" name="Как работать с метками времени (timestamp) в PostgreSQL?" author="" url="https://habr.com/post/273177/" tags="postgresql psql time timestamp" ctime="20181217120709" dir="1545030429b3ffds588f" file="text.html"/>
    </recordtable>
   </node>
   <node crypt="" id="1531477847aiodnph7a2" name="Javascript">
