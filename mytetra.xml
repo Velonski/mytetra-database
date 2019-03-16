@@ -137,6 +137,8 @@
     <record id="1533278226n0jmm701or" name="Как запустить приложение в виде службы Windows - NSSM" author="" url="https://windowsnotes.ru/programs/kak-zapustit-prilozhenie-v-vide-sluzhby-windows/" tags="windows service create nssm" ctime="20180803113706" dir="1533278226r920peekkr" file="text.html"/>
     <record id="1533292126piv5uvk5kc" name="NSSM - the Non-Sucking Service Manager" author="" url="https://nssm.cc/usage" tags="windows service nssm" ctime="20180803152846" dir="1533292126tba6skh8r4" file="text.html"/>
     <record id="15477829616fw5b02q7t" name="Windows 7 и сброс прав доступа и владельца файлов" author="" url="http://tt.erinome.net/2012/07/265" tags="windows access rights takeown icacls" ctime="20190118084241" dir="1547782961rek95djw5j" file="text.html"/>
+    <record id="1548910550xtr66fqkmm" name="Windows - Сочетания клавиш" author="" url="https://support.microsoft.com/ru-ru/help/12445/windows-keyboard-shortcuts" tags="windows hot keys" ctime="20190131095550" dir="1548910550hsujort0yr" file="text.html"/>
+    <record id="1549627488jdn9xvjzhh" name="Как добавить программу в автозагрузку Windows 10" author="" url="https://cho-cho.ru/gde-nahoditsja-avtozagruzka-v-windows-10" tags="windows auto startup apps programs" ctime="20190208170448" dir="1549627488r1kh3uymgd" file="text.html"/>
    </recordtable>
   </node>
   <node crypt="" id="1504108400vxxba6csn9" name="Vim">
@@ -159,6 +161,7 @@
     <record id="1525669114a7hpxzu47o" name="Самые типичные ошибки и вопросы, связанные с Git, и удобные способы их решения" author="" url="https://tproger.ru/translations/most-common-git-screwupsquestions-and-solutions/" tags="git help" ctime="20180507095834" dir="1525669114re3qizybr6" file="text.html"/>
     <record id="1526476341qjgj4wb4yg" name="Reset local repository branch to be just like remote repository HEAD&#10;" author="" url="https://stackoverflow.com/questions/1628088/reset-local-repository-branch-to-be-just-like-remote-repository-head" tags="git reset local master to remote" ctime="20180516181221" dir="15264763414omb9tfisu" file="text.html"/>
     <record id="1542014882ttqi68xj6r" name="How to add file to a previous commit?" author="" url="https://stackoverflow.com/questions/14096721/how-to-add-file-to-a-previous-commit" tags="git add last commit file" ctime="20181112142802" dir="1542014882pg7rb4ifvb" file="text.html"/>
+    <record id="1552751279o2ebh81k0h" name="Особенности настройки git под windows" author="" url="https://habr.com/ru/post/74839/" tags="git&#10;windows&#10;cp1251&#10;cp866&#10;less&#10;iconv" ctime="20190316204759" dir="1552751279u13lazdnop" file="text.html"/>
    </recordtable>
   </node>
   <node crypt="" id="1506336652wmdu2jx2nn" name="Веб-разработка">
@@ -334,6 +337,7 @@
     <record id="1531829903uhperci6dg" name="http.client" author="" url="http://ilnurgi1.ru/docs/python/modules/http_client.html" tags="python http client example" ctime="20180717171823" dir="1531829903zzi4pj1d4g" file="text.html"/>
     <record id="1531846032ohtvvl9p87" name="Регулярные выражения в Python от простого к сложному. Подробности, примеры, картинки, упражнения" author="" url="https://habr.com/post/349860/" tags="python regexp" ctime="20180717214712" dir="15318460321ljvpiutcj" file="text.html"/>
     <record id="1532319474bybp0nrksj" name="Собираем проект на python3&amp;PyQT5 под Windows, используя PyInstaller" author="https://habr.com/users/FUNNYDMAN/" url="https://habr.com/post/325626/" tags="python exe pyinstaller" ctime="20180723091754" dir="1532319474jedfvwfjxu" file="text.html"/>
+    <record id="1552365317e5e9h8bq9h" name="Разные версии менеджера пакетов PIP" author="" url="https://stackoverflow.com/questions/2812520/dealing-with-multiple-python-versions-and-pip" tags="python pip multiple version" ctime="20190312093517" dir="15523653175fr4er1uev" file="text.html"/>
    </recordtable>
    <node crypt="" id="1533009814n2f8fpquzd" name="Pyinstaller">
     <recordtable>
@@ -422,6 +426,9 @@
     <record id="1532321876x770qt02rx" name="How to reload a page using JavaScript?" author="" url="https://stackoverflow.com/questions/3715047/how-to-reload-a-page-using-javascript#3715123" tags="javascript reload page" ctime="20180723095756" dir="1532321876chjpvx2teo" file="text.html"/>
     <record id="1537164087thjn7ojg8l" name="JSDoc - Examples" author="" url="http://usejsdoc.org" tags="javascript jsdoc documentation" ctime="20180917110127" dir="1537164087dpiedfk17n" file="text.html"/>
     <record id="1542266188wn1y1a1s9m" name="How to interpolate variables in strings in JavaScript, without concatenation?&#10;" author="" url="https://stackoverflow.com/questions/3304014/how-to-interpolate-variables-in-strings-in-javascript-without-concatenation" tags="javascript variable string interpolate" ctime="20181115121628" dir="1542266188bsi5pqe683" file="text.html"/>
+    <record id="1548330139ou4dzlarj7" name="Открыть отдельное окно браузера при нажатии на ссылку" author="" url="https://jsfiddle.net/naobzore/drqfvg8o/" tags="javascript anchor link window open" ctime="20190124164219" dir="1548330139771adh7xrt" file="text.html"/>
+    <record id="1551416542eg7z8zd8zb" name="TableFilter - A Javascript library making HTML tables filterable" author="" url="http://www.tablefilter.com" tags="javascript library table list filter sort search" ctime="20190301100222" dir="1551416542oq3yltjhgf" file="text.html"/>
+    <record id="155202747186ng5axbtj" name="Привязка контекста (this) к функции в javascript и частичное применение функций" author="" url="https://habr.com/ru/post/149581/" tags="javascript function this bind context" ctime="20190308114431" dir="1552027471f2yntdp3qg" file="text.html"/>
    </recordtable>
   </node>
   <node crypt="" id="15314778531bpcn2m0d7" name="MySQL">
@@ -597,6 +604,7 @@
    <recordtable>
     <record id="15404483871unc74yqgz" name="Переключение раскладки клавиатуры в Cygwin/X" author="" url="http://dmitriy5181.github.io/2014-04-04-cygwin-x-keyboard-layout.html" tags="cygwin x server layout" ctime="20181025111947" dir="15404483870dnuefs1lt" file="text.html"/>
     <record id="15405245518fu8nj7d0x" name="XServer под Cygwin" author="" url="http://beggytech.blogspot.com/2007/10/xserver-cygwin.html" tags="cygwin xserver xorg xkb keyboard layout" ctime="20181026082911" dir="1540524551z49bv5a011" file="text.html"/>
+    <record id="1552308169bycqg7wxgo" name="Supervisord в Windows через CygWin" author="" url="https://stackoverflow.com/questions/7629813/is-there-windows-analog-to-supervisord" tags="windows supervisord cygwin task process" ctime="20190311174249" dir="1552308169b62wyiew9m" file="text.html"/>
    </recordtable>
   </node>
   <node crypt="" id="1540611797cje2yqvyms" name="Xming">
@@ -610,6 +618,11 @@
   <node crypt="" id="15434935771h0u3o3gjp" name="Hacking">
    <recordtable>
     <record id="1543493718pjkrgs8g9k" name="Defeating HTTP Basic Auth with Hydra" author="" url="http://tylerrockwell.github.io/defeating-basic-auth-with-hydra/" tags="linux hydra ip camera hack http basic brute force password" ctime="20181129171518" dir="1543493718eklaq1df5u" file="text.html"/>
+   </recordtable>
+  </node>
+  <node crypt="" id="1548916839r1ld5zukuf" name="TypeScript">
+   <recordtable>
+    <record id="1548916909j00livo1p9" name="TypeScript in 5 minutes" author="" url="http://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html" tags="" ctime="20190131114149" dir="1548916909zbavbpprrh" file="text.html"/>
    </recordtable>
   </node>
  </content>
